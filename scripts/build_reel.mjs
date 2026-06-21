@@ -70,8 +70,9 @@ run(PYTHON, [
   "-m", "edge_tts",
   "--voice", item.voice,
   "--file", txtFile,
-  // use =VALUE form so argparse doesn't treat the leading "-" as a new flag
-  `--rate=${item.rate || "-6%"}`,
+  // use =VALUE form so argparse doesn't treat the leading "-" as a new flag.
+  // uniform slower rate (-12%) = more reading time + a more serious cadence.
+  `--rate=-12%`,
   `--pitch=${item.pitch || "-6Hz"}`,
   "--write-media", voMp3,
   "--write-subtitles", voVtt,
@@ -114,7 +115,8 @@ function wordsFromCues(cues) {
   }
   return words;
 }
-// group words into short, punchy kinetic lines (break on punctuation / 4 words / 26 chars)
+// Group words into SENTENCE-level captions so each line stays on screen long
+// enough to actually read. Only split a sentence at a clause once it gets long.
 function groupWords(words) {
   const segs = [];
   let cur = null;
@@ -123,8 +125,8 @@ function groupWords(words) {
     if (!cur) cur = { text: w.text, startMs: w.startMs, endMs: w.endMs, n: 1 };
     else { cur.text += " " + w.text; cur.endMs = w.endMs; cur.n++; }
     const endsSentence = /[.?!]$/.test(cur.text);
-    const endsClause = /[,;:—–]$/.test(cur.text) && cur.n >= 2;
-    if (endsSentence || endsClause || cur.n >= 4 || cur.text.length >= 26) flush();
+    const longClause = /[,;:—–]$/.test(cur.text) && cur.text.length >= 58;
+    if (endsSentence || longClause || cur.text.length >= 92) flush();
   }
   flush();
   return segs;
@@ -217,3 +219,6 @@ run("ffmpeg", [
 
 log(`\x1b[32m✓ DONE\x1b[0m  renders/${outName}`);
 console.log(`\nCaption to post:\n${item.caption}\n\n${(item.hashtags || []).join(" ")}`);
+
+// QA watcher review (non-fatal locally; the cloud workflow treats it as a hard gate)
+spawnSync(process.execPath, [join(__dirname, "qa.mjs"), String(day)], { stdio: "inherit" });

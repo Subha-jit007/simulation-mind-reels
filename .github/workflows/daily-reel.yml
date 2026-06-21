@@ -61,6 +61,10 @@ jobs:
         if: steps.pick.outputs.skip != '1'
         run: node scripts/build_reel.mjs ${{ steps.pick.outputs.day }}
 
+      - name: QA watcher review (blocks bad/fast videos)
+        if: steps.pick.outputs.skip != '1'
+        run: node scripts/qa.mjs ${{ steps.pick.outputs.day }}
+
       - name: Upload MP4 to a Release (public URL for Instagram)
         if: steps.pick.outputs.skip != '1'
         id: host

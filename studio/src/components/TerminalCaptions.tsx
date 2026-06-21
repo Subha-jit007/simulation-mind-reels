@@ -27,8 +27,9 @@ export const TerminalCaptions: React.FC<{
   const outF = next ? Math.round((next.startMs / 1000) * fps) : inF + 60;
   const local = frame - inF;
 
-  // typing effect
-  const typeFrames = Math.min((outF - inF) * 0.6, c.text.length * 1.2);
+  // typing effect — finish typing in the first ~40% of the window, then HOLD
+  // the full line for the rest so it's comfortably readable (not racing by).
+  const typeFrames = Math.min((outF - inF) * 0.4, c.text.length * 0.7);
   const shown = Math.max(0, Math.floor(interpolate(local, [1, typeFrames], [0, c.text.length], {
     extrapolateLeft: "clamp",
     extrapolateRight: "clamp",
@@ -43,7 +44,7 @@ export const TerminalCaptions: React.FC<{
 
   const isHook = frame < Math.round(fps * 3); // first 3 seconds = the hook
   const len = c.text.length;
-  const fontSize = (isHook ? 8 : 0) + (len > 30 ? 46 : len > 18 ? 54 : 64);
+  const fontSize = (isHook ? 6 : 0) + (len > 70 ? 40 : len > 45 ? 46 : len > 24 ? 54 : 64);
 
   return (
     <div
