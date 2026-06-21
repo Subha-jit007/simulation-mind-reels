@@ -70,8 +70,9 @@ run(PYTHON, [
   "-m", "edge_tts",
   "--voice", item.voice,
   "--file", txtFile,
-  "--rate", item.rate || "-6%",
-  "--pitch", item.pitch || "-6Hz",
+  // use =VALUE form so argparse doesn't treat the leading "-" as a new flag
+  `--rate=${item.rate || "-6%"}`,
+  `--pitch=${item.pitch || "-6Hz"}`,
   "--write-media", voMp3,
   "--write-subtitles", voVtt,
 ]);
