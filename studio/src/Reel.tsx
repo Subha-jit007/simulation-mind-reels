@@ -25,6 +25,10 @@ export const Reel: React.FC = () => {
   const ctaStart = durationInFrames - Math.round(fps * 2.6);
   const captionsVisible = frame < ctaStart;
 
+  // rotate the closing tagline between the two channel lines (B / C) by day
+  const TAGLINES = ["Are you sure you're real?", "Questions that don't let you sleep."];
+  const tagline = TAGLINES[(reel.day - 1) % TAGLINES.length];
+
   // first-3s hook tag
   const hookOpacity = interpolate(
     frame,
@@ -114,7 +118,7 @@ export const Reel: React.FC = () => {
             </span>
           </div>
           <div style={{ background: "rgba(13,14,20,0.95)", padding: "40px 44px", fontFamily: mono, color: CLAW.light }}>
-            <div style={{ fontSize: 46, lineHeight: 1.3, fontWeight: 600 }}>{reel.cta}</div>
+            <div style={{ fontSize: 50, lineHeight: 1.3, fontWeight: 600 }}>{tagline}</div>
             <div style={{ marginTop: 26, fontSize: 30, color: CLAW.body }}>
               ▸ follow <span style={{ color: CLAW.light }}>@philosophic_kid</span>
             </div>
