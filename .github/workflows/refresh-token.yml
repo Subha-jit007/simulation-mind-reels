@@ -1,0 +1,24 @@
+name: Refresh IG Token
+
+# Keeps the Instagram token alive forever. Refreshes monthly (well inside the
+# ~60-day window) and saves the new token back into the secret. Needs a GH_PAT
+# secret with Secrets:write so it can update IG_ACCESS_TOKEN by itself.
+
+on:
+  schedule:
+    - cron: "0 4 1 * *" # 04:00 UTC on the 1st of every month
+  workflow_dispatch: {}
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Refresh and save the IG token
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: node scripts/refresh_token.mjs

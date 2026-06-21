@@ -54,6 +54,15 @@ never needs any paid AI.
 
 ---
 
+## Make it TRULY zero-touch (token auto-refresh) — optional, one-time
+IG tokens expire ~60 days. To never re-paste again, let the repo refresh its own token:
+1. GitHub → your avatar → **Settings → Developer settings → Personal access tokens → Tokens (classic)** → **Generate new token (classic)**.
+   - Note: `reel-token-refresher` · Expiration: **No expiration** (or 1 year) · Scope: tick **`repo`** → Generate → copy.
+   - *(Fine-grained alternative: only-this-repo, Repository permissions → Secrets: Read and write.)*
+2. Repo → **Settings → Secrets and variables → Actions → New repository secret** → name **`GH_PAT`**, paste the token.
+3. Done. The **Refresh IG Token** workflow runs monthly and updates `IG_ACCESS_TOKEN` itself — you never touch it again.
+   (Test it now: Actions tab → **Refresh IG Token** → Run workflow.)
+
 ## Notes
 - **Fully automatic:** each day it renders the next un-posted day (1 → 51) and posts it. No buffer
   to maintain, nothing to render by hand. All 51 scripts/captions/hashtags are already written.
