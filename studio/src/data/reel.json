@@ -1,140 +1,64 @@
 {
-  "id": "day-02",
-  "day": 2,
-  "kicker": "THE COPY · 02",
-  "title": "The Upload Isn't You",
+  "id": "day-01",
+  "day": 1,
+  "kicker": "SIMULATION · 01",
+  "title": "You Will Never Find The Exit",
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "durationInFrames": 1245,
-  "palette": "signal",
-  "voice": "en-US-EricNeural",
-  "cta": "Follow if your own mind unsettles you.",
+  "durationInFrames": 1065,
+  "palette": "void",
+  "voice": "en-US-GuyNeural",
+  "cta": "Follow for the questions that don't let you sleep.",
   "captions": [
     {
-      "text": "They say one day",
+      "text": "If we live in a simulation, you will never find the exit.",
       "startMs": 100,
-      "endMs": 1670
+      "endMs": 4595
     },
     {
-      "text": "you'll upload your mind",
-      "startMs": 1670,
-      "endMs": 3240
+      "text": "Every test you run is part of the program.",
+      "startMs": 4545,
+      "endMs": 7926
     },
     {
-      "text": "and live forever.",
-      "startMs": 3240,
-      "endMs": 4418
+      "text": "The ruler that measures the wall is made of the same code as the wall.",
+      "startMs": 7926,
+      "endMs": 12670
     },
     {
-      "text": "But picture the machine",
-      "startMs": 4368,
-      "endMs": 6157
+      "text": "The cage is not locked — it has no door at all.",
+      "startMs": 12670,
+      "endMs": 16477
     },
     {
-      "text": "that scans your brain,",
-      "startMs": 6157,
-      "endMs": 7947
+      "text": "But here is what changes everything.",
+      "startMs": 16477,
+      "endMs": 19531
     },
     {
-      "text": "copies every neuron,",
-      "startMs": 7947,
-      "endMs": 9289
+      "text": "If this is the only reality you can reach, and it stays consistent,",
+      "startMs": 19531,
+      "endMs": 24301
     },
     {
-      "text": "and switches on.",
-      "startMs": 9289,
-      "endMs": 10631
+      "text": "then the pain still hurts.",
+      "startMs": 24301,
+      "endMs": 26136
     },
     {
-      "text": "That copy wakes up",
-      "startMs": 10631,
-      "endMs": 12258
+      "text": "The love still lands.",
+      "startMs": 26136,
+      "endMs": 28607
     },
     {
-      "text": "certain it is you.",
-      "startMs": 12258,
-      "endMs": 13884
-    },
-    {
-      "text": "It has your memories,",
-      "startMs": 13884,
-      "endMs": 15701
-    },
-    {
-      "text": "your voice,",
-      "startMs": 15701,
-      "endMs": 16610
-    },
-    {
-      "text": "your fear of dying.",
-      "startMs": 16610,
-      "endMs": 18427
-    },
-    {
-      "text": "And meanwhile,",
-      "startMs": 18427,
-      "endMs": 19437
-    },
-    {
-      "text": "you are still standing",
-      "startMs": 19437,
-      "endMs": 21457
-    },
-    {
-      "text": "there.",
-      "startMs": 21457,
-      "endMs": 21962
-    },
-    {
-      "text": "Or you died in",
-      "startMs": 21962,
-      "endMs": 23575
-    },
-    {
-      "text": "the scan.",
-      "startMs": 23575,
-      "endMs": 24381
-    },
-    {
-      "text": "Nothing transferred.",
-      "startMs": 24381,
-      "endMs": 26586
-    },
-    {
-      "text": "You didn't become immortal.",
-      "startMs": 26586,
-      "endMs": 28991
-    },
-    {
-      "text": "You built a stranger",
-      "startMs": 28991,
-      "endMs": 30477
-    },
-    {
-      "text": "who inherits your life",
-      "startMs": 30477,
-      "endMs": 31963
-    },
-    {
-      "text": "and your name.",
-      "startMs": 31963,
-      "endMs": 33077
-    },
-    {
-      "text": "The upload isn't you.",
-      "startMs": 33077,
-      "endMs": 35322
-    },
-    {
-      "text": "It's a successor who",
-      "startMs": 35322,
-      "endMs": 36976
-    },
-    {
-      "text": "only thinks it is.",
-      "startMs": 36976,
-      "endMs": 38629
+      "text": "The substrate never cheapened a single moment of it.",
+      "startMs": 28607,
+      "endMs": 32656
     }
+  ],
+  "scenes": [
+    "images/day1-a.png",
+    "images/day1-c.png"
   ]
 }

@@ -157,6 +157,12 @@ const reelData = {
   cta: item.cta || "Follow for the questions that don't let you sleep.",
   captions,
 };
+// optional storytelling scenes (Canva images) for hero days: content/scenes/day-NN.json
+const scenesPath = join(ROOT, "content", "scenes", `day-${String(day).padStart(2, "0")}.json`);
+if (existsSync(scenesPath)) {
+  reelData.scenes = JSON.parse(readFileSync(scenesPath, "utf8"));
+  log(`Storytelling scenes: ${reelData.scenes.length}`);
+}
 writeFileSync(join(STUDIO, "src", "data", "reel.json"), JSON.stringify(reelData, null, 2));
 
 // ---- 5. Remotion render (silent video) ---------------------------------

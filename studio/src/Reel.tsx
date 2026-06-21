@@ -2,6 +2,7 @@ import { AbsoluteFill, interpolate, useCurrentFrame, useVideoConfig } from "remo
 import { loadFont as loadMono } from "@remotion/google-fonts/IBMPlexMono";
 import { loadFont as loadPixel } from "@remotion/google-fonts/Silkscreen";
 import { CosmicBackground } from "./components/CosmicBackground";
+import { StoryBackground } from "./components/StoryBackground";
 import { TerminalCaptions } from "./components/TerminalCaptions";
 import { DesktopChrome } from "./components/DesktopChrome";
 import { CLAW } from "./clawed";
@@ -51,7 +52,11 @@ export const Reel: React.FC = () => {
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#05060a" }}>
-      <CosmicBackground palette={reel.palette} />
+      {(reel as { scenes?: string[] }).scenes?.length ? (
+        <StoryBackground scenes={(reel as { scenes?: string[] }).scenes as string[]} />
+      ) : (
+        <CosmicBackground palette={reel.palette} />
+      )}
 
       {/* CRT scanlines for the terminal feel */}
       <AbsoluteFill
