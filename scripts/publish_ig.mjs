@@ -22,7 +22,10 @@ import { dirname, join, resolve } from "node:path";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
-const GRAPH = `https://graph.facebook.com/${process.env.GRAPH_VERSION || "v21.0"}`;
+// IG_LOGIN=1 -> use the Instagram Login API (graph.instagram.com, no Facebook Page needed).
+// otherwise -> Facebook-Page Graph API (graph.facebook.com).
+const HOST = process.env.IG_LOGIN === "1" ? "graph.instagram.com" : "graph.facebook.com";
+const GRAPH = `https://${HOST}/${process.env.GRAPH_VERSION || "v21.0"}`;
 const DRY = process.env.DRY_RUN === "1";
 
 const reels = JSON.parse(readFileSync(join(ROOT, "content", "reels.json"), "utf8"));
@@ -78,12 +81,12 @@ console.log(`▸ Day ${day}: "${item.title}"`);
 console.log(`  video: ${videoUrl}`);
 console.log(`  caption: ${item.caption}`);
 
-if (!process.env.IG_USER_ID || !process.env.IG_ACCESS_TOKEN) {
-  if (!DRY) throw new Error("Missing IG_USER_ID / IG_ACCESS_TOKEN env.");
+if (!process.env.IG_ACCESS_TOKEN || (!process.env.IG_USER_ID && process.env.IG_LOGIN !== "1")) {
+  if (!DRY) throw new Error("Missing IG_ACCESS_TOKEN (and IG_USER_ID for the Facebook-Page API).");
   console.log("  (DRY_RUN, no token) — would create container + publish here.");
   process.exit(0);
 }
-const IG = process.env.IG_USER_ID;
+let IG = process.env.IG_USER_ID;
 const TOKEN = process.env.IG_ACCESS_TOKEN;
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -100,6 +103,13 @@ async function get(path, fields) {
   const json = await res.json();
   if (json.error) throw new Error(`Graph error: ${JSON.stringify(json.error)}`);
   return json;
+}
+
+// resolve the IG user id automatically when using Instagram Login
+if (!IG) {
+  const me = await get("me", "user_id,username");
+  IG = me.user_id || me.id;
+  console.log(`▸ IG account: @${me.username || "?"} (id ${IG})`);
 }
 
 // ---- 1. create container ----------------------------------------------

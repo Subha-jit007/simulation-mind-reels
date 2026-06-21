@@ -27,8 +27,8 @@ jobs:
     env:
       PYTHON: python3
       GH_TOKEN: ${{ github.token }}
-      # true only once both IG secrets are set; lets you test render/upload before adding them
-      HAS_IG: ${{ secrets.IG_USER_ID != '' && secrets.IG_ACCESS_TOKEN != '' }}
+      # true once the IG token is set; lets you test render/upload before adding it
+      HAS_IG: ${{ secrets.IG_ACCESS_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -82,7 +82,7 @@ jobs:
       - name: Publish to Instagram
         if: steps.pick.outputs.skip != '1' && env.HAS_IG == 'true'
         env:
-          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_LOGIN: "1" # use the Instagram Login API (no Facebook Page needed)
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           VIDEO_URL: ${{ steps.host.outputs.url }}
         run: node scripts/publish_ig.mjs ${{ steps.pick.outputs.day }}
