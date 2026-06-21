@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+studio/node_modules/
+
+# local reference clone only (80MB, has its own git) — not needed in the repo
+toolkit/
+
+# build artifacts
+studio/out/
+renders/.work/
+
+# rendered videos live as GitHub Release assets, not in git (keeps repo small)
+renders/*.mp4
+
+# keep the folder + the source data + posting state
+!renders/.gitkeep

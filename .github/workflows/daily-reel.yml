@@ -1,0 +1,91 @@
+name: Daily Reel — render & post
+
+# Every day this RENDERS the next reel and POSTS it to Instagram. Fully free.
+# Secrets required: IG_USER_ID, IG_ACCESS_TOKEN   (see Automation Setup.md)
+# Repo should be PUBLIC so the Release asset URL is fetchable by Instagram.
+
+on:
+  schedule:
+    # 14:30 UTC = 8:00 PM IST. Change to your time (in UTC).
+    - cron: "30 14 * * *"
+  workflow_dispatch:
+    inputs:
+      day:
+        description: "Force a specific day (optional)"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-reel
+  cancel-in-progress: false
+
+jobs:
+  reel:
+    runs-on: ubuntu-latest
+    env:
+      PYTHON: python3
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install ffmpeg + edge-tts
+        run: |
+          sudo apt-get update && sudo apt-get install -y ffmpeg
+          python3 -m pip install --quiet edge-tts
+
+      - name: Install studio deps
+        run: cd studio && npm ci
+
+      - name: Pick the day
+        id: pick
+        run: |
+          DAY="${{ github.event.inputs.day }}"
+          if [ -z "$DAY" ]; then DAY="$(node scripts/next_day.mjs)"; fi
+          if [ -z "$DAY" ]; then echo "All reels posted. Nothing to do."; echo "skip=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+          echo "day=$DAY" >> "$GITHUB_OUTPUT"
+          echo "Making day $DAY"
+
+      - name: Render the reel
+        if: steps.pick.outputs.skip != '1'
+        run: node scripts/build_reel.mjs ${{ steps.pick.outputs.day }}
+
+      - name: Upload MP4 to a Release (public URL for Instagram)
+        if: steps.pick.outputs.skip != '1'
+        id: host
+        run: |
+          DAY=${{ steps.pick.outputs.day }}
+          DD=$(printf "%02d" "$DAY")
+          FILE=$(ls renders/Day-$DD-*.mp4 | head -1)
+          TAG="reel-day-$DD"
+          gh release create "$TAG" "$FILE" -t "Reel Day $DD" -n "auto-generated" 2>/dev/null \
+            || gh release upload "$TAG" "$FILE" --clobber
+          URL=$(gh release view "$TAG" --json assets -q '.assets[0].browser_download_url')
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+          echo "Hosted at: $URL"
+
+      - name: Publish to Instagram
+        if: steps.pick.outputs.skip != '1'
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          VIDEO_URL: ${{ steps.host.outputs.url }}
+        run: node scripts/publish_ig.mjs ${{ steps.pick.outputs.day }}
+
+      - name: Save posting state
+        if: steps.pick.outputs.skip != '1'
+        run: |
+          git config user.name "reel-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add content/state.json
+          git commit -m "posted reel day ${{ steps.pick.outputs.day }}" || echo "nothing to commit"
+          git push
