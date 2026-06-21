@@ -71,7 +71,7 @@ jobs:
           TAG="reel-day-$DD"
           gh release create "$TAG" "$FILE" -t "Reel Day $DD" -n "auto-generated" 2>/dev/null \
             || gh release upload "$TAG" "$FILE" --clobber
-          URL=$(gh release view "$TAG" --json assets -q '.assets[0].browser_download_url')
+          URL=$(gh release view "$TAG" --json assets -q '.assets[0].url')
           echo "url=$URL" >> "$GITHUB_OUTPUT"
           echo "Hosted at: $URL"
 
