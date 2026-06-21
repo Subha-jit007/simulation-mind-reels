@@ -1,45 +1,64 @@
-import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { AbsoluteFill, Easing, Img, interpolate, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 
-// Full-bleed Canva scene images, slow Ken Burns + crossfade, darkened so the
-// captions stay readable. Used when a reel has a `scenes` list (hero/story days).
-export const StoryBackground: React.FC<{ scenes: string[] }> = ({ scenes }) => {
+type Scene = string | { image: string; startMs: number; endMs: number };
+
+// Full-bleed cinematic scenes synced to the narration beats, with varied
+// transitions (alternating zoom-in/zoom-out + slide drift) and crossfades.
+export const StoryBackground: React.FC<{ scenes: Scene[] }> = ({ scenes }) => {
   const frame = useCurrentFrame();
-  const { durationInFrames } = useVideoConfig();
-  const n = scenes.length;
-  const per = durationInFrames / n;
+  const { durationInFrames, fps } = useVideoConfig();
+
+  // normalise to {src, inF, outF}
+  const items = scenes.map((s, i) => {
+    if (typeof s === "string") {
+      const per = durationInFrames / scenes.length;
+      return { src: s, inF: i * per, outF: (i + 1) * per, idx: i };
+    }
+    const next = scenes[i + 1];
+    const inF = Math.round((s.startMs / 1000) * fps);
+    const outF = next && typeof next !== "string"
+      ? Math.round((next.startMs / 1000) * fps)
+      : durationInFrames;
+    return { src: s.image, inF, outF, idx: i };
+  });
 
   return (
     <AbsoluteFill style={{ backgroundColor: "#05060a" }}>
-      {scenes.map((src, i) => {
-        const start = i * per;
-        const local = frame - start;
-        const fadeIn = interpolate(local, [0, 20], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-        const fadeOut = i < n - 1
-          ? interpolate(frame, [start + per - 20, start + per], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
-          : 1;
-        const op = Math.min(fadeIn, fadeOut);
-        if (op <= 0.001) return null;
-        const scale = interpolate(local, [0, per + 20], [1.12, 1.34], { extrapolateRight: "clamp" });
-        const drift = Math.sin((start + local) / 140) * 12;
+      {items.map(({ src, inF, outF, idx }) => {
+        const fadeFrames = 14;
+        if (frame < inF - fadeFrames || frame > outF + 2) return null;
+        const local = frame - inF;
+        const len = Math.max(outF - inF, 1);
+        const opacity = Math.min(
+          interpolate(local, [-fadeFrames, 4], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }),
+          interpolate(frame, [outF - fadeFrames, outF], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
+        );
+        if (opacity <= 0.001) return null;
+        // alternate Ken Burns direction + slide for motion variety
+        const t = interpolate(local, [0, len + fadeFrames], [0, 1], { extrapolateRight: "clamp", easing: Easing.inOut(Easing.ease) });
+        const zoomIn = idx % 2 === 0;
+        const scale = zoomIn ? 1.08 + t * 0.22 : 1.3 - t * 0.2;
+        const driftX = (idx % 3 - 1) * (t * 40);
+        const driftY = (idx % 2 === 0 ? -1 : 1) * (t * 26);
         return (
-          <AbsoluteFill key={i} style={{ opacity: op }}>
+          <AbsoluteFill key={idx} style={{ opacity }}>
             <Img
               src={staticFile(src)}
               style={{
                 width: "100%",
                 height: "100%",
                 objectFit: "cover",
-                transform: `scale(${scale}) translateX(${drift}px)`,
+                transform: `scale(${scale}) translate(${driftX}px, ${driftY}px)`,
               }}
             />
           </AbsoluteFill>
         );
       })}
 
-      {/* darken + vignette so any baked-in text recedes and captions pop */}
+      {/* darken + vignette so any noise recedes and captions pop */}
       <AbsoluteFill style={{ background: "rgba(5,6,10,0.5)" }} />
-      <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 30%, rgba(0,0,0,0.7) 100%)" }} />
-      <AbsoluteFill style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.55), transparent 22%, transparent 72%, rgba(0,0,0,0.6))" }} />
+      <AbsoluteFill style={{ background: "radial-gradient(ellipse at center, transparent 28%, rgba(0,0,0,0.72) 100%)" }} />
+      <AbsoluteFill style={{ background: "linear-gradient(to bottom, rgba(0,0,0,0.6), transparent 20%, transparent 70%, rgba(0,0,0,0.66))" }} />
     </AbsoluteFill>
   );
 };

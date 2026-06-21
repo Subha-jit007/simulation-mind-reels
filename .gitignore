@@ -2,6 +2,9 @@
 node_modules/
 studio/node_modules/
 
+# auto-generated Pollinations scene cache (regenerated each render)
+studio/public/images/auto/
+
 # local reference clone only (80MB, has its own git) — not needed in the repo
 toolkit/
 

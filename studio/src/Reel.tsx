@@ -3,6 +3,7 @@ import { loadFont as loadMono } from "@remotion/google-fonts/IBMPlexMono";
 import { loadFont as loadPixel } from "@remotion/google-fonts/Silkscreen";
 import { CosmicBackground } from "./components/CosmicBackground";
 import { StoryBackground } from "./components/StoryBackground";
+import { MotionObjects } from "./components/MotionObjects";
 import { TerminalCaptions } from "./components/TerminalCaptions";
 import { DesktopChrome } from "./components/DesktopChrome";
 import { CLAW } from "./clawed";
@@ -57,6 +58,8 @@ export const Reel: React.FC = () => {
       ) : (
         <CosmicBackground palette={reel.palette} />
       )}
+
+      <MotionObjects />
 
       {/* CRT scanlines for the terminal feel */}
       <AbsoluteFill

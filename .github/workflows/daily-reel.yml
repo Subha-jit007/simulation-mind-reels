@@ -27,6 +27,7 @@ jobs:
     env:
       PYTHON: python3
       GH_TOKEN: ${{ github.token }}
+      PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }} # fallback scene source
       # true once the IG token is set; lets you test render/upload before adding it
       HAS_IG: ${{ secrets.IG_ACCESS_TOKEN != '' }}
     steps:

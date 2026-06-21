@@ -157,11 +157,78 @@ const reelData = {
   cta: item.cta || "Follow for the questions that don't let you sleep.",
   captions,
 };
-// optional storytelling scenes (Canva images) for hero days: content/scenes/day-NN.json
-const scenesPath = join(ROOT, "content", "scenes", `day-${String(day).padStart(2, "0")}.json`);
+// ---- scenes: one cinematic image per beat ------------------------------
+// FREE + UNLIMITED via Pollinations (just an HTTP GET → works in the cloud
+// cron, no API key). Robust: retries per image, skips failures, and if nothing
+// comes back the reel falls back to the cosmic background. content/scenes/day-NN.json
+// (manual hero scenes) always wins.
+async function dl(url, opts = {}) {
+  const ctrl = new AbortController();
+  const to = setTimeout(() => ctrl.abort(), 90000);
+  try {
+    const res = await fetch(url, { ...opts, signal: ctrl.signal });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const b = Buffer.from(await res.arrayBuffer());
+    if (b.length < 3000) throw new Error("empty");
+    return b;
+  } finally { clearTimeout(to); }
+}
+const PEXELS_KEY = process.env.PEXELS_API_KEY;
+const MOODS = ["dark abstract", "nebula cosmos", "silhouette fog", "deep space stars",
+  "smoke light rays", "neon abstract dark", "galaxy void", "abstract particles dark"];
+async function pexelsPhoto(query) {
+  if (!PEXELS_KEY) return null;
+  try {
+    const api = `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=portrait&per_page=15`;
+    const res = await fetch(api, { headers: { Authorization: PEXELS_KEY } });
+    const j = await res.json();
+    const photos = j.photos || [];
+    if (!photos.length) return null;
+    const pick = photos[Math.floor(Math.random() * photos.length)];
+    return await dl(pick.src.portrait || pick.src.large2x || pick.src.original);
+  } catch { return null; }
+}
+// one cinematic image per beat: Pollinations (AI, concept-matched) → Pexels (real
+// footage fallback) → skip. Robust so the cron never breaks.
+async function fetchScenes(caps, dayNum, dd) {
+  const dir = join(STUDIO, "public", "images", "auto", `day-${dd}`);
+  mkdirSync(dir, { recursive: true });
+  const style =
+    "cinematic dark conceptual film still, no text, no words, no letters, " +
+    "moody volumetric light, deep indigo and terracotta palette, film grain, 9:16, depicting:";
+  const out = [];
+  for (let i = 0; i < caps.length; i++) {
+    const tmp = join(dir, `s${i}.src`);
+    const jpg = join(dir, `s${i}.jpg`);
+    const prompt = encodeURIComponent(`${style} ${caps[i].text}`);
+    const pollUrl = `https://image.pollinations.ai/prompt/${prompt}?width=768&height=1344&nologo=true&model=flux&seed=${dayNum * 100 + i}`;
+    let buf = null, src = "pollinations";
+    for (let a = 0; a < 2 && !buf; a++) { try { buf = await dl(pollUrl); } catch {} }
+    if (!buf) { buf = await pexelsPhoto(MOODS[(dayNum + i) % MOODS.length]); src = "pexels"; }
+    if (!buf) { log(`  scene ${i + 1} failed (all sources) — skipping`); continue; }
+    try {
+      writeFileSync(tmp, buf);
+      const r = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", tmp,
+        "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920",
+        "-frames:v", "1", "-q:v", "3", jpg]);
+      if (r.status !== 0) throw new Error("ffmpeg");
+      out.push({ image: `images/auto/day-${dd}/s${i}.jpg`, startMs: caps[i].startMs, endMs: caps[i].endMs });
+      process.stdout.write(`  scene ${i + 1}/${caps.length} ✓ (${src})\r`);
+    } catch (e) { log(`  scene ${i + 1} encode failed (${e.message})`); }
+  }
+  return out;
+}
+
+const DD = String(day).padStart(2, "0");
+const scenesPath = join(ROOT, "content", "scenes", `day-${DD}.json`);
 if (existsSync(scenesPath)) {
   reelData.scenes = JSON.parse(readFileSync(scenesPath, "utf8"));
-  log(`Storytelling scenes: ${reelData.scenes.length}`);
+  log(`Storytelling scenes (manual): ${reelData.scenes.length}`);
+} else if (process.env.NO_SCENES !== "1") {
+  log("Generating cinematic scenes via Pollinations (free, unlimited)…");
+  const auto = await fetchScenes(captions, day, DD);
+  if (auto.length) { reelData.scenes = auto; log(`Scenes: ${auto.length}/${captions.length} generated`); }
+  else log("No scenes generated — falling back to cosmic background.");
 }
 writeFileSync(join(STUDIO, "src", "data", "reel.json"), JSON.stringify(reelData, null, 2));
 

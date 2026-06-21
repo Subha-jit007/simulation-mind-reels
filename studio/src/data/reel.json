@@ -1,64 +1,137 @@
 {
-  "id": "day-01",
-  "day": 1,
-  "kicker": "SIMULATION · 01",
-  "title": "You Will Never Find The Exit",
+  "id": "day-02",
+  "day": 2,
+  "kicker": "THE COPY · 02",
+  "title": "The Upload Isn't You",
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "durationInFrames": 1065,
-  "palette": "void",
-  "voice": "en-US-GuyNeural",
-  "cta": "Follow for the questions that don't let you sleep.",
+  "durationInFrames": 1311,
+  "palette": "signal",
+  "voice": "en-US-EricNeural",
+  "cta": "Follow if your own mind unsettles you.",
   "captions": [
     {
-      "text": "If we live in a simulation, you will never find the exit.",
+      "text": "They say one day you'll upload your mind and live forever.",
       "startMs": 100,
-      "endMs": 4595
+      "endMs": 4666
     },
     {
-      "text": "Every test you run is part of the program.",
-      "startMs": 4545,
-      "endMs": 7926
+      "text": "But picture the machine that scans your brain, copies every neuron,",
+      "startMs": 4616,
+      "endMs": 9817
     },
     {
-      "text": "The ruler that measures the wall is made of the same code as the wall.",
-      "startMs": 7926,
-      "endMs": 12670
+      "text": "and switches on.",
+      "startMs": 9817,
+      "endMs": 11235
     },
     {
-      "text": "The cage is not locked — it has no door at all.",
-      "startMs": 12670,
-      "endMs": 16477
+      "text": "That copy wakes up certain it is you.",
+      "startMs": 11235,
+      "endMs": 14673
     },
     {
-      "text": "But here is what changes everything.",
-      "startMs": 16477,
-      "endMs": 19531
+      "text": "It has your memories, your voice, your fear of dying.",
+      "startMs": 14673,
+      "endMs": 19474
     },
     {
-      "text": "If this is the only reality you can reach, and it stays consistent,",
-      "startMs": 19531,
-      "endMs": 24301
+      "text": "And meanwhile, you are still standing there.",
+      "startMs": 19474,
+      "endMs": 23210
     },
     {
-      "text": "then the pain still hurts.",
-      "startMs": 24301,
-      "endMs": 26136
+      "text": "Or you died in the scan.",
+      "startMs": 23210,
+      "endMs": 25767
     },
     {
-      "text": "The love still lands.",
-      "startMs": 26136,
-      "endMs": 28607
+      "text": "Nothing transferred.",
+      "startMs": 25767,
+      "endMs": 28096
     },
     {
-      "text": "The substrate never cheapened a single moment of it.",
-      "startMs": 28607,
-      "endMs": 32656
+      "text": "You didn't become immortal.",
+      "startMs": 28096,
+      "endMs": 30639
+    },
+    {
+      "text": "You built a stranger who inherits your life and your name.",
+      "startMs": 30639,
+      "endMs": 34957
+    },
+    {
+      "text": "The upload isn't you.",
+      "startMs": 34957,
+      "endMs": 37329
+    },
+    {
+      "text": "It's a successor who only thinks it is.",
+      "startMs": 37329,
+      "endMs": 40823
     }
   ],
   "scenes": [
-    "images/day1-a.png",
-    "images/day1-c.png"
+    {
+      "image": "images/auto/day-02/s0.jpg",
+      "startMs": 100,
+      "endMs": 4666
+    },
+    {
+      "image": "images/auto/day-02/s1.jpg",
+      "startMs": 4616,
+      "endMs": 9817
+    },
+    {
+      "image": "images/auto/day-02/s2.jpg",
+      "startMs": 9817,
+      "endMs": 11235
+    },
+    {
+      "image": "images/auto/day-02/s3.jpg",
+      "startMs": 11235,
+      "endMs": 14673
+    },
+    {
+      "image": "images/auto/day-02/s4.jpg",
+      "startMs": 14673,
+      "endMs": 19474
+    },
+    {
+      "image": "images/auto/day-02/s5.jpg",
+      "startMs": 19474,
+      "endMs": 23210
+    },
+    {
+      "image": "images/auto/day-02/s6.jpg",
+      "startMs": 23210,
+      "endMs": 25767
+    },
+    {
+      "image": "images/auto/day-02/s7.jpg",
+      "startMs": 25767,
+      "endMs": 28096
+    },
+    {
+      "image": "images/auto/day-02/s8.jpg",
+      "startMs": 28096,
+      "endMs": 30639
+    },
+    {
+      "image": "images/auto/day-02/s9.jpg",
+      "startMs": 30639,
+      "endMs": 34957
+    },
+    {
+      "image": "images/auto/day-02/s10.jpg",
+      "startMs": 34957,
+      "endMs": 37329
+    },
+    {
+      "image": "images/auto/day-02/s11.jpg",
+      "startMs": 37329,
+      "endMs": 40823
+    }
   ]
 }
