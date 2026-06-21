@@ -81,7 +81,14 @@ ${topPalette ? `- 🎨 Highest-engagement look: \`${topPalette[0]}\` (avg ${topP
 - Favor the **${topVoice ? topVoice[0] : "best"}** voice and **${topPalette ? topPalette[0] : "best"}** palette on upcoming reels.
 - Double down on the angle of the top reel; consider a follow-up on the same idea.
 - Keep hooks in the first 3s and the progress bar (retention drives reach more than timing).
-${me.followers_count >= 100 ? "- You're past 100 followers — check Instagram Insights → Most active times, then I can re-tune the post schedule." : "- Under 100 followers: focus on saves/shares; reach here is from the cold test-audience, not followers."}
+
+## 💰 Paid-promo readiness
+${(() => { const f = me.followers_count || 0;
+  if (f >= 10000) return "- 🎯 **10k+** — add the bio link sticker, make a 1-page media kit, expect inbound brand DMs. Set a per-promo rate.";
+  if (f >= 5000) return "- 🎯 **5k+** — you can start charging for shoutouts / affiliate promos. Sponsors weigh **engagement rate > follower count**, so keep saves & shares high.";
+  if (f >= 1000) return "- 🎯 **1k+** — nano-influencer range: affiliate links + small paid shoutouts begin to work. Put a **contact email in your bio** so brands can reach you.";
+  return "- 🎯 **Under 1k** — growth phase: maximize saves/shares & reach from the cold test-audience. Paid promos realistically start around ~1k+.";
+})()}
 
 ## Full leaderboard
 | Day | Likes | Comments | Score |
