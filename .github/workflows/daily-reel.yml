@@ -27,6 +27,8 @@ jobs:
     env:
       PYTHON: python3
       GH_TOKEN: ${{ github.token }}
+      # true only once both IG secrets are set; lets you test render/upload before adding them
+      HAS_IG: ${{ secrets.IG_USER_ID != '' && secrets.IG_ACCESS_TOKEN != '' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -73,8 +75,12 @@ jobs:
           echo "url=$URL" >> "$GITHUB_OUTPUT"
           echo "Hosted at: $URL"
 
+      - name: Skipping publish (no IG secrets yet)
+        if: steps.pick.outputs.skip != '1' && env.HAS_IG != 'true'
+        run: echo "Rendered + uploaded OK. Add IG_USER_ID and IG_ACCESS_TOKEN secrets to enable posting."
+
       - name: Publish to Instagram
-        if: steps.pick.outputs.skip != '1'
+        if: steps.pick.outputs.skip != '1' && env.HAS_IG == 'true'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -82,7 +88,7 @@ jobs:
         run: node scripts/publish_ig.mjs ${{ steps.pick.outputs.day }}
 
       - name: Save posting state
-        if: steps.pick.outputs.skip != '1'
+        if: steps.pick.outputs.skip != '1' && env.HAS_IG == 'true'
         run: |
           git config user.name "reel-bot"
           git config user.email "actions@users.noreply.github.com"
