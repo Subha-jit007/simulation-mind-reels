@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "chatvault": {
+      "command": "node",
+      "args": [
+        "E:\\ig contetnt\\chatvault-mcp-server\\chatvault-mcp-server\\dist\\index.js"
+      ]
+    }
+  }
+}
