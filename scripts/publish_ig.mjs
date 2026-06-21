@@ -75,7 +75,11 @@ if (!videoUrl) {
   }
   videoUrl = `${base.replace(/\/$/, "")}/${encodeURIComponent(file)}`;
 }
-const caption = `${item.caption}\n\n${(item.hashtags || []).join(" ")}`;
+// optional monetization CTA, appended automatically once MONETIZE_URL is set
+const promo = process.env.MONETIZE_URL
+  ? `\n\n${process.env.MONETIZE_CTA || "📖 51 mind-benders + wallpaper pack →"} ${process.env.MONETIZE_URL}`
+  : "";
+const caption = `${item.caption}${promo}\n\n${(item.hashtags || []).join(" ")}`;
 
 console.log(`▸ Day ${day}: "${item.title}"`);
 console.log(`  video: ${videoUrl}`);

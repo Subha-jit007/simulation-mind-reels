@@ -12,5 +12,10 @@ renders/.work/
 # rendered videos live as GitHub Release assets, not in git (keeps repo small)
 renders/*.mp4
 
+# paid products + profile assets stay local (public repo = don't give them away free)
+product/
+profile/
+studio/_wp.json
+
 # keep the folder + the source data + posting state
 !renders/.gitkeep

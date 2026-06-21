@@ -85,6 +85,8 @@ jobs:
           IG_LOGIN: "1" # use the Instagram Login API (no Facebook Page needed)
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           VIDEO_URL: ${{ steps.host.outputs.url }}
+          MONETIZE_URL: ${{ vars.MONETIZE_URL }} # set this repo variable to your Gumroad/Ko-fi link
+          MONETIZE_CTA: ${{ vars.MONETIZE_CTA }}
         run: node scripts/publish_ig.mjs ${{ steps.pick.outputs.day }}
 
       - name: Save posting state

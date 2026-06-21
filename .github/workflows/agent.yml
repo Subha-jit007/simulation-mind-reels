@@ -1,0 +1,32 @@
+name: Growth Agent
+
+# Autonomous analyst: measures reach/engagement, learns what works, logs advice.
+# Runs a few hours after the daily post. Never fakes engagement.
+
+on:
+  schedule:
+    - cron: "0 18 * * *" # 18:00 UTC ~ a few hours after the reel posts
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run growth agent
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: node scripts/agent.mjs
+      - name: Commit analytics + report
+        run: |
+          git config user.name "Subha-jit007"
+          git config user.email "160590753+Subha-jit007@users.noreply.github.com"
+          git add content/analytics.json AGENT_LOG.md
+          git commit -m "agent: analytics update ($(date -u +%F))" || echo "nothing to commit"
+          git push

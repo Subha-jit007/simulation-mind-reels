@@ -1,145 +1,140 @@
 {
-  "id": "day-01",
-  "day": 1,
-  "kicker": "SIMULATION · 01",
-  "title": "You Will Never Find The Exit",
+  "id": "day-02",
+  "day": 2,
+  "kicker": "THE COPY · 02",
+  "title": "The Upload Isn't You",
   "fps": 30,
   "width": 1080,
   "height": 1920,
-  "durationInFrames": 1003,
-  "palette": "void",
-  "voice": "en-US-GuyNeural",
-  "cta": "Follow for the questions that don't let you sleep.",
+  "durationInFrames": 1245,
+  "palette": "signal",
+  "voice": "en-US-EricNeural",
+  "cta": "Follow if your own mind unsettles you.",
   "captions": [
     {
-      "text": "If we live in",
+      "text": "They say one day",
       "startMs": 100,
-      "endMs": 1502
+      "endMs": 1670
     },
     {
-      "text": "a simulation,",
-      "startMs": 1502,
-      "endMs": 2203
+      "text": "you'll upload your mind",
+      "startMs": 1670,
+      "endMs": 3240
     },
     {
-      "text": "you will never find",
-      "startMs": 2203,
-      "endMs": 3604
+      "text": "and live forever.",
+      "startMs": 3240,
+      "endMs": 4418
     },
     {
-      "text": "the exit.",
-      "startMs": 3604,
-      "endMs": 4305
+      "text": "But picture the machine",
+      "startMs": 4368,
+      "endMs": 6157
     },
     {
-      "text": "Every test you run",
-      "startMs": 4255,
-      "endMs": 5662
+      "text": "that scans your brain,",
+      "startMs": 6157,
+      "endMs": 7947
     },
     {
-      "text": "is part of the",
-      "startMs": 5662,
-      "endMs": 7068
+      "text": "copies every neuron,",
+      "startMs": 7947,
+      "endMs": 9289
     },
     {
-      "text": "program.",
-      "startMs": 7068,
-      "endMs": 7420
+      "text": "and switches on.",
+      "startMs": 9289,
+      "endMs": 10631
     },
     {
-      "text": "The ruler that measures",
-      "startMs": 7420,
-      "endMs": 8604
+      "text": "That copy wakes up",
+      "startMs": 10631,
+      "endMs": 12258
     },
     {
-      "text": "the wall is made",
-      "startMs": 8604,
-      "endMs": 9789
+      "text": "certain it is you.",
+      "startMs": 12258,
+      "endMs": 13884
     },
     {
-      "text": "of the same code",
-      "startMs": 9789,
-      "endMs": 10973
+      "text": "It has your memories,",
+      "startMs": 13884,
+      "endMs": 15701
     },
     {
-      "text": "as the wall.",
-      "startMs": 10973,
-      "endMs": 11861
+      "text": "your voice,",
+      "startMs": 15701,
+      "endMs": 16610
     },
     {
-      "text": "The cage is not",
-      "startMs": 11861,
-      "endMs": 13049
+      "text": "your fear of dying.",
+      "startMs": 16610,
+      "endMs": 18427
     },
     {
-      "text": "locked —",
-      "startMs": 13049,
-      "endMs": 13643
+      "text": "And meanwhile,",
+      "startMs": 18427,
+      "endMs": 19437
     },
     {
-      "text": "it has no door",
-      "startMs": 13643,
-      "endMs": 14831
+      "text": "you are still standing",
+      "startMs": 19437,
+      "endMs": 21457
     },
     {
-      "text": "at all.",
-      "startMs": 14831,
-      "endMs": 15425
+      "text": "there.",
+      "startMs": 21457,
+      "endMs": 21962
     },
     {
-      "text": "But here is what",
-      "startMs": 15425,
-      "endMs": 17331
+      "text": "Or you died in",
+      "startMs": 21962,
+      "endMs": 23575
     },
     {
-      "text": "changes everything.",
-      "startMs": 17331,
-      "endMs": 18284
+      "text": "the scan.",
+      "startMs": 23575,
+      "endMs": 24381
     },
     {
-      "text": "If this is the",
-      "startMs": 18284,
-      "endMs": 19658
+      "text": "Nothing transferred.",
+      "startMs": 24381,
+      "endMs": 26586
     },
     {
-      "text": "only reality you can",
-      "startMs": 19658,
-      "endMs": 21032
+      "text": "You didn't become immortal.",
+      "startMs": 26586,
+      "endMs": 28991
     },
     {
-      "text": "reach, and it stays",
-      "startMs": 21032,
-      "endMs": 22407
+      "text": "You built a stranger",
+      "startMs": 28991,
+      "endMs": 30477
     },
     {
-      "text": "consistent, then the pain",
-      "startMs": 22407,
-      "endMs": 23781
+      "text": "who inherits your life",
+      "startMs": 30477,
+      "endMs": 31963
     },
     {
-      "text": "still hurts.",
-      "startMs": 23781,
-      "endMs": 24468
+      "text": "and your name.",
+      "startMs": 31963,
+      "endMs": 33077
     },
     {
-      "text": "The love still lands.",
-      "startMs": 24468,
-      "endMs": 26781
+      "text": "The upload isn't you.",
+      "startMs": 33077,
+      "endMs": 35322
     },
     {
-      "text": "The substrate never cheapened",
-      "startMs": 26781,
-      "endMs": 28465
+      "text": "It's a successor who",
+      "startMs": 35322,
+      "endMs": 36976
     },
     {
-      "text": "a single moment of",
-      "startMs": 28465,
-      "endMs": 30150
-    },
-    {
-      "text": "it.",
-      "startMs": 30150,
-      "endMs": 30571
+      "text": "only thinks it is.",
+      "startMs": 36976,
+      "endMs": 38629
     }
   ]
 }
