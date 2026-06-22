@@ -129,6 +129,30 @@ function groupWords(words) {
     if (endsSentence || longClause || cur.text.length >= 92) flush();
   }
   flush();
+  // Merge any fragment that would flash by into a neighbor. A long sentence
+  // force-split at 92 chars can leave a tiny trailing piece (e.g. "red.") that
+  // shows for only a few hundred ms — the QA gate (650ms floor) rejects those.
+  // A caption's on-screen time is the gap until the next caption starts.
+  const MIN_MS = 750;
+  for (let i = 0; i < segs.length; i++) {
+    const s = segs[i];
+    const onscreen = i < segs.length - 1 ? segs[i + 1].startMs - s.startMs : Infinity;
+    const tooShort = onscreen < MIN_MS || s.text.length < 8;
+    if (!tooShort || segs.length < 2) continue;
+    if (i > 0) {
+      // fold into the previous caption (which gains the extra screen time)
+      const p = segs[i - 1];
+      p.text += " " + s.text;
+      p.endMs = s.endMs;
+    } else {
+      // first caption: fold into the next one
+      const nx = segs[i + 1];
+      nx.text = s.text + " " + nx.text;
+      nx.startMs = s.startMs;
+    }
+    segs.splice(i, 1);
+    i--;
+  }
   return segs;
 }
 const cues = parseVtt(readFileSync(voVtt, "utf8"));
