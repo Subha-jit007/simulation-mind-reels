@@ -46,5 +46,44 @@
         "eng": 2
       }
     ]
+  },
+  {
+    "date": "2026-06-23",
+    "followers": 3,
+    "posts": 3,
+    "top": [
+      {
+        "day": 1,
+        "eng": 11
+      },
+      {
+        "day": 2,
+        "eng": 2
+      },
+      {
+        "day": 3,
+        "eng": 1
+      }
+    ],
+    "media": [
+      {
+        "day": 1,
+        "likes": 5,
+        "comments": 2,
+        "eng": 11
+      },
+      {
+        "day": 2,
+        "likes": 2,
+        "comments": 0,
+        "eng": 2
+      },
+      {
+        "day": 3,
+        "likes": 1,
+        "comments": 0,
+        "eng": 1
+      }
+    ]
   }
 ]
