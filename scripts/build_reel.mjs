@@ -296,6 +296,11 @@ const outName = `Day-${String(day).padStart(2, "0")}-${slug(item.title)}.mp4`;
 const outFile = join(ROOT, "renders", outName);
 log("Mixing audio and muxing final reel…");
 const muxFilter =
+  // Convert Remotion's full-range output to limited (tv) range and tag it yuv420p.
+  // Remotion emits yuvj420p (full-range), which (a) the video-editing render gate
+  // rejects and (b) looks washed-out on players that assume tv range. The range
+  // remap fixes both — players read it correctly.
+  `[0:v]scale=${W}:${H}:in_range=full:out_range=tv:flags=accurate_rnd,format=yuv420p[v];` +
   "[1:a]aresample=44100,highpass=f=80," +
   "acompressor=threshold=0.06:ratio=3:attack=10:release=220," +
   "aecho=0.85:0.5:55:0.12,apad,volume=1.0[vo];" +
@@ -308,8 +313,11 @@ run("ffmpeg", [
   "-i", voMp3,
   "-i", music,
   "-filter_complex", muxFilter,
-  "-map", "0:v", "-map", "[a]",
-  "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+  "-map", "[v]", "-map", "[a]",
+  // +faststart moves the moov atom up so the reel starts streaming immediately.
+  "-c:v", "libx264", "-pix_fmt", "yuv420p", "-color_range", "tv",
+  "-crf", "18", "-preset", "veryfast", "-movflags", "+faststart",
+  "-c:a", "aac", "-b:a", "192k",
   "-t", String(totalSec),
   outFile,
 ]);
