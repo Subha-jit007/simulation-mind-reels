@@ -1,11 +1,11 @@
-# 🤖 Growth Agent — 2026-06-28
+# 🤖 Growth Agent — 2026-06-29
 
-**@__.advaita_** · **28 followers** (+21 since last check) · 9 posts
+**@__.advaita_** · **29 followers** (+1 since last check) · 10 posts
 
 ## What's working
 - 🏆 Best reel so far: **Day 1 — You Will Never Find The Exit** (5 likes, 2 comments)
 - 🎙️ Highest-engagement voice: `en-GB-ThomasNeural` (avg 7)
-- 🎨 Highest-engagement look: `void` (avg 5)
+- 🎨 Highest-engagement look: `void` (avg 6)
 
 ## Recommendations (auto)
 - Favor the **en-GB-ThomasNeural** voice and **void** palette on upcoming reels.
@@ -21,11 +21,12 @@
 | 1 | 5 | 2 | 11 |
 | 6 | 7 | 0 | 7 |
 | 5 | 4 | 0 | 4 |
+| 8 | 2 | 0 | 2 |
+| ? | 2 | 0 | 2 |
 | 7 | 2 | 0 | 2 |
+| 4 | 2 | 0 | 2 |
 | 3 | 2 | 0 | 2 |
 | 2 | 2 | 0 | 2 |
-| ? | 1 | 0 | 1 |
-| 4 | 1 | 0 | 1 |
-| 8 | 0 | 0 | 0 |
+| 9 | 1 | 0 | 1 |
 
 *Updated automatically. The agent measures and advises — it never buys, bots, or fakes engagement.*
