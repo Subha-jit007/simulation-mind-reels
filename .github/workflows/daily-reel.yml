@@ -60,7 +60,13 @@ jobs:
 
       - name: Render the reel
         if: steps.pick.outputs.skip != '1'
-        run: node scripts/build_reel.mjs ${{ steps.pick.outputs.day }}
+        run: |
+          # Default to the COLORFUL TREND builder. Set repo variable STYLE=dark
+          # to revert to the old cinematic-dark Remotion builder (reversible, no code change).
+          SCRIPT=scripts/build_reel_trend.mjs
+          if [ "${{ vars.STYLE }}" = "dark" ]; then SCRIPT=scripts/build_reel.mjs; fi
+          echo "Rendering day ${{ steps.pick.outputs.day }} with $SCRIPT"
+          node $SCRIPT ${{ steps.pick.outputs.day }}
 
       - name: QA watcher review (blocks bad/fast videos)
         if: steps.pick.outputs.skip != '1'
