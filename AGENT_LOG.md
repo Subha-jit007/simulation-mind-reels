@@ -1,14 +1,14 @@
-# 🤖 Growth Agent — 2026-07-14
+# 🤖 Growth Agent — 2026-07-15
 
-**@__.advaita_** · **36 followers** (+0 since last check) · 25 posts
+**@__.advaita_** · **36 followers** (+0 since last check) · 26 posts
 
 ## What's working
-- 🏆 Best reel so far: **Day 1 — You Will Never Find The Exit** (5 likes, 2 comments)
-- 🎙️ Highest-engagement voice: `en-US-GuyNeural` (avg 5)
+- 🏆 Best reel so far: **Day 6 — Maybe It's Bits, Not Atoms** (7 likes, 0 comments)
+- 🎙️ Highest-engagement voice: `en-US-AndrewNeural` (avg 4)
 - 🎨 Highest-engagement look: `signal` (avg 3)
 
 ## Recommendations (auto)
-- Favor the **en-US-GuyNeural** voice and **signal** palette on upcoming reels.
+- Favor the **en-US-AndrewNeural** voice and **signal** palette on upcoming reels.
 - Double down on the angle of the top reel; consider a follow-up on the same idea.
 - Keep hooks in the first 3s and the progress bar (retention drives reach more than timing).
 
@@ -18,8 +18,8 @@
 ## Full leaderboard
 | Day | Likes | Comments | Score |
 |----|------|---------|------|
-| 1 | 5 | 2 | 11 |
 | 6 | 7 | 0 | 7 |
+| 24 | 5 | 0 | 5 |
 | 19 | 5 | 0 | 5 |
 | 15 | 5 | 0 | 5 |
 | 5 | 4 | 0 | 4 |
@@ -42,6 +42,6 @@
 | 20 | 1 | 0 | 1 |
 | 18 | 1 | 0 | 1 |
 | 17 | 1 | 0 | 1 |
-| 24 | 0 | 0 | 0 |
+| 25 | 0 | 0 | 0 |
 
 *Updated automatically. The agent measures and advises — it never buys, bots, or fakes engagement.*
