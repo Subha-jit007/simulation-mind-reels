@@ -1,14 +1,14 @@
-# 🤖 Growth Agent — 2026-08-03
+# 🤖 Growth Agent — 2026-08-04
 
-**@__.advaita_** · **36 followers** (+0 since last check) · 45 posts
+**@__.advaita_** · **36 followers** (+0 since last check) · 46 posts
 
 ## What's working
 - 🏆 Best reel so far: **Day 24 — The Self Is A Verb** (7 likes, 0 comments)
-- 🎙️ Highest-engagement voice: `en-GB-RyanNeural` (avg 4)
+- 🎙️ Highest-engagement voice: `en-GB-ThomasNeural` (avg 4)
 - 🎨 Highest-engagement look: `ember` (avg 3)
 
 ## Recommendations (auto)
-- Favor the **en-GB-RyanNeural** voice and **ember** palette on upcoming reels.
+- Favor the **en-GB-ThomasNeural** voice and **ember** palette on upcoming reels.
 - Double down on the angle of the top reel; consider a follow-up on the same idea.
 - Keep hooks in the first 3s and the progress bar (retention drives reach more than timing).
 
@@ -28,13 +28,13 @@
 | 29 | 3 | 0 | 3 |
 | 25 | 3 | 0 | 3 |
 | 22 | 3 | 0 | 3 |
+| 44 | 2 | 0 | 2 |
 | 38 | 2 | 0 | 2 |
 | 33 | 2 | 0 | 2 |
 | 26 | 2 | 0 | 2 |
 | 23 | 2 | 0 | 2 |
 | 21 | 2 | 0 | 2 |
-| 20 | 2 | 0 | 2 |
-| 44 | 1 | 0 | 1 |
+| 45 | 1 | 0 | 1 |
 | 43 | 1 | 0 | 1 |
 | 42 | 1 | 0 | 1 |
 | 40 | 1 | 0 | 1 |
