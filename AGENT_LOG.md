@@ -1,11 +1,11 @@
-# 🤖 Growth Agent — 2026-08-04
+# 🤖 Growth Agent — 2026-08-05
 
-**@__.advaita_** · **36 followers** (+0 since last check) · 46 posts
+**@__.advaita_** · **36 followers** (+0 since last check) · 47 posts
 
 ## What's working
 - 🏆 Best reel so far: **Day 24 — The Self Is A Verb** (7 likes, 0 comments)
-- 🎙️ Highest-engagement voice: `en-GB-ThomasNeural` (avg 4)
-- 🎨 Highest-engagement look: `ember` (avg 3)
+- 🎙️ Highest-engagement voice: `en-GB-ThomasNeural` (avg 5)
+- 🎨 Highest-engagement look: `ember` (avg 4)
 
 ## Recommendations (auto)
 - Favor the **en-GB-ThomasNeural** voice and **ember** palette on upcoming reels.
@@ -19,29 +19,29 @@
 | Day | Likes | Comments | Score |
 |----|------|---------|------|
 | 24 | 7 | 0 | 7 |
+| 41 | 5 | 0 | 5 |
 | 28 | 5 | 0 | 5 |
 | 27 | 5 | 0 | 5 |
-| 41 | 4 | 0 | 4 |
+| 34 | 4 | 0 | 4 |
 | 30 | 4 | 0 | 4 |
-| 34 | 3 | 0 | 3 |
+| 44 | 3 | 0 | 3 |
+| 38 | 3 | 0 | 3 |
+| 33 | 3 | 0 | 3 |
 | 31 | 3 | 0 | 3 |
 | 29 | 3 | 0 | 3 |
 | 25 | 3 | 0 | 3 |
 | 22 | 3 | 0 | 3 |
-| 44 | 2 | 0 | 2 |
-| 38 | 2 | 0 | 2 |
-| 33 | 2 | 0 | 2 |
+| 45 | 2 | 0 | 2 |
+| 43 | 2 | 0 | 2 |
+| 42 | 2 | 0 | 2 |
+| 40 | 2 | 0 | 2 |
+| 39 | 2 | 0 | 2 |
+| 37 | 2 | 0 | 2 |
+| 36 | 2 | 0 | 2 |
+| 35 | 2 | 0 | 2 |
+| 32 | 2 | 0 | 2 |
 | 26 | 2 | 0 | 2 |
 | 23 | 2 | 0 | 2 |
-| 21 | 2 | 0 | 2 |
-| 45 | 1 | 0 | 1 |
-| 43 | 1 | 0 | 1 |
-| 42 | 1 | 0 | 1 |
-| 40 | 1 | 0 | 1 |
-| 39 | 1 | 0 | 1 |
-| 37 | 1 | 0 | 1 |
-| 36 | 1 | 0 | 1 |
-| 35 | 1 | 0 | 1 |
-| 32 | 1 | 0 | 1 |
+| 46 | 1 | 0 | 1 |
 
 *Updated automatically. The agent measures and advises — it never buys, bots, or fakes engagement.*
