@@ -20,7 +20,8 @@
       "#deepthoughts",
       "#thematrix",
       "#metaphysics"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 2,
@@ -1086,7 +1087,7 @@
     "day": 48,
     "title": "The Watcher That Never Changes",
     "kicker": "AWARENESS · 48",
-    "palette": "ember",
+    "palette": "void",
     "voice": "en-GB-ThomasNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1103,7 +1104,8 @@
       "#deepthoughts",
       "#mindfulness",
       "#metaphysics"
-    ]
+    ],
+    "targetSeconds": 13
   },
   {
     "day": 49,
@@ -1126,7 +1128,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "targetSeconds": 16
   },
   {
     "day": 50,
@@ -1149,7 +1152,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#simulationtheory"
-    ]
+    ],
+    "targetSeconds": 16
   },
   {
     "day": 51,
@@ -1172,13 +1176,14 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "targetSeconds": 16
   },
   {
     "day": 52,
     "title": "The Self Is A Verb",
     "kicker": "RERUN · 52",
-    "palette": "signal",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1196,7 +1201,7 @@
       "#mindfulness",
       "#metaphysics"
     ],
-    "targetSeconds": 16,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 24
   },
@@ -1222,8 +1227,34 @@
       "#awakening",
       "#psychology"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 27
+  },
+  {
+    "day": 54,
+    "title": "You Will Never Find The Exit",
+    "kicker": "RERUN · 54",
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-6Hz",
+    "idea": "The structural impossibility of detecting a simulation from inside — and why it doesn't make the experience less real.",
+    "script": "If we live in a simulation, you will never find the exit. Every test you run is part of the program. The ruler that measures the wall is made of the same code as the wall. The cage is not locked — it has no door at all. But here is what changes everything. If this is the only reality you can reach, and it stays consistent, then the pain still hurts. The love still lands. The substrate never cheapened a single moment of it.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "You can't escape a simulation from the inside. But maybe that was never the point. 🌌",
+    "hashtags": [
+      "#simulationtheory",
+      "#consciousness",
+      "#philosophy",
+      "#existential",
+      "#whatisreal",
+      "#deepthoughts",
+      "#thematrix",
+      "#metaphysics"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 1
   }
 ]

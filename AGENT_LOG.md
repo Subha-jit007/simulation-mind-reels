@@ -1,47 +1,55 @@
-# 🤖 Growth Agent — 2026-08-05
+# 🤖 Growth Agent — 2026-08-06
 
-**@__.advaita_** · **36 followers** (+0 since last check) · 47 posts
+**@__.advaita_** · **36 followers** (+0 since last check) · 48 posts
 
-## What's working
-- 🏆 Best reel so far: **Day 24 — The Self Is A Verb** (7 likes, 0 comments)
-- 🎙️ Highest-engagement voice: `en-GB-ThomasNeural` (avg 5)
-- 🎨 Highest-engagement look: `ember` (avg 4)
+**Optimising on:** `retention`
 
-## Recommendations (auto)
-- Favor the **en-GB-ThomasNeural** voice and **ember** palette on upcoming reels.
-- Double down on the angle of the top reel; consider a follow-up on the same idea.
-- Keep hooks in the first 3s and the progress bar (retention drives reach more than timing).
+## Best reels
+1. **Day 1 — You Will Never Find The Exit** · 192 views
+2. **Day 27 — Pain Is Data. Suffering Is The Story.** · 191 views
+3. **Day 28 — You Are The Ship Of Theseus** · 166 views
+4. **Day 19 — The Map Is Not The Territory** · 163 views
+5. **Day 24 — The Self Is A Verb** · 153 views
+
+## What the data supports
+### Length
+⏳ Still exploring — only one option tried so far
+
+| length | posts | retention |
+|---|---|---|
+| 15-20s | 1 | 0.23 |
+
+### Palette
+⏳ Still exploring — too close to call (ember vs signal)
+
+| palette | posts | retention |
+|---|---|---|
+| ember | 12 | 80.67 |
+| signal | 17 | 79.53 |
+| void | 18 | 73.18 |
+
+### Voice
+⏳ Still exploring — en-US-GuyNeural is ahead but inside the noise (t=0.92, need 2)
+
+| voice | posts | retention |
+|---|---|---|
+| en-US-GuyNeural | 7 | 122.14 |
+| en-GB-ThomasNeural | 6 | 90.33 |
+| en-GB-RyanNeural | 7 | 77.00 |
+| en-US-EricNeural | 7 | 72.71 |
+| en-US-RogerNeural | 6 | 69.83 |
+| en-US-SteffanNeural | 7 | 55.29 |
+| en-US-AndrewNeural | 7 | 55.18 |
+
+## What it changed for upcoming reels
+- day 48: 13s · void · en-GB-ThomasNeural  (explore)
+- day 49: 16s · signal · en-US-RogerNeural
+- day 50: 16s · void · en-US-GuyNeural
+- day 51: 16s · ember · en-GB-RyanNeural
+- day 52: 22s · ember · en-US-AndrewNeural  (explore)
+- day 53: 16s · ember · en-GB-ThomasNeural
 
 ## 💰 Paid-promo readiness
-- 🎯 **Under 1k** — growth phase: maximize saves/shares & reach from the cold test-audience. Paid promos realistically start around ~1k+.
+- 🎯 **Under 1k** — growth phase. Saves and shares are the levers, not likes.
 
-## Full leaderboard
-| Day | Likes | Comments | Score |
-|----|------|---------|------|
-| 24 | 7 | 0 | 7 |
-| 41 | 5 | 0 | 5 |
-| 28 | 5 | 0 | 5 |
-| 27 | 5 | 0 | 5 |
-| 34 | 4 | 0 | 4 |
-| 30 | 4 | 0 | 4 |
-| 44 | 3 | 0 | 3 |
-| 38 | 3 | 0 | 3 |
-| 33 | 3 | 0 | 3 |
-| 31 | 3 | 0 | 3 |
-| 29 | 3 | 0 | 3 |
-| 25 | 3 | 0 | 3 |
-| 22 | 3 | 0 | 3 |
-| 45 | 2 | 0 | 2 |
-| 43 | 2 | 0 | 2 |
-| 42 | 2 | 0 | 2 |
-| 40 | 2 | 0 | 2 |
-| 39 | 2 | 0 | 2 |
-| 37 | 2 | 0 | 2 |
-| 36 | 2 | 0 | 2 |
-| 35 | 2 | 0 | 2 |
-| 32 | 2 | 0 | 2 |
-| 26 | 2 | 0 | 2 |
-| 23 | 2 | 0 | 2 |
-| 46 | 1 | 0 | 1 |
-
-*Updated automatically. The agent measures and advises — it never buys, bots, or fakes engagement.*
+*Measured automatically. The agent never buys, bots, or fakes engagement.*
