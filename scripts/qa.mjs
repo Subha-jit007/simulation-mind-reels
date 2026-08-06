@@ -53,11 +53,16 @@ if (!file) {
 // --- readability check --------------------------------------------------
 const caps = reel.captions || [];
 const fps = reel.fps || 30;
-const endMs = (reel.durationInFrames / fps) * 1000 - 2600; // captions stop ~CTA
+const videoMs = (reel.durationInFrames / fps) * 1000;
+// Builders that write a per-caption endMs are authoritative. Only fall back to
+// the old "captions stop ~2.6s before the end for the CTA tail" assumption for
+// legacy reel.json files that don't carry one — otherwise the final caption of
+// a CTA-less reel measures as negative and blocks a perfectly fine video.
+const tailMs = videoMs - 2600;
 let tooFast = 0;
 caps.forEach((c, i) => {
   const next = caps[i + 1];
-  const window = (next ? next.startMs : endMs) - c.startMs;
+  const window = (c.endMs != null ? c.endMs : (next ? next.startMs : tailMs)) - c.startMs;
   const required = (c.text.length / 16) * 1000 + 300; // ~16 chars/sec + buffer
   if (window < 650) { fail(`Caption ${i + 1} flashes by (${window}ms): "${c.text.slice(0, 40)}…"`); tooFast++; }
   else if (window < required * 0.7) { tooFast++; }

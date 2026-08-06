@@ -1,213 +1,362 @@
 #!/usr/bin/env node
 /**
- * build_reel_trend.mjs <day> [--assets <dir>] [--vo]
+ * build_reel_trend.mjs <day> [--assets <dir>] [--seconds N] [--no-vo]
  *
- * The COLORFUL TREND style (replaces the dark moody look for the channel).
- *   - punchy short captions derived from the day's content (or item.beats)
- *   - one VIBRANT psychedelic image per beat, sourced 3 ways:
- *       provided  → --assets <dir> (or content/scenes/day-NN images you drop in)
- *       made      → Pollinations flux (free, unlimited, headless-cloud safe)
- *       found     → Pexels (PEXELS_API_KEY) → colorful gradient fallback
- *   - Ken-Burns motion + crossfades, bright cycling-color captions that
- *     fade in / drift out, warm (non-doom, non-cartoon) pad underneath.
- *   - pure ffmpeg (no Remotion / no Chrome) → runs identically local + CI.
+ * The channel's daily reel builder. Pure ffmpeg — no Chrome, no Remotion —
+ * so it behaves identically on Subha's machine and on a GitHub runner.
  *
- * Output: renders/Day-NN-<slug>.mp4   then runs the qa.mjs gate.
+ * WHAT CHANGED (v2) and why, because every line of it is a fix for something
+ * that was measurably hurting reach:
+ *
+ *  1. NO third-party stock. The old fallback searched Pexels for "psychedelic
+ *     colorful" and published a rainbow glass pipe over the line "philosophers
+ *     call it a zombie". Images now come from one art-directed motif bank
+ *     (art.mjs) so a reel is one coherent world instead of nine unrelated
+ *     photos. Fallback is a generated palette gradient, never someone's photo.
+ *  2. VO DRIVES THE TIMING. Each beat gets its own edge-tts line, is measured,
+ *     and its clip is cut to that length. Captions can no longer drift off the
+ *     voice, and beats are non-metronomic for free.
+ *  3. LENGTH IS A PARAMETER. --seconds / item.targetSeconds decides how much
+ *     script survives, so the growth agent can tune length against watch-time
+ *     instead of everything being a flat 31s.
+ *  4. HARD CUTS, not 0.6s crossfades on every seam. Each beat opens on a
+ *     scale-punch that settles, which reads as an actual edit.
+ *  5. LOCKED TYPOGRAPHY inside Instagram's safe zone. No more random per-beat
+ *     colour cycling; ivory body, palette accent on the hook, and a soft scrim
+ *     so text stays legible without a cheap 9px outline.
+ *  6. LOOP CLOSE. The last beat returns to the first image so the reel loops
+ *     seamlessly — replays are reach.
+ *
+ * Output: renders/Day-NN-<slug>.mp4, then the qa.mjs gate.
  */
 import { spawnSync } from "node:child_process";
 import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync, copyFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
-import { dirname, join, resolve, extname } from "node:path";
+import { dirname, join, resolve } from "node:path";
+import { promptFor, paletteOf, IVORY } from "./art.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const STUDIO = join(ROOT, "studio");
 const FPS = 30, W = 1080, H = 1920;
-const DUR = 4.0;                 // seconds per beat
-const FR = Math.round(DUR * FPS); // frames per beat
-const XF = 0.6;                  // crossfade seconds
-const STEP = DUR - XF;           // global time advance per beat
+
+// Instagram's own UI eats the edges of a reel. Keep every pixel that matters
+// inside this box or the caption ends up under the like button.
+const SAFE_TOP = 200, SAFE_BOTTOM = 430;
+const TEXT_BASE = H - SAFE_BOTTOM - 90; // baseline region for the caption block
 
 const args = process.argv.slice(2);
 const day = parseInt(args[0] || "1", 10);
-if (!day) { console.error("Usage: build_reel_trend.mjs <day> [--assets <dir>] [--vo]"); process.exit(1); }
-const assetsDir = args.includes("--assets") ? args[args.indexOf("--assets") + 1] : process.env.ASSET_DIR || null;
-const useVO = args.includes("--vo") || process.env.WITH_VO === "1";
+if (!day) { console.error("Usage: build_reel_trend.mjs <day> [--assets <dir>] [--seconds N] [--no-vo]"); process.exit(1); }
+const argVal = (flag) => (args.includes(flag) ? args[args.indexOf(flag) + 1] : null);
+const assetsDir = argVal("--assets") || process.env.ASSET_DIR || null;
+const useVO = !args.includes("--no-vo") && process.env.WITH_VO !== "0";
 const PYTHON = process.env.PYTHON || (process.platform === "win32" ? "py" : "python3");
 
 const log = (m) => console.log(`\x1b[36m▸\x1b[0m ${m}`);
 const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "").slice(0, 48);
-function run(cmd, a, o = {}) { const r = spawnSync(cmd, a, { stdio: "inherit", ...o }); if (r.status !== 0) throw new Error(`${cmd} failed (exit ${r.status})`); }
-function capture(cmd, a, o = {}) { const r = spawnSync(cmd, a, { encoding: "utf8", ...o }); if (r.status !== 0) throw new Error(`${cmd} failed: ${r.stderr || ""}`); return r.stdout.trim(); }
+function run(cmd, a, o = {}) {
+  const r = spawnSync(cmd, a, { stdio: "inherit", ...o });
+  if (r.status !== 0) throw new Error(`${cmd} failed (exit ${r.status})`);
+}
+function probeDur(file) {
+  const r = spawnSync("ffprobe", ["-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", file], { encoding: "utf8" });
+  const d = parseFloat((r.stdout || "").trim());
+  return Number.isFinite(d) ? d : 0;
+}
 
-// ---- 1. content + punchy beats -----------------------------------------
+// ---- 1. content, length budget, beats ----------------------------------
 const reels = JSON.parse(readFileSync(join(ROOT, "content", "reels.json"), "utf8"));
 const item = reels.find((r) => r.day === day);
 if (!item) throw new Error(`No reel for day ${day}`);
+const pal = paletteOf(item.palette);
 
-function wrap(s, max = 26) {
-  if (s.length <= max) return s;
-  const words = s.split(" "); let l1 = "", l2 = "";
-  for (const w of words) { if ((l1 + " " + w).trim().length <= max && !l2) l1 = (l1 + " " + w).trim(); else l2 = (l2 + " " + w).trim(); }
-  return l2 ? l1 + "\n" + l2 : l1;
+// The growth agent writes targetSeconds per day once it has watch-time data.
+// Until then 16s: long enough for one idea, short enough to loop on a cold
+// account. CLI flag wins so a hero build can override.
+const targetSeconds = Number(argVal("--seconds") || item.targetSeconds || process.env.TARGET_SECONDS || 16);
+
+function wrap(s, max) {
+  const words = s.split(/\s+/);
+  const lines = [];
+  let cur = "";
+  for (const w of words) {
+    if (!cur) cur = w;
+    else if ((cur + " " + w).length <= max) cur += " " + w;
+    else { lines.push(cur); cur = w; }
+  }
+  if (cur) lines.push(cur);
+  return lines.slice(0, 3).join("\n");
 }
+
+/**
+ * Beats = the hook, then as much of the script as fits the length budget.
+ * ~2.4 words/sec at edge-tts rate -6%, plus ~0.45s of air per beat.
+ */
+const secondsFor = (text) => text.split(/\s+/).length / 2.4 + 0.45;
+
+/** Closing beat. A reel that ends mid-thought has nothing to loop back into. */
+function closingLine() {
+  const cta = (item.cta || "").replace(/\s+/g, " ").trim();
+  if (cta && cta.length <= 46) return cta;
+  return item.title.replace(/\s+/g, " ").trim();
+}
+
 function deriveBeats() {
-  if (Array.isArray(item.beats) && item.beats.length) return item.beats.slice(0, 10);
-  const beats = [item.title.replace(/\s+/g, " ").trim()];
-  const sents = (item.script || item.idea || "").split(/(?<=[.?!])\s+/).map((s) => s.trim()).filter(Boolean);
-  for (const s of sents) {
-    const clauses = s.length <= 48 ? [s] : s.split(/\s*[,;:—–]\s*/).map((c) => c.trim()).filter(Boolean);
-    for (let c of clauses) {
+  if (Array.isArray(item.beats) && item.beats.length) return item.beats.slice(0, 12);
+
+  const hook = item.title.replace(/\s+/g, " ").trim();
+  const close = closingLine();
+
+  // Split into clauses, then MERGE the runts. A comma list like "your life,
+  // your love, your pain" would otherwise become three two-word beats, and the
+  // reel would end on the fragment "your life".
+  const raw = [];
+  for (const s of (item.script || item.idea || "").split(/(?<=[.?!])\s+/).map((x) => x.trim()).filter(Boolean)) {
+    const parts = s.length <= 60 ? [s] : s.split(/\s*[;:—–]\s*|,\s+/).map((c) => c.trim()).filter(Boolean);
+    for (let c of parts) {
       c = c.replace(/[.,;:—–]+$/, "").trim();
-      if (c.length < 3) continue;
-      if (c.length > 60) c = c.slice(0, 57).replace(/\s+\S*$/, "") ;   // trim at word boundary
-      beats.push(c);
+      if (c.length < 4) continue;
+      // Anything too short to stand alone folds into the previous beat.
+      if (raw.length && (c.length < 20 || raw[raw.length - 1].length < 20)) {
+        raw[raw.length - 1] = `${raw[raw.length - 1]}, ${c}`;
+      } else {
+        raw.push(c);
+      }
     }
   }
-  // keep 6..9 beats so the reel stays a tight 22-34s
-  return beats.slice(0, 9);
+
+  // Reserve room for the hook and the closing line before spending on body.
+  let budget = targetSeconds - secondsFor(hook) - 0.3 - secondsFor(close);
+  const body = [];
+  for (const c of raw) {
+    const cost = secondsFor(c);
+    if (budget - cost < 0) break;
+    budget -= cost;
+    body.push(c);
+    if (body.length >= 9) break;
+  }
+  return [hook, ...body, close];
 }
 const beats = deriveBeats();
 const N = beats.length;
-log(`Day ${day} "${item.title}" — TREND style · ${N} beats · ${useVO ? "with VO" : "music only"}`);
+log(`Day ${day} "${item.title}" — ${N} beats · target ${targetSeconds}s · palette ${item.palette} · ${useVO ? "VO" : "music only"}`);
 
 const dd = String(day).padStart(2, "0");
 const work = join(ROOT, "renders", ".work", `day-${dd}-trend`);
 mkdirSync(work, { recursive: true });
 mkdirSync(join(STUDIO, "src", "data"), { recursive: true });
 
-// font: bundled Anton (consistent local + CI); fall back to a system heavy font
 const fontCandidates = [process.env.TREND_FONT, join(ROOT, "assets", "fonts", "Anton-Regular.ttf"),
   "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", "C:/Windows/Fonts/ariblk.ttf"].filter(Boolean);
 const fontSrc = fontCandidates.find((f) => existsSync(f));
 if (!fontSrc) throw new Error("no usable font found");
 copyFileSync(fontSrc, join(work, "font.ttf"));
 
-// ---- 2. assets: provided → made → found → gradient ---------------------
-async function dl(url, opts = {}) {
-  const ctrl = new AbortController(); const to = setTimeout(() => ctrl.abort(), 90000);
-  try { const res = await fetch(url, { ...opts, signal: ctrl.signal }); if (!res.ok) throw new Error("HTTP " + res.status);
-    const b = Buffer.from(await res.arrayBuffer()); if (b.length < 3000) throw new Error("empty"); return b;
+// ---- 2. voice first, so the pictures can be cut to it -------------------
+const voFiles = [];
+const durations = [];
+if (useVO) {
+  log("voicing beats (edge-tts)…");
+  for (let i = 0; i < N; i++) {
+    const txt = join(work, `vo${i}.txt`);
+    writeFileSync(txt, beats[i].replace(/\n/g, " "), "utf8");
+    const mp3 = join(work, `vo${i}.mp3`);
+    run(PYTHON, ["-m", "edge_tts", "--voice", item.voice || "en-US-GuyNeural", "--file", txt,
+      `--rate=${item.rate || "-6%"}`, `--pitch=${item.pitch || "-4Hz"}`, "--write-media", mp3]);
+    voFiles.push(mp3);
+    // A held beat reads as confidence; a clipped one reads as a glitch.
+    const d = probeDur(mp3);
+    durations.push(Math.max(1.5, +(d + (i === 0 ? 0.75 : 0.45)).toFixed(2)));
+  }
+} else {
+  for (let i = 0; i < N; i++) durations.push(i === 0 ? 2.4 : 2.0);
+}
+const starts = [];
+let acc = 0;
+for (const d of durations) { starts.push(+acc.toFixed(2)); acc += d; }
+const total = +acc.toFixed(2);
+log(`timeline: ${total}s  [${durations.join(", ")}]`);
+
+// ---- 3. images: art-directed generation, palette gradient as fallback ---
+async function dl(url) {
+  const ctrl = new AbortController();
+  const to = setTimeout(() => ctrl.abort(), 90000);
+  try {
+    const res = await fetch(url, { signal: ctrl.signal });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const b = Buffer.from(await res.arrayBuffer());
+    if (b.length < 3000) throw new Error("empty");
+    return b;
   } finally { clearTimeout(to); }
 }
-const PEXELS_KEY = process.env.PEXELS_API_KEY;
-const PEX = ["psychedelic colorful", "neon abstract", "colorful galaxy", "vibrant paint", "rainbow smoke", "colorful surreal", "holographic"];
-async function pexels(q) {
-  if (!PEXELS_KEY) return null;
-  try { const r = await fetch(`https://api.pexels.com/v1/search?query=${encodeURIComponent(q)}&orientation=portrait&per_page=15`, { headers: { Authorization: PEXELS_KEY } });
-    const j = await r.json(); const p = j.photos || []; if (!p.length) return null;
-    const pick = p[Math.floor(Math.random() * p.length)]; return await dl(pick.src.portrait || pick.src.large2x);
-  } catch { return null; }
-}
-const STYLE = "vibrant psychedelic dreamscape, ultra colorful, surreal trippy, saturated neon, cosmic, fluid art, high detail, no text, no words, no watermark, vertical 9:16, depicting:";
 function gradient(path, i) {
-  const cols = ["0xFF4FA3", "0x36E0FF", "0xB6FF3C", "0xC77DFF", "0xFFA94D"];
-  const c0 = cols[i % cols.length], c1 = cols[(i + 2) % cols.length];
+  // Branded fallback. Never a stranger's photograph.
+  const c0 = pal.accentHex.replace("#", "0x");
+  const cols = ["0x2B1E5C", "0x0B2540", "0x3D1B4A", "0x14343C"];
   run("ffmpeg", ["-y", "-loglevel", "error", "-f", "lavfi", "-i",
-    `gradients=s=1080x1920:c0=${c0}:c1=${c1}:x0=0:y0=0:x1=1080:y1=1920:d=1`, "-frames:v", "1", path]);
+    `gradients=s=1080x1920:c0=${c0}:c1=${cols[i % cols.length]}:x0=0:y0=0:x1=1080:y1=1920:d=1`,
+    "-frames:v", "1", path]);
 }
-function providedImages(dir) {
-  if (!dir || !existsSync(dir)) return [];
-  return readdirSync(dir).filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f)).sort()
-    .map((f) => join(dir, f));
+function fit(src, out) {
+  run("ffmpeg", ["-y", "-loglevel", "error", "-i", src, "-vf",
+    "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920", "-frames:v", "1", "-q:v", "2", out]);
 }
-async function getImage(i, providedList) {
+const providedList = (assetsDir && existsSync(assetsDir))
+  ? readdirSync(assetsDir).filter((f) => /\.(jpg|jpeg|png|webp)$/i.test(f)).sort().map((f) => join(assetsDir, f))
+  : [];
+if (providedList.length) log(`using ${providedList.length} PROVIDED assets from ${assetsDir}`);
+
+async function getImage(i) {
   const out = join(work, `img${i}.jpg`);
-  // provided
-  if (providedList.length) {
-    const src = providedList[i % providedList.length];
-    run("ffmpeg", ["-y", "-loglevel", "error", "-i", src,
-      "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920", "-frames:v", "1", "-q:v", "3", out]);
-    return { out, src: "provided" };
+  if (existsSync(out) && process.env.REUSE_SCENES === "1") return { out, src: "cache" };
+
+  if (providedList.length) { fit(providedList[i % providedList.length], out); return { out, src: "provided" }; }
+
+  const prompt = promptFor(day, i, N, item.palette);
+  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}`
+    + `?width=768&height=1344&nologo=true&model=flux&seed=${day * 100 + i}`;
+  for (let a = 0; a < 3; a++) {
+    try {
+      const buf = await dl(url);
+      const tmp = join(work, `img${i}.src`);
+      writeFileSync(tmp, buf);
+      const r = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", tmp, "-vf",
+        "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920", "-frames:v", "1", "-q:v", "2", out]);
+      if (r.status === 0) return { out, src: "made" };
+    } catch { /* retry */ }
   }
-  // made (Pollinations)
-  const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(`${STYLE} ${beats[i].replace(/\n/g, " ")}`)}?width=768&height=1344&nologo=true&model=flux&seed=${day * 100 + i}`;
-  let buf = null, src = "made";
-  for (let a = 0; a < 2 && !buf; a++) { try { buf = await dl(url); } catch {} }
-  if (!buf) { buf = await pexels(PEX[(day + i) % PEX.length]); src = "found"; }
-  const tmp = join(work, `img${i}.src`);
-  if (buf) {
-    writeFileSync(tmp, buf);
-    const r = spawnSync("ffmpeg", ["-y", "-loglevel", "error", "-i", tmp,
-      "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920", "-frames:v", "1", "-q:v", "3", out]);
-    if (r.status === 0) return { out, src };
-  }
-  gradient(out, i); return { out, src: "gradient" };
+  gradient(out, i);
+  return { out, src: "gradient" };
 }
 
-// ---- 3. per-beat clips (Ken Burns + colorful caption) -------------------
-const COLS = ["0xFFE14D", "0x4DE1FF", "0xB6FF4D", "0xFF6FB5", "0xC77DFF", "0xFFA94D", "0x5CFFD6", "0xFF5C7A", "0xFFD93C"];
-const YEXPR = "h*0.72+40*(1-min(t/0.6\\,1))-26*max(t-3.4\\,0)/0.6";
-const AEXPR = "if(lt(t\\,0.5)\\,t/0.5\\,if(lt(t\\,3.5)\\,1\\,max(0\\,(4.0-t)/0.5)))";
-function fontSize(text) { const len = Math.max(...text.split("\n").map((l) => l.length)); return len <= 12 ? 92 : len <= 18 ? 80 : len <= 26 ? 68 : 58; }
+// A soft bottom scrim, generated once. Keeps captions readable over a busy
+// image without the cheap thick-outline look.
+const scrim = join(work, "scrim.png");
+run("ffmpeg", ["-y", "-loglevel", "error", "-f", "lavfi", "-i", `color=black:s=${W}x${H}`,
+  "-vf", "format=yuva420p,geq=r=0:g=0:b=0:a='clip((Y-820)/620*170,0,170)'", "-frames:v", "1", scrim]);
 
-const provided = providedImages(assetsDir);
-if (provided.length) log(`Using ${provided.length} PROVIDED assets from ${assetsDir}`);
+// ---- 4. one clip per beat: punch-settle push + locked type --------------
+function fontSize(text) {
+  const longest = Math.max(...text.split("\n").map((l) => l.length));
+  if (longest <= 14) return 92;
+  if (longest <= 20) return 78;
+  if (longest <= 27) return 66;
+  return 56;
+}
 
+const images = [];
 for (let i = 0; i < N; i++) {
-  const text = wrap(beats[i].replace(/\n/g, " "), 24);
+  // Loop close: the final beat returns to the opening image.
+  const isLast = i === N - 1 && N > 2;
+  const { out, src } = isLast ? { out: images[0], src: "loop" } : await getImage(i);
+  images.push(out);
+
+  const D = durations[i];
+  const FR = Math.round(D * FPS);
+  const text = wrap(beats[i].replace(/\n/g, " "), i === 0 ? 18 : 24);
   writeFileSync(join(work, `cap${i}.txt`), text, "utf8");
-  const { out, src } = await getImage(i, provided);
-  const Z = i % 2 === 0 ? "min(zoom+0.0011\\,1.20)" : "if(lte(on\\,1)\\,1.20\\,max(zoom-0.0011\\,1.0))";
-  const fc = COLS[i % COLS.length];
   const fs = fontSize(text);
+  const lines = text.split("\n").length;
+  const yTop = TEXT_BASE - (lines - 1) * (fs + 10);
+
+  // Push in or pull out, alternating, so consecutive cuts don't feel identical.
+  // Each opens 6% hot and settles — that reads as an edit rather than a fade.
+  // NOTE: zoompan has no `t`; progress must come from `on` (output frame).
+  const settleFrames = Math.max(1, Math.round(0.45 * FPS));
+  const P = `(on/${FR})`;
+  const SETTLE = `min(on/${settleFrames}\\,1)`;
+  const dir = i % 2 === 0 ? 1 : -1;
+  const z = dir > 0
+    ? `1.06+0.10*${P}-0.06*${SETTLE}`
+    : `1.18-0.10*${P}+0.06*(1-${SETTLE})`;
+
+  // Caption rises a few px and holds; alpha in fast, out only at the very end.
+  const yExpr = `${yTop}-14*(1-min(t/0.32\\,1))`;
+  const outStart = Math.max(0.2, D - 0.28);
+  const aExpr = `if(lt(t\\,0.22)\\,t/0.22\\,if(lt(t\\,${outStart.toFixed(2)})\\,1\\,max(0\\,(${D.toFixed(2)}-t)/0.28)))`;
+  const col = i === 0 ? pal.accentHex : IVORY;
+
+  // Top progress bar: uses global time so it tracks the whole reel, not the clip.
+  const barW = `iw*(t+${starts[i].toFixed(2)})/${total.toFixed(2)}`;
+
   const filter =
-    `[0:v]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,setsar=1,` +
-    `eq=saturation=1.2:contrast=1.05,zoompan=z='${Z}':d=${FR}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1080x1920:fps=${FPS},` +
-    `drawtext=fontfile=font.ttf:textfile=cap${i}.txt:fontsize=${fs}:fontcolor=${fc}:bordercolor=black:borderw=9:` +
-    `shadowcolor=black@0.5:shadowx=3:shadowy=4:line_spacing=8:x=(w-text_w)/2:y='${YEXPR}':alpha='${AEXPR}',format=yuv420p[v]`;
-  run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-i", out, "-filter_complex", filter,
-    "-map", "[v]", "-frames:v", String(FR), "-r", String(FPS), "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", `beat${i}.mp4`],
-    { cwd: work });
-  process.stdout.write(`  beat ${i + 1}/${N} ✓ (${src}) "${beats[i].replace(/\n/g, " ").slice(0, 30)}"\n`);
+    `[0:v]scale=2160:3840:force_original_aspect_ratio=increase,crop=2160:3840,setsar=1,${pal.grade},` +
+    `zoompan=z='${z}':d=${FR}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=${W}x${H}:fps=${FPS}[bg];` +
+    `[bg][1:v]overlay=0:0[sc];` +
+    `[sc]drawbox=x=0:y=0:w='${barW}':h=7:color=${pal.accentHex}@0.95:t=fill,` +
+    `drawtext=fontfile=font.ttf:text='@__.advaita_':fontsize=30:fontcolor=${IVORY}@0.62:x=48:y=${SAFE_TOP - 60},` +
+    // No "/51" — the growth agent writes new days past the original 51, so a
+    // fixed denominator would start lying.
+    `drawtext=fontfile=font.ttf:text='DAY ${day}':fontsize=30:fontcolor=${IVORY}@0.72:x=w-text_w-48:y=${SAFE_TOP - 60},` +
+    `drawtext=fontfile=font.ttf:textfile=cap${i}.txt:fontsize=${fs}:fontcolor=${col}:` +
+    `bordercolor=black@0.55:borderw=4:shadowcolor=black@0.45:shadowx=2:shadowy=3:line_spacing=10:` +
+    `x=(w-text_w)/2:y='${yExpr}':alpha='${aExpr}',format=yuv420p[v]`;
+
+  run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-loop", "1", "-i", out, "-i", scrim,
+    "-filter_complex", filter, "-map", "[v]", "-frames:v", String(FR), "-r", String(FPS),
+    "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", `beat${i}.mp4`], { cwd: work });
+  process.stdout.write(`  beat ${i + 1}/${N} ✓ ${D}s (${src}) "${beats[i].slice(0, 34)}"\n`);
 }
 
-// ---- 4. crossfade chain ------------------------------------------------
-const TRANS = ["fade", "smoothleft", "circleopen", "smoothright", "fade", "smoothup", "radial", "dissolve", "fade"];
-const inArgs = []; for (let i = 0; i < N; i++) inArgs.push("-i", `beat${i}.mp4`);
-let filt = `[0][1]xfade=transition=${TRANS[0]}:duration=${XF}:offset=${STEP.toFixed(2)}[x1]`;
-for (let k = 2; k < N; k++) filt += `;[x${k - 1}][${k}]xfade=transition=${TRANS[(k - 1) % TRANS.length]}:duration=${XF}:offset=${(STEP * k).toFixed(2)}[x${k}]`;
-const vlabel = N === 1 ? "0" : `x${N - 1}`;
-log("compositing crossfades…");
-run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", ...inArgs, "-filter_complex",
-  filt.replace(`[${vlabel}]`, "[vout]") + (N === 1 ? "" : ""), "-map", N === 1 ? "0:v" : "[vout]",
-  "-r", String(FPS), "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", "combined.mp4"], { cwd: work });
+// ---- 5. hard-cut assembly ----------------------------------------------
+log("cutting…");
+writeFileSync(join(work, "list.txt"), beats.map((_, i) => `file 'beat${i}.mp4'`).join("\n") + "\n");
+run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-f", "concat", "-safe", "0",
+  "-i", "list.txt", "-c", "copy", "combined.mp4"], { cwd: work });
 
-const total = +(N * DUR - (N - 1) * XF).toFixed(2);
-
-// ---- 5. warm uplifting pad (NOT doom, NOT cartoon) + optional VO --------
+// ---- 6. score: warm, wide, serious. Never cartoon. ---------------------
 const padFilter =
-  "sine=f=130.81:r=44100[c3];sine=f=164.81:r=44100[e3];sine=f=196.00:r=44100[g3];sine=f=261.63:r=44100[c4];sine=f=65.41:r=44100[c2];" +
+  "sine=f=130.81:r=44100[c3];sine=f=164.81:r=44100[e3];sine=f=196.00:r=44100[g3];" +
+  "sine=f=261.63:r=44100[c4];sine=f=65.41:r=44100[c2];" +
   "[c3][e3][g3][c4][c2]amix=inputs=5:weights=0.9 0.8 0.8 0.4 0.7:normalize=0[m];" +
-  `[m]volume=0.16,tremolo=f=0.18:d=0.35,lowpass=f=2100,highpass=f=45,aecho=0.8:0.5:140:0.3,afade=t=in:st=0:d=2.5,afade=t=out:st=${(total - 2.5).toFixed(2)}:d=2.5[a]`;
+  `[m]volume=0.15,tremolo=f=0.18:d=0.32,lowpass=f=2100,highpass=f=45,aecho=0.8:0.5:140:0.3,` +
+  `afade=t=in:st=0:d=2.2,afade=t=out:st=${Math.max(0, total - 2.2).toFixed(2)}:d=2.2[a]`;
 run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-filter_complex", padFilter,
   "-map", "[a]", "-t", String(total), "-ar", "44100", "-ac", "2", "-c:a", "aac", "-b:a", "192k", join(work, "pad.m4a")]);
 
-let voPath = null;
+// VO track: each line padded out to its own beat's length, then concatenated.
+// This is what keeps the voice locked to the captions with no SRT parsing.
+let voTrack = null;
 if (useVO) {
-  const txt = join(work, "vo.txt"); writeFileSync(txt, beats.join(". ").replace(/\n/g, " "), "utf8");
-  voPath = join(work, "vo.mp3");
-  log("deep VO via edge-tts…");
-  run(PYTHON, ["-m", "edge_tts", "--voice", item.voice || "en-US-GuyNeural", "--file", txt, "--rate=-10%", `--pitch=${item.pitch || "-4Hz"}`, "--write-media", voPath]);
+  for (let i = 0; i < N; i++) {
+    run("ffmpeg", ["-y", "-loglevel", "error", "-i", voFiles[i], "-af",
+      `aresample=44100,highpass=f=80,acompressor=threshold=0.06:ratio=3,apad=whole_dur=${durations[i]}`,
+      "-t", String(durations[i]), "-ar", "44100", "-ac", "2", "-c:a", "pcm_s16le", join(work, `vp${i}.wav`)]);
+  }
+  writeFileSync(join(work, "volist.txt"), beats.map((_, i) => `file 'vp${i}.wav'`).join("\n") + "\n");
+  run("ffmpeg", ["-y", "-loglevel", "error", "-f", "concat", "-safe", "0", "-i", "volist.txt",
+    "-c", "copy", "votrack.wav"], { cwd: work });
+  voTrack = join(work, "votrack.wav");
 }
 
-// ---- 6. mux ------------------------------------------------------------
+// ---- 7. mux ------------------------------------------------------------
 mkdirSync(join(ROOT, "renders"), { recursive: true });
 const outName = `Day-${dd}-${slug(item.title)}.mp4`;
 const outFile = join(ROOT, "renders", outName);
-if (voPath) {
-  run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-i", join(work, "combined.mp4"), "-i", voPath, "-i", join(work, "pad.m4a"),
-    "-filter_complex", "[1:a]aresample=44100,highpass=f=80,acompressor=threshold=0.06:ratio=3,apad[vo];[2:a]volume=0.6[mu];[vo][mu]amix=inputs=2:duration=first:normalize=0[a]",
-    "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", outFile]);
+if (voTrack) {
+  run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error",
+    "-i", join(work, "combined.mp4"), "-i", voTrack, "-i", join(work, "pad.m4a"),
+    "-filter_complex", "[1:a]volume=1.0[vo];[2:a]volume=0.5[mu];[vo][mu]amix=inputs=2:duration=first:normalize=0,alimiter=limit=0.95[a]",
+    "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+    "-shortest", "-movflags", "+faststart", outFile]);
 } else {
-  run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error", "-i", join(work, "combined.mp4"), "-i", join(work, "pad.m4a"),
-    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", outFile]);
+  run("ffmpeg", ["-y", "-hide_banner", "-loglevel", "error",
+    "-i", join(work, "combined.mp4"), "-i", join(work, "pad.m4a"),
+    "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+    "-shortest", "-movflags", "+faststart", outFile]);
 }
 
-// ---- 7. reel.json for the QA gate + caption to post --------------------
-const captions = beats.map((b, i) => ({ text: b.replace(/\n/g, " "), startMs: Math.round(STEP * i * 1000) + 500, endMs: Math.round((STEP * i + 3.2) * 1000) }));
+// ---- 8. hand the QA gate its timing map --------------------------------
+const captions = beats.map((b, i) => ({
+  text: b.replace(/\n/g, " "),
+  startMs: Math.round(starts[i] * 1000) + 200,
+  endMs: Math.round((starts[i] + durations[i]) * 1000) - 200,
+}));
 writeFileSync(join(STUDIO, "src", "data", "reel.json"), JSON.stringify({
-  id: `day-${dd}`, day, fps: FPS, width: W, height: H, durationInFrames: Math.round(total * FPS), style: "trend", captions,
+  id: `day-${dd}`, day, fps: FPS, width: W, height: H,
+  durationInFrames: Math.round(total * FPS), style: "trend-v2",
+  targetSeconds, palette: item.palette, voice: item.voice, captions,
 }, null, 2));
 
 log(`\x1b[32m✓ DONE\x1b[0m  renders/${outName}  (${total}s, ${N} beats)`);
