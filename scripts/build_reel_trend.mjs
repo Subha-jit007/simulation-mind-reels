@@ -359,6 +359,22 @@ writeFileSync(join(STUDIO, "src", "data", "reel.json"), JSON.stringify({
   targetSeconds, palette: item.palette, voice: item.voice, captions,
 }, null, 2));
 
+// ---- 9. experiment record ----------------------------------------------
+// The growth agent can only learn from a choice if it knows the choice was
+// made. Every render appends what it actually did, so reach and watch-time
+// can later be attributed back to length, palette, voice and beat count.
+const manifestPath = join(ROOT, "content", "renders.json");
+const manifest = existsSync(manifestPath) ? JSON.parse(readFileSync(manifestPath, "utf8")) : [];
+const record = {
+  day, renderedAt: new Date().toISOString(), style: "trend-v2",
+  seconds: total, targetSeconds, beats: N, palette: item.palette,
+  voice: item.voice, rate: item.rate || "-6%", pitch: item.pitch || "-4Hz",
+  hook: beats[0], vo: useVO, source: item.source || "original",
+};
+const at = manifest.findIndex((r) => r.day === day);
+if (at >= 0) manifest[at] = record; else manifest.push(record);
+writeFileSync(manifestPath, JSON.stringify(manifest, null, 2) + "\n");
+
 log(`\x1b[32m✓ DONE\x1b[0m  renders/${outName}  (${total}s, ${N} beats)`);
 console.log(`\nCaption to post:\n${item.caption || item.title}\n\n${(item.hashtags || []).join(" ")}`);
 spawnSync(process.execPath, [join(__dirname, "qa.mjs"), String(day)], { stdio: "inherit" });

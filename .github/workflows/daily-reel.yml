@@ -49,6 +49,11 @@ jobs:
       - name: Install studio deps
         run: cd studio && npm ci
 
+      # Safety net: never let the schedule reach zero. If fewer than 7 reels
+      # are queued, re-cut the best-performing older ones with a fresh edit.
+      - name: Top up the queue
+        run: node scripts/refill.mjs --keep-ahead 7
+
       - name: Pick the day
         id: pick
         run: |
@@ -105,6 +110,9 @@ jobs:
         run: |
           git config user.name "Subha-jit007"
           git config user.email "160590753+Subha-jit007@users.noreply.github.com"
-          git add content/state.json
+          # renders.json records the choices this reel was built with, so the
+          # growth agent can attribute tomorrow's reach back to them.
+          # reels.json may have gained re-cut days from the refill step.
+          git add content/state.json content/renders.json content/reels.json
           git commit -m "posted reel day ${{ steps.pick.outputs.day }}" || echo "nothing to commit"
           git push

@@ -23,10 +23,19 @@ jobs:
         env:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: node scripts/agent.mjs
-      - name: Commit analytics + report
+
+      # Keep the queue stocked. The 51-day plan ran out on 11 Aug; a silent
+      # account loses distribution faster than a weak reel does.
+      - name: Refill the content queue
+        run: node scripts/refill.mjs --keep-ahead 7
+
+      - name: Commit analytics, decisions + report
         run: |
           git config user.name "Subha-jit007"
           git config user.email "160590753+Subha-jit007@users.noreply.github.com"
-          git add content/analytics.json AGENT_LOG.md
-          git commit -m "agent: analytics update ($(date -u +%F))" || echo "nothing to commit"
+          # reels.json is included because the agent now WRITES its decisions
+          # there (length/palette/voice for upcoming days) instead of only
+          # printing advice into a report nobody reads.
+          git add content/analytics.json content/reels.json AGENT_LOG.md
+          git commit -m "agent: measure, retune upcoming reels ($(date -u +%F))" || echo "nothing to commit"
           git push
