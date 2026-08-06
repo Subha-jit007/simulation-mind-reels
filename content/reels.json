@@ -549,7 +549,8 @@
       "#deepthoughts",
       "#mindfulness",
       "#metaphysics"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 25,
@@ -618,7 +619,8 @@
       "#deepthoughts",
       "#awakening",
       "#psychology"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 28,
@@ -1171,5 +1173,57 @@
       "#metaphysics",
       "#whatisreal"
     ]
+  },
+  {
+    "day": 52,
+    "title": "The Self Is A Verb",
+    "kicker": "RERUN · 52",
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "You are not a noun the brain stores; you are a process it performs — selfing, not a self.",
+    "script": "You talk about your self as if it is a thing you own, a small solid core inside you. But you cannot point to it. What is actually there is activity, a process, your brain endlessly doing the work of being you. There is no noun, no fixed object called the self. There is only selfing, a verb, happening moment to moment, like a flame that looks like a thing but is really an event. When it stops, nothing is lost, because there was never a thing there to lose. You are not a statue. You are a dance that mistakes itself for a dancer.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "You're not a thing. You're something the brain keeps doing.",
+    "hashtags": [
+      "#consciousness",
+      "#ego",
+      "#philosophy",
+      "#selfawareness",
+      "#awakening",
+      "#deepthoughts",
+      "#mindfulness",
+      "#metaphysics"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 24
+  },
+  {
+    "day": 53,
+    "title": "Pain Is Data. Suffering Is The Story.",
+    "kicker": "RERUN · 53",
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Pain is raw signal; suffering is the narrative the self wraps around it — separating the two changes everything.",
+    "script": "Pain is a signal. A nerve fires, your brain registers damage, and that is information, raw and useful. But suffering is something extra. It is the story you wrap around the pain. This should not be happening. It will never end. Why me. The sensation arrives on its own. The narrative is added. And the strange thing is, most of what hurts in a life lives in the narrative, not the sensation. You cannot always stop the signal. But the story, the part that turns pain into suffering, was written by you. Which means, sometimes, it can be written differently.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "Pain is the signal. Suffering is the story you tell about it.",
+    "hashtags": [
+      "#suffering",
+      "#consciousness",
+      "#philosophy",
+      "#mindfulness",
+      "#stoicism",
+      "#deepthoughts",
+      "#awakening",
+      "#psychology"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 27
   }
 ]

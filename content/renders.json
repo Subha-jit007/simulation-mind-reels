@@ -1,0 +1,17 @@
+[
+  {
+    "day": 47,
+    "renderedAt": "2026-08-06T19:18:23.448Z",
+    "style": "trend-v2",
+    "seconds": 13,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Are We In A Simulation Is The Wrong Question",
+    "vo": true,
+    "source": "original"
+  }
+]
