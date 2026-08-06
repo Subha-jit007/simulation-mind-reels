@@ -1,0 +1,20 @@
+name: Probe IG insights
+
+# Manual, read-only. Asks Meta which metrics this token can actually read,
+# so the growth agent optimizes on real reach/watch-time instead of guessing.
+
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Probe
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: node scripts/probe_insights.mjs
