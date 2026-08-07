@@ -644,7 +644,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#paradox"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 29,
@@ -1183,7 +1184,7 @@
     "day": 52,
     "title": "The Self Is A Verb",
     "kicker": "RERUN · 52",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1201,7 +1202,7 @@
       "#mindfulness",
       "#metaphysics"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 24
   },
@@ -1253,8 +1254,34 @@
       "#thematrix",
       "#metaphysics"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 1
+  },
+  {
+    "day": 55,
+    "title": "You Are The Ship Of Theseus",
+    "kicker": "RERUN · 55",
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Every atom in you is replaced over years — so what makes you the same person is pattern, not material.",
+    "script": "There is an old puzzle. A ship has every plank replaced, one by one, until none of the original remains. Is it still the same ship? Now look at yourself. Almost every atom in your body has been swapped out over the years. The matter that made you a child is long gone. So what makes you the same person? Not the material. It is the pattern, the arrangement, the continuity of the shape, not the stuff. You are not a substance that persists. You are a pattern that the universe keeps rebuilding out of whatever atoms are passing through.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "Almost every atom in you has been replaced. What stayed 'you'?",
+    "hashtags": [
+      "#shipoftheseus",
+      "#identity",
+      "#philosophy",
+      "#consciousness",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#paradox"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 28
   }
 ]
