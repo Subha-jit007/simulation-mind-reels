@@ -28,5 +28,20 @@
     "hook": "The Watcher That Never Changes",
     "vo": true,
     "source": "original"
+  },
+  {
+    "day": 49,
+    "renderedAt": "2026-08-08T15:00:16.178Z",
+    "style": "trend-v2",
+    "seconds": 17.05,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-US-RogerNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "The Agents Don't Know They're Simulated",
+    "vo": true,
+    "source": "original"
   }
 ]
