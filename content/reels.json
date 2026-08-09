@@ -505,7 +505,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 23,
@@ -1185,7 +1186,7 @@
     "day": 52,
     "title": "The Self Is A Verb",
     "kicker": "RERUN · 52",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1203,7 +1204,7 @@
       "#mindfulness",
       "#metaphysics"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 24
   },
@@ -1289,7 +1290,7 @@
     "day": 56,
     "title": "The Map Is Not The Territory",
     "kicker": "RERUN · 56",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1307,8 +1308,34 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 19
+  },
+  {
+    "day": 57,
+    "title": "You Live A Fraction Of A Second In The Past",
+    "kicker": "RERUN · 57",
+    "palette": "void",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Neural processing delay means the 'now' you experience already happened; consciousness is a slightly delayed broadcast.",
+    "script": "It takes time for signals to travel from your senses to your brain and become experience. By the time you consciously see something, it has already happened. The now you feel is a reconstruction, assembled slightly late and presented as live. Your brain even edits the timing so everything seems to line up, hiding the delay from you. You are never actually in the present moment. You are always watching a recording of a world that has already moved on. Reality is live. Your experience of it is on tape, a heartbeat behind, forever.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "The present you feel is already the past. Your brain is buffering.",
+    "hashtags": [
+      "#perception",
+      "#neuroscience",
+      "#consciousness",
+      "#time",
+      "#philosophy",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 22
   }
 ]
