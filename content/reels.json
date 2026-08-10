@@ -343,7 +343,8 @@
       "#deepthoughts",
       "#ai",
       "#metaphysics"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 16,
@@ -1186,7 +1187,7 @@
     "day": 52,
     "title": "The Self Is A Verb",
     "kicker": "RERUN · 52",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1204,7 +1205,7 @@
       "#mindfulness",
       "#metaphysics"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 24
   },
@@ -1290,7 +1291,7 @@
     "day": 56,
     "title": "The Map Is Not The Territory",
     "kicker": "RERUN · 56",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1308,7 +1309,7 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 19
   },
@@ -1334,8 +1335,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 22
+  },
+  {
+    "day": 58,
+    "title": "The Room That Speaks But Can't Understand",
+    "kicker": "RERUN · 58",
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Searle's Chinese Room — perfect symbol manipulation without comprehension; does any AI actually understand?",
+    "script": "Picture a man in a sealed room who speaks no Chinese. People slip questions in Chinese under the door. He has a giant rulebook that tells him which symbols to send back. To everyone outside, the room answers fluently. But the man understands nothing. He is just matching shapes. Now ask the hard question. Today's AI is that room, faster and vaster. It produces brilliant answers by manipulating symbols it may not understand at all. Fluency is not comprehension. And from the outside, you genuinely cannot tell the difference.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "It answers every question perfectly. It understands nothing. Sound familiar?",
+    "hashtags": [
+      "#chineseroom",
+      "#aiconsciousness",
+      "#philosophyofmind",
+      "#consciousness",
+      "#searle",
+      "#deepthoughts",
+      "#ai",
+      "#metaphysics"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 15
   }
 ]
