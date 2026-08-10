@@ -58,5 +58,20 @@
     "hook": "The Question That Has No Outside",
     "vo": true,
     "source": "original"
+  },
+  {
+    "day": 51,
+    "renderedAt": "2026-08-10T15:32:30.757Z",
+    "style": "trend-v2",
+    "seconds": 12.42,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "ember",
+    "voice": "en-GB-RyanNeural",
+    "rate": "-5%",
+    "pitch": "-3Hz",
+    "hook": "Even If It's A Dream, It's Where You Live",
+    "vo": true,
+    "source": "original"
   }
 ]
