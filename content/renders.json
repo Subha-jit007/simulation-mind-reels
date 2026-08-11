@@ -73,5 +73,20 @@
     "hook": "Even If It's A Dream, It's Where You Live",
     "vo": true,
     "source": "original"
+  },
+  {
+    "day": 52,
+    "renderedAt": "2026-08-11T15:31:02.059Z",
+    "style": "trend-v2",
+    "seconds": 11.9,
+    "targetSeconds": 17,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "The Self Is A Verb",
+    "vo": true,
+    "source": "recut"
   }
 ]
