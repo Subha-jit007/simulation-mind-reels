@@ -88,5 +88,20 @@
     "hook": "The Self Is A Verb",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 53,
+    "renderedAt": "2026-08-12T15:32:39.171Z",
+    "style": "trend-v2",
+    "seconds": 19.68,
+    "targetSeconds": 16,
+    "beats": 5,
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "Pain Is Data. Suffering Is The Story.",
+    "vo": true,
+    "source": "recut"
   }
 ]
