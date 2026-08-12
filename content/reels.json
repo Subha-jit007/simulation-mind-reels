@@ -90,7 +90,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#mindblown"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 5,
@@ -1292,7 +1293,7 @@
     "day": 56,
     "title": "The Map Is Not The Territory",
     "kicker": "RERUN · 56",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1310,7 +1311,7 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 19
   },
@@ -1388,8 +1389,34 @@
       "#metaphysics",
       "#quantum"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 6
+  },
+  {
+    "day": 60,
+    "title": "One Of These Three Is True",
+    "kicker": "RERUN · 60",
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Bostrom's simulation trilemma — at least one of the three propositions is almost certainly true.",
+    "script": "One of these three things is almost certainly true, and all of them are unsettling. One: civilizations always destroy themselves before they can simulate reality. Two: they could, but they choose never to. Or three: there are countless simulated worlds, and you are almost certainly inside one of them. Because if real minds can be simulated, the simulated ones would outnumber the originals by billions to one. So a random mind — your mind — is probably not the original. Pick whichever door you like. None of them lead back to ordinary.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Nick Bostrom's trilemma. Three doors. None of them comfortable. 🚪",
+    "hashtags": [
+      "#simulationtheory",
+      "#bostrom",
+      "#philosophy",
+      "#existential",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#mindblown"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 4
   }
 ]
