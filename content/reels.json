@@ -207,7 +207,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 10,
@@ -1293,7 +1294,7 @@
     "day": 56,
     "title": "The Map Is Not The Territory",
     "kicker": "RERUN · 56",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1311,7 +1312,7 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 19
   },
@@ -1397,7 +1398,7 @@
     "day": 60,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 60",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1415,8 +1416,34 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 4
+  },
+  {
+    "day": 61,
+    "title": "Who Made The Upper Beings?",
+    "kicker": "RERUN · 61",
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Saying 'upper beings made our world' just relocates the question — same infinite regress as 'who made God.'",
+    "script": "Say a higher being built our universe. It is a satisfying answer, until you ask the next question. Who built them? If everything that exists needs a maker, then their world needs one too, and that maker needs one, forever, with no floor to stand on. And if something can simply exist without a maker, then why not this universe? The creator explanation feels like an answer, but it only moves the mystery up one level and hides it there. The question never actually closes. It just gets a new address.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "If a creator made our world, who made the creator? The regress never ends.",
+    "hashtags": [
+      "#simulationtheory",
+      "#theology",
+      "#philosophy",
+      "#god",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 9
   }
 ]
