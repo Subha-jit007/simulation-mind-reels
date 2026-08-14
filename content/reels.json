@@ -835,7 +835,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#paradox"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 37,
@@ -1294,7 +1295,7 @@
     "day": 56,
     "title": "The Map Is Not The Territory",
     "kicker": "RERUN · 56",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1312,7 +1313,7 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 19
   },
@@ -1398,7 +1399,7 @@
     "day": 60,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 60",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1416,7 +1417,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 4
   },
@@ -1445,5 +1446,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 9
+  },
+  {
+    "day": 62,
+    "title": "Two Of You Wake Up. Which Is You?",
+    "kicker": "RERUN · 62",
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "If you're copied perfectly and both wake, each is equally 'you' — shattering the idea of a single continuous self.",
+    "script": "Suppose tonight you are scanned and perfectly copied. Tomorrow, two people wake up, each with your memories, each certain they are you, each equally right. So which one is the real you? The honest answer is unbearable. Both. Neither. The question assumes there is a single thread of you that has to go one way, and there is not. There never was. The feeling that you are one continuous self, with a definite future owner, is an illusion that only holds because, so far, no one has ever made a second copy. The moment they do, the whole idea quietly breaks.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Copy you perfectly. Both wake up. Both are you. Now what?",
+    "hashtags": [
+      "#identity",
+      "#consciousness",
+      "#philosophy",
+      "#thoughtexperiment",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#paradox"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 36
   }
 ]
