@@ -133,5 +133,20 @@
     "hook": "You Are The Ship Of Theseus",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 56,
+    "renderedAt": "2026-08-15T14:50:40.851Z",
+    "style": "trend-v2",
+    "seconds": 18.49,
+    "targetSeconds": 22,
+    "beats": 5,
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "The Map Is Not The Territory",
+    "vo": true,
+    "source": "recut"
   }
 ]
