@@ -674,7 +674,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#cosmos"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 30,
@@ -1399,7 +1400,7 @@
     "day": 60,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 60",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1417,7 +1418,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 4
   },
@@ -1469,8 +1470,34 @@
       "#metaphysics",
       "#paradox"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 36
+  },
+  {
+    "day": 63,
+    "title": "The Universe Is Suspiciously Mathematical",
+    "kicker": "RERUN · 63",
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Why is reality so describable by clean mathematics? The 'unreasonable effectiveness of math' as a hint about the substrate.",
+    "script": "There is something physicists find quietly astonishing. The universe obeys mathematics with almost unreasonable precision. Scribble equations on a page and they predict the motion of planets, the behavior of light, the existence of particles no one had ever seen. Why should reality care about our math at all? Why is the cosmos so clean, so computable, so written? It might just be how things are. Or it might be a clue about what this place is made of underneath. A universe that runs on math looks a lot like a universe that runs on code.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Why does the universe obey clean math so perfectly? As if it were written.",
+    "hashtags": [
+      "#mathematics",
+      "#physics",
+      "#simulationtheory",
+      "#philosophy",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#cosmos"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 29
   }
 ]
