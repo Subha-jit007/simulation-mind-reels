@@ -148,5 +148,20 @@
     "hook": "The Map Is Not The Territory",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 57,
+    "renderedAt": "2026-08-16T14:49:49.279Z",
+    "style": "trend-v2",
+    "seconds": 14.01,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "void",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "You Live A Fraction Of A Second In The Past",
+    "vo": true,
+    "source": "recut"
   }
 ]
