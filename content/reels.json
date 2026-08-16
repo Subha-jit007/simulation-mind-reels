@@ -883,7 +883,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 39,
@@ -1400,7 +1401,7 @@
     "day": 60,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 60",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1418,7 +1419,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 4
   },
@@ -1496,8 +1497,34 @@
       "#metaphysics",
       "#cosmos"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 29
+  },
+  {
+    "day": 64,
+    "title": "The Loneliest Fact In Philosophy",
+    "kicker": "RERUN · 64",
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "You are sealed inside the one consciousness you can verify, forever inferring the inner lives of everyone else.",
+    "script": "You will spend your entire life beside other minds and never enter a single one. You will love people, know them deeply, finish their sentences, and still only ever experience your own awareness, never theirs. Every connection is two sealed rooms, passing signals under the door, inferring the life on the other side. We are together, constantly, and fundamentally alone in the one place that matters most, the inside. It sounds tragic. But maybe it is why connection feels so precious. We reach across a gap that can never fully close, and somehow, often, that reaching is enough.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "You'll spend your whole life unable to truly enter another mind.",
+    "hashtags": [
+      "#solipsism",
+      "#consciousness",
+      "#philosophy",
+      "#existential",
+      "#loneliness",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 38
   }
 ]
