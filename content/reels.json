@@ -860,7 +860,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#awakening"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 38,
@@ -1401,7 +1402,7 @@
     "day": 60,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 60",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1419,7 +1420,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 4
   },
@@ -1505,7 +1506,7 @@
     "day": 64,
     "title": "The Loneliest Fact In Philosophy",
     "kicker": "RERUN · 64",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1523,8 +1524,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 16,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 38
+  },
+  {
+    "day": 65,
+    "title": "Meaning Isn't Found. It's Assigned.",
+    "kicker": "RERUN · 65",
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "The universe ships without built-in meaning; meaning is something minds add — which makes you its source, not its seeker.",
+    "script": "People search the universe for meaning, as if it is hidden out there, waiting to be discovered. But the universe is silent. It ships with no built-in purpose, no label explaining what any of it is for. That sounds bleak, until you flip it. Meaning was never out there to find. It is something minds create and assign. The love you feel, the things you care about, the significance of a life, those are real, and they are authored, by you. You are not a seeker of meaning in a meaningful world. You are a source of it, in a blank one.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "You won't find meaning out there. You're the one who assigns it.",
+    "hashtags": [
+      "#meaning",
+      "#existential",
+      "#philosophy",
+      "#nihilism",
+      "#consciousness",
+      "#deepthoughts",
+      "#metaphysics",
+      "#awakening"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 37
   }
 ]
