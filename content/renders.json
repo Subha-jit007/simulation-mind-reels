@@ -163,5 +163,20 @@
     "hook": "You Live A Fraction Of A Second In The Past",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 58,
+    "renderedAt": "2026-08-17T14:55:35.996Z",
+    "style": "trend-v2",
+    "seconds": 16.86,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "The Room That Speaks But Can't Understand",
+    "vo": true,
+    "source": "recut"
   }
 ]
