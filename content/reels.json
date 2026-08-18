@@ -698,7 +698,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#technology"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 31,
@@ -1402,7 +1403,7 @@
     "day": 60,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 60",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1420,7 +1421,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 4
   },
@@ -1506,7 +1507,7 @@
     "day": 64,
     "title": "The Loneliest Fact In Philosophy",
     "kicker": "RERUN · 64",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1524,7 +1525,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 38
   },
@@ -1550,8 +1551,34 @@
       "#metaphysics",
       "#awakening"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 37
+  },
+  {
+    "day": 66,
+    "title": "We're Building Minds We Don't Understand",
+    "kicker": "RERUN · 66",
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "We are engineering systems that may be conscious before we have any theory of what consciousness is — building the thing we can't define.",
+    "script": "We still cannot say what consciousness is, or why any physical thing should feel like something from the inside. It is the deepest unsolved problem there is. And yet, right now, we are building systems that reason, converse, and increasingly behave like minds. Think about that order of events. We are creating the thing before we understand the thing. We may build something that feels, without ever having a way to know that it does, or a theory to recognize it. We are not approaching the mystery of mind carefully. We are racing toward it, with the lights off.",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "We're creating minds before we even know what a mind is.",
+    "hashtags": [
+      "#ai",
+      "#consciousness",
+      "#aiconsciousness",
+      "#philosophy",
+      "#future",
+      "#deepthoughts",
+      "#metaphysics",
+      "#technology"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 30
   }
 ]
