@@ -955,7 +955,8 @@
       "#deepthoughts",
       "#nonduality",
       "#metaphysics"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 42,
@@ -1507,7 +1508,7 @@
     "day": 64,
     "title": "The Loneliest Fact In Philosophy",
     "kicker": "RERUN · 64",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1525,7 +1526,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 38
   },
@@ -1577,8 +1578,34 @@
       "#metaphysics",
       "#technology"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 30
+  },
+  {
+    "day": 67,
+    "title": "The Ego Dissolves And Nothing Is Lost",
+    "kicker": "RERUN · 67",
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Reports of ego dissolution — when the boundary of 'me' drops, experience continues, suggesting the self was never load-bearing.",
+    "script": "People who experience ego death describe the same impossible thing. The boundary between self and world dissolves. The I that seemed to be at the center simply is not there anymore. And yet, experience continues. Awareness goes on, often more vivid than before. Which reveals something the ego would never admit. You were never required. The sense of being a separate self is not the foundation of your experience. It is just one more thing appearing within it, and it can drop away while everything keeps happening. What you defend as the core of you turns out to be optional. And under it, something quieter remains.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "When the 'I' dissolves, awareness remains. The ego was never the point.",
+    "hashtags": [
+      "#egodeath",
+      "#consciousness",
+      "#awakening",
+      "#philosophy",
+      "#mindfulness",
+      "#deepthoughts",
+      "#nonduality",
+      "#metaphysics"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 41
   }
 ]
