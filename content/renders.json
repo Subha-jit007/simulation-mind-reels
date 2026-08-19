@@ -193,5 +193,20 @@
     "hook": "Maybe It's Bits, Not Atoms",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 60,
+    "renderedAt": "2026-08-19T15:03:01.789Z",
+    "style": "trend-v2",
+    "seconds": 9.13,
+    "targetSeconds": 13,
+    "beats": 3,
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "One Of These Three Is True",
+    "vo": true,
+    "source": "recut"
   }
 ]
