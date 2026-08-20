@@ -208,5 +208,20 @@
     "hook": "One Of These Three Is True",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 61,
+    "renderedAt": "2026-08-20T15:06:00.986Z",
+    "style": "trend-v2",
+    "seconds": 10.5,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Who Made The Upper Beings?",
+    "vo": true,
+    "source": "recut"
   }
 ]
