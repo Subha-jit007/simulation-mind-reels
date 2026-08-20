@@ -979,7 +979,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#theology"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 43,
@@ -1508,7 +1509,7 @@
     "day": 64,
     "title": "The Loneliest Fact In Philosophy",
     "kicker": "RERUN · 64",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1526,7 +1527,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 38
   },
@@ -1607,5 +1608,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 41
+  },
+  {
+    "day": 68,
+    "title": "A God Inside The Sim Would Look Like Physics",
+    "kicker": "RERUN · 68",
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "If a creator set the rules of a simulated world, those rules would appear to us as the unbreakable laws of physics.",
+    "script": "If someone wrote the rules of a simulated world, how would those rules appear to the beings inside it? Not as a person. Not as a voice from the sky. They would appear as physics, as unbreakable, ever-present laws that govern everything and can never be violated. The speed of light. The constants. The way reality simply refuses to let certain things happen. To us, that is nature. But that is exactly what a creator's source code would feel like from inside the program, invisible, total, and mistaken for just the way things are.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "A programmer's rules, from inside, would just look like the laws of physics.",
+    "hashtags": [
+      "#simulationtheory",
+      "#god",
+      "#physics",
+      "#philosophy",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#theology"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 42
   }
 ]
