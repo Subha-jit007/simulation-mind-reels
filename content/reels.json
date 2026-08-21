@@ -1003,7 +1003,8 @@
       "#deepthoughts",
       "#psychology",
       "#metaphysics"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 44,
@@ -1509,7 +1510,7 @@
     "day": 64,
     "title": "The Loneliest Fact In Philosophy",
     "kicker": "RERUN · 64",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1527,7 +1528,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 38
   },
@@ -1613,7 +1614,7 @@
     "day": 68,
     "title": "A God Inside The Sim Would Look Like Physics",
     "kicker": "RERUN · 68",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1631,8 +1632,34 @@
       "#metaphysics",
       "#theology"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 42
+  },
+  {
+    "day": 69,
+    "title": "The Hardest Cage Has No Walls",
+    "kicker": "RERUN · 69",
+    "palette": "void",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Conditioning, language, and culture shape what you can even think — the most total prison is the one you can't perceive.",
+    "script": "The easiest prison to escape is the one you can see. The hardest is the one you cannot. The language you think in, the culture you grew up in, the assumptions you never chose, they quietly set the limits of what you are even able to imagine. You do not feel trapped, because the bars are made of the same material as your thoughts. Most people live their whole lives inside borders they never noticed were there. Freedom does not start with breaking out. It starts with the unsettling moment you realize the walls exist at all, and that you did not build them.",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "The strongest cage is the one you can't see the bars of.",
+    "hashtags": [
+      "#consciousness",
+      "#philosophy",
+      "#conditioning",
+      "#freedom",
+      "#awakening",
+      "#deepthoughts",
+      "#psychology",
+      "#metaphysics"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 43
   }
 ]
