@@ -722,7 +722,8 @@
       "#deepthoughts",
       "#presence",
       "#psychology"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 32,
@@ -1510,7 +1511,7 @@
     "day": 64,
     "title": "The Loneliest Fact In Philosophy",
     "kicker": "RERUN · 64",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -1528,7 +1529,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 38
   },
@@ -1614,7 +1615,7 @@
     "day": 68,
     "title": "A God Inside The Sim Would Look Like Physics",
     "kicker": "RERUN · 68",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1632,7 +1633,7 @@
       "#metaphysics",
       "#theology"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 42
   },
@@ -1658,8 +1659,34 @@
       "#psychology",
       "#metaphysics"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 43
+  },
+  {
+    "day": 70,
+    "title": "Attention Is The Only Thing You Spend",
+    "kicker": "RERUN · 70",
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Consciousness is a spotlight; where attention goes, your reality is built — it's the one resource you truly allocate.",
+    "script": "You think you spend money, or time. But underneath all of it, there is one true currency. Attention. Your conscious life is made of whatever you attend to, and nothing else. The moments you did not notice may as well not have happened to you. Whatever captures your attention is, quite literally, shaping the reality you experience. Which is why the fight for your attention is the realest economy on Earth. Guard it like the only thing you actually own. Because the sum of what you paid attention to, in the end, is your life.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "Your life is literally made of what you pay attention to.",
+    "hashtags": [
+      "#attention",
+      "#consciousness",
+      "#mindfulness",
+      "#philosophy",
+      "#awakening",
+      "#deepthoughts",
+      "#presence",
+      "#psychology"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 31
   }
 ]
