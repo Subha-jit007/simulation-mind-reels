@@ -1051,7 +1051,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#oneness"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 46,
@@ -1615,7 +1616,7 @@
     "day": 68,
     "title": "A God Inside The Sim Would Look Like Physics",
     "kicker": "RERUN · 68",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1633,7 +1634,7 @@
       "#metaphysics",
       "#theology"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 42
   },
@@ -1688,5 +1689,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 31
+  },
+  {
+    "day": 71,
+    "title": "You Are The Universe Looking At Itself",
+    "kicker": "RERUN · 71",
+    "palette": "ember",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "You are made of the universe's atoms, briefly arranged to be aware — the cosmos becoming conscious of itself for a moment.",
+    "script": "Every atom in your body was forged inside a star that died long before the Earth existed. You are made of the universe, the literal leftover matter of ancient explosions. And somehow, that matter has arranged itself into something that can look up, and wonder, and ask what it all means. So when you experience awe at the cosmos, something remarkable is happening. The universe is becoming aware of itself, through you, for a brief moment, before the atoms scatter again. You are not a small thing observing a vast one. You are the vastness, briefly awake, looking back at its own face.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "You are the universe, briefly arranged to look back at itself.",
+    "hashtags": [
+      "#consciousness",
+      "#cosmos",
+      "#philosophy",
+      "#awakening",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#oneness"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 45
   }
 ]
