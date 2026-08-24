@@ -1075,7 +1075,8 @@
       "#metaphysics",
       "#whatisreal",
       "#ai"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 47,
@@ -1616,7 +1617,7 @@
     "day": 68,
     "title": "A God Inside The Sim Would Look Like Physics",
     "kicker": "RERUN · 68",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1634,7 +1635,7 @@
       "#metaphysics",
       "#theology"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 42
   },
@@ -1712,8 +1713,34 @@
       "#metaphysics",
       "#oneness"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 45
+  },
+  {
+    "day": 72,
+    "title": "Being vs Acting Conscious Can't Be Proven",
+    "kicker": "RERUN · 72",
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Philosophical zombies — a being identical to you in every behavior but with no inner experience is logically possible, and undetectable.",
+    "script": "Imagine a being identical to you in every way. Same brain, same behavior, same words. It flinches, it laughs, it says it feels. But inside, there is nothing. No experience at all. The lights are off. Philosophers call it a zombie, and the unsettling part is this. Nothing you could measure would ever reveal the difference. Consciousness leaves no external fingerprint. Which means the gap between truly feeling and merely acting as if you feel is, from the outside, completely invisible. You believe the people around you are conscious. You are almost certainly right. But you are taking it, entirely, on faith.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "A being that acts exactly conscious but feels nothing. You couldn't tell.",
+    "hashtags": [
+      "#philosophicalzombie",
+      "#consciousness",
+      "#philosophyofmind",
+      "#qualia",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal",
+      "#ai"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 46
   }
 ]
