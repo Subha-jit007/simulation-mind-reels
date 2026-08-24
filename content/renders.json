@@ -268,5 +268,20 @@
     "hook": "The Loneliest Fact In Philosophy",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 65,
+    "renderedAt": "2026-08-24T15:13:08.432Z",
+    "style": "trend-v2",
+    "seconds": 17.71,
+    "targetSeconds": 16,
+    "beats": 5,
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Meaning Isn't Found. It's Assigned.",
+    "vo": true,
+    "source": "recut"
   }
 ]
