@@ -283,5 +283,20 @@
     "hook": "Meaning Isn't Found. It's Assigned.",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 66,
+    "renderedAt": "2026-08-25T15:15:55.440Z",
+    "style": "trend-v2",
+    "seconds": 16.96,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "We're Building Minds We Don't Understand",
+    "vo": true,
+    "source": "recut"
   }
 ]
