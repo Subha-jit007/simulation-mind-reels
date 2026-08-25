@@ -746,7 +746,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#awakening"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 33,
@@ -1617,7 +1618,7 @@
     "day": 68,
     "title": "A God Inside The Sim Would Look Like Physics",
     "kicker": "RERUN · 68",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1635,7 +1636,7 @@
       "#metaphysics",
       "#theology"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 42
   },
@@ -1721,7 +1722,7 @@
     "day": 72,
     "title": "Being vs Acting Conscious Can't Be Proven",
     "kicker": "RERUN · 72",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1739,8 +1740,34 @@
       "#whatisreal",
       "#ai"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 46
+  },
+  {
+    "day": 73,
+    "title": "You Already Survived Not Existing",
+    "kicker": "RERUN · 73",
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "The eternity before your birth was non-existence and it didn't hurt — reframing the fear of death.",
+    "script": "People fear death as a plunge into nothingness, an eternity of not being. But you have already done eternity once. For all the endless time before you were born, you did not exist, and it cost you nothing. There was no darkness to endure, no absence to suffer, because there was no you to suffer it. Death, whatever it is, returns you to exactly that. The state you fear is the same one you came from, and it never troubled you for a moment. You are not afraid of nonexistence. You have been there. You are afraid of leaving, which is a different thing entirely.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "There was an eternity before you existed. It didn't hurt at all.",
+    "hashtags": [
+      "#death",
+      "#existential",
+      "#philosophy",
+      "#consciousness",
+      "#mortality",
+      "#deepthoughts",
+      "#metaphysics",
+      "#awakening"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 32
   }
 ]
