@@ -298,5 +298,20 @@
     "hook": "We're Building Minds We Don't Understand",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 67,
+    "renderedAt": "2026-08-26T16:01:01.843Z",
+    "style": "trend-v2",
+    "seconds": 18.08,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "The Ego Dissolves And Nothing Is Lost",
+    "vo": true,
+    "source": "recut"
   }
 ]
