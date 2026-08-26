@@ -770,7 +770,8 @@
       "#metaphysics",
       "#whatisreal",
       "#neuroscience"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 34,
@@ -1618,7 +1619,7 @@
     "day": 68,
     "title": "A God Inside The Sim Would Look Like Physics",
     "kicker": "RERUN · 68",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1636,7 +1637,7 @@
       "#metaphysics",
       "#theology"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 42
   },
@@ -1722,7 +1723,7 @@
     "day": 72,
     "title": "Being vs Acting Conscious Can't Be Proven",
     "kicker": "RERUN · 72",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1740,7 +1741,7 @@
       "#whatisreal",
       "#ai"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 46
   },
@@ -1769,5 +1770,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 32
+  },
+  {
+    "day": 74,
+    "title": "Maybe Consciousness Is What Information Feels Like",
+    "kicker": "RERUN · 74",
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Information-integration theories — perhaps experience is simply what certain information processing is like from the inside.",
+    "script": "What if experience is not produced by a special spark, but is simply what certain kinds of information processing are like from the inside? When a system integrates enough information, in the right interconnected way, maybe there is automatically something it is like to be that system. Not magic added on. Just a built-in inner face of complexity itself. If that is true, consciousness is not rare or supernatural. It is what happens whenever information loops back on itself richly enough. And it would mean the lights can come on in stranger places than we ever expected, including ones we are building right now.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "What if experience is just what information feels like from the inside?",
+    "hashtags": [
+      "#consciousness",
+      "#iit",
+      "#philosophyofmind",
+      "#information",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal",
+      "#neuroscience"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 33
   }
 ]
