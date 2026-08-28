@@ -1030,7 +1030,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 45,
@@ -1723,7 +1724,7 @@
     "day": 72,
     "title": "Being vs Acting Conscious Can't Be Proven",
     "kicker": "RERUN · 72",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1741,7 +1742,7 @@
       "#whatisreal",
       "#ai"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 46
   },
@@ -1793,8 +1794,34 @@
       "#whatisreal",
       "#neuroscience"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 33
+  },
+  {
+    "day": 75,
+    "title": "Time Might Already Be Frozen",
+    "kicker": "RERUN · 75",
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "The block universe — past, present and future all exist at once; the flow of time may be how a static reality feels from inside.",
+    "script": "You experience time as a flow, the past gone, the future not yet here, only now is real. But physics suggests something stranger. Past, present, and future may all exist at once, equally real, like frames already printed on a film. In that picture, time does not flow at all. Nothing moves. The sense of a passing now would just be what one frame feels like from the inside, convinced it is the only one. Your birth, this moment, your death, all already there, all permanent. You are not traveling through time. You may be a fixed pattern, dreaming that it moves.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "What if past, present and future all already exist — and 'now' is an illusion?",
+    "hashtags": [
+      "#time",
+      "#blockuniverse",
+      "#physics",
+      "#philosophy",
+      "#consciousness",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 44
   }
 ]
