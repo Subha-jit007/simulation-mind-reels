@@ -114,7 +114,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#realitycheck"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 6,
@@ -1724,7 +1725,7 @@
     "day": 72,
     "title": "Being vs Acting Conscious Can't Be Proven",
     "kicker": "RERUN · 72",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1742,7 +1743,7 @@
       "#whatisreal",
       "#ai"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 46
   },
@@ -1820,8 +1821,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 44
+  },
+  {
+    "day": 76,
+    "title": "There Are No Glitches In The Matrix",
+    "kicker": "RERUN · 76",
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "A perfect simulation predicts nothing different from reality — so glitch-hunting is doomed; an unfalsifiable claim is a mood, not a theory.",
+    "script": "People keep looking for glitches in the matrix. A déjà vu. A coincidence. A law of physics that seems too convenient. But here is the problem. A good simulation, by definition, behaves exactly like a real universe. If it didn't, it would be a bad one. So there is no experiment you can run, no glitch you can catch, that a real world wouldn't also produce. A claim that predicts nothing different from reality is not a theory. It is a mood. The simulation, if it exists, is perfect precisely because you can never tell.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "Stop hunting for glitches. A perfect simulation leaves none. 👁️",
+    "hashtags": [
+      "#simulationtheory",
+      "#thematrix",
+      "#philosophy",
+      "#epistemology",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#realitycheck"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 5
   }
 ]
