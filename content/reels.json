@@ -795,7 +795,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#existential"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 35,
@@ -1725,7 +1726,7 @@
     "day": 72,
     "title": "Being vs Acting Conscious Can't Be Proven",
     "kicker": "RERUN · 72",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -1743,7 +1744,7 @@
       "#whatisreal",
       "#ai"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 46
   },
@@ -1829,7 +1830,7 @@
     "day": 76,
     "title": "There Are No Glitches In The Matrix",
     "kicker": "RERUN · 76",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1847,8 +1848,34 @@
       "#metaphysics",
       "#realitycheck"
     ],
-    "targetSeconds": 16,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 5
+  },
+  {
+    "day": 77,
+    "title": "You Can't Step Outside To Check",
+    "kicker": "RERUN · 77",
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Any observer is part of the system being observed — there is no outside vantage point from which to verify reality.",
+    "script": "To prove this world is real, you would need to compare it against something outside it, a view from nowhere. But you cannot get there. Every instrument you would use is part of the world. Every thought you would think runs on a brain inside the system. You are sealed in, and so is everything you could ever use to check. This is the deepest reason the simulation question cannot be settled. Not because the answer is hidden, but because there is no outside vantage point available to anyone, ever. You cannot audit the box from inside the box. And inside the box is the only place you will ever be.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "To check if reality is real, you'd need to stand outside it. You can't.",
+    "hashtags": [
+      "#epistemology",
+      "#simulationtheory",
+      "#philosophy",
+      "#consciousness",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#existential"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 34
   }
 ]
