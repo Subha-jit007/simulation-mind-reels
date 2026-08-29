@@ -343,5 +343,20 @@
     "hook": "The Hardest Cage Has No Walls",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 70,
+    "renderedAt": "2026-08-29T17:48:38.653Z",
+    "style": "trend-v2",
+    "seconds": 16.62,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "Attention Is The Only Thing You Spend",
+    "vo": true,
+    "source": "recut"
   }
 ]
