@@ -535,7 +535,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#paradox"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 24,
@@ -1831,7 +1832,7 @@
     "day": 76,
     "title": "There Are No Glitches In The Matrix",
     "kicker": "RERUN · 76",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1849,7 +1850,7 @@
       "#metaphysics",
       "#realitycheck"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 5
   },
@@ -1901,8 +1902,34 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 21
+  },
+  {
+    "day": 79,
+    "title": "If It's All Determined, Why Decide?",
+    "kicker": "RERUN · 79",
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Even in a determined universe, deliberation is the mechanism through which the outcome is computed — the paradox of choosing in a fixed world.",
+    "script": "If the universe runs on cause and effect, then every choice you will ever make is already set by the state of things before you. So why does it feel like deliberating changes anything? Here is the twist. Your thinking is part of the chain of causes. The future is not fixed despite your deliberation. It is fixed partly through it. You are the universe computing its own next step. Determinism does not make your choices pointless. It makes them the very mechanism reality uses to decide. You are not outside the machine, watching helplessly. You are the part of the machine where the decision actually happens.",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "If everything is determined, why does thinking it through still change the outcome?",
+    "hashtags": [
+      "#determinism",
+      "#freewill",
+      "#philosophy",
+      "#consciousness",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#paradox"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 23
   }
 ]
