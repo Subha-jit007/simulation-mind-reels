@@ -606,7 +606,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 27,
@@ -1832,7 +1833,7 @@
     "day": 76,
     "title": "There Are No Glitches In The Matrix",
     "kicker": "RERUN · 76",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1850,7 +1851,7 @@
       "#metaphysics",
       "#realitycheck"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 5
   },
@@ -1931,5 +1932,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 23
+  },
+  {
+    "day": 80,
+    "title": "It Only Renders What You Look At",
+    "kicker": "RERUN · 80",
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "A simulation would only need to compute what's observed — eerily echoing how quantum measurement seems to fix reality on observation.",
+    "script": "A video game does not build the whole world at once. It renders only what the player is looking at; the rest stays unresolved until you turn to face it. Now here is the strange echo. In quantum physics, particles do not seem to settle into definite states until they are measured, until something looks. Reality, at its smallest scale, behaves a little like it is saving resources, leaving things blurry until observed. It almost certainly is not proof of a simulation. But it is exactly the optimization you would expect a simulation to use. And nobody fully understands why the universe does it.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "A simulation only renders what's observed. So does quantum mechanics. Coincidence?",
+    "hashtags": [
+      "#simulationtheory",
+      "#quantum",
+      "#observer",
+      "#physics",
+      "#consciousness",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 26
   }
 ]
