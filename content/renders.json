@@ -403,5 +403,20 @@
     "hook": "You Already Survived Not Existing",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 74,
+    "renderedAt": "2026-09-02T17:59:42.565Z",
+    "style": "trend-v2",
+    "seconds": 13.58,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Maybe Consciousness Is What Information Feels Like",
+    "vo": true,
+    "source": "recut"
   }
 ]
