@@ -418,5 +418,20 @@
     "hook": "Maybe Consciousness Is What Information Feels Like",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 75,
+    "renderedAt": "2026-09-03T17:59:31.199Z",
+    "style": "trend-v2",
+    "seconds": 15.94,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Time Might Already Be Frozen",
+    "vo": true,
+    "source": "recut"
   }
 ]
