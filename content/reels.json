@@ -585,7 +585,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 26,
@@ -1939,7 +1940,7 @@
     "day": 80,
     "title": "It Only Renders What You Look At",
     "kicker": "RERUN · 80",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1957,7 +1958,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 26
   },
@@ -2012,5 +2013,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 3
+  },
+  {
+    "day": 83,
+    "title": "Your Memories Are Being Rewritten",
+    "kicker": "RERUN · 83",
+    "palette": "ember",
+    "voice": "en-US-EricNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Memory is reconstruction, not playback — every recall edits the file; your past is partly fiction.",
+    "script": "You trust your memories like recordings, faithful playbacks of what happened. They are not. Each time you remember something, your brain rebuilds it from fragments, and then saves the rebuilt version, often slightly changed. The memories you revisit most are the ones most edited, drifting a little further from the truth every time. Your most precious memory may be the least accurate, worn smooth by handling. You are not remembering the past. You are remembering the last time you remembered it. Your history is less an archive and more a story you keep quietly rewriting, and believing.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Every time you remember it, you change it. Your past is half-invented.",
+    "hashtags": [
+      "#memory",
+      "#neuroscience",
+      "#consciousness",
+      "#psychology",
+      "#philosophy",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 25
   }
 ]
