@@ -826,7 +826,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 36,
@@ -1941,7 +1942,7 @@
     "day": 80,
     "title": "It Only Renders What You Look At",
     "kicker": "RERUN · 80",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1959,7 +1960,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 26
   },
@@ -2045,7 +2046,7 @@
     "day": 84,
     "title": "The Upload Isn't You",
     "kicker": "RERUN · 84",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-5Hz",
@@ -2063,8 +2064,34 @@
       "#deepthoughts",
       "#aiconsciousness"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 2
+  },
+  {
+    "day": 85,
+    "title": "Your Brain Predicts, It Doesn't Record",
+    "kicker": "RERUN · 85",
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Predictive processing — you perceive your brain's best guess, corrected by the senses; reality is a controlled hallucination.",
+    "script": "Your brain does not passively receive the world. It guesses. Constantly, it predicts what should be out there, and your senses mostly just correct the errors. So what you experience is not a live feed. It is your brain's best prediction, lightly adjusted by reality. This is why you see what you expect, why illusions fool you, why two people witness different events. Perception is a controlled hallucination, kept on a leash by the senses. You are not watching the world. You are watching your brain's story about the world, and trusting that the corrections keep it close enough to true.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "You don't see the world. You see your brain's prediction of it.",
+    "hashtags": [
+      "#predictiveprocessing",
+      "#perception",
+      "#neuroscience",
+      "#consciousness",
+      "#philosophy",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 35
   }
 ]
