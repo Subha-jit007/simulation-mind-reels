@@ -187,7 +187,8 @@
       "#metaphysics",
       "#whatisreal",
       "#ai"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 9,
@@ -1942,7 +1943,7 @@
     "day": 80,
     "title": "It Only Renders What You Look At",
     "kicker": "RERUN · 80",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -1960,7 +1961,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 26
   },
@@ -2046,7 +2047,7 @@
     "day": 84,
     "title": "The Upload Isn't You",
     "kicker": "RERUN · 84",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-5Hz",
@@ -2064,7 +2065,7 @@
       "#deepthoughts",
       "#aiconsciousness"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 2
   },
@@ -2093,5 +2094,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 35
+  },
+  {
+    "day": 86,
+    "title": "Is Anyone Home?",
+    "kicker": "RERUN · 86",
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "If you simulate a mind perfectly, you can't tell from outside whether it feels anything or just behaves as if it does. The other-minds problem applied to AI.",
+    "script": "You could build a perfect copy of a human mind. It would laugh at jokes, flinch from pain, swear it loves you. And you would have no way to know if anyone is actually inside it. From the outside, a being that truly feels and a being that only acts exactly as if it feels are identical. There is no test for the lights being on. We assume other people are conscious because they are like us. But the moment we build something almost like us, that assumption quietly falls apart.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "A perfect imitation of a mind. Is anyone actually inside it?",
+    "hashtags": [
+      "#aiconsciousness",
+      "#philosophyofmind",
+      "#consciousness",
+      "#simulationtheory",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal",
+      "#ai"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 8
   }
 ]
