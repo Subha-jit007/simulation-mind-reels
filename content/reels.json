@@ -164,7 +164,8 @@
       "#philosophy",
       "#deepthoughts",
       "#future"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 8,
@@ -2047,7 +2048,7 @@
     "day": 84,
     "title": "The Upload Isn't You",
     "kicker": "RERUN · 84",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-5Hz",
@@ -2065,7 +2066,7 @@
       "#deepthoughts",
       "#aiconsciousness"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 2
   },
@@ -2117,8 +2118,34 @@
       "#whatisreal",
       "#ai"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 8
+  },
+  {
+    "day": 87,
+    "title": "The Party No One Planned",
+    "kicker": "RERUN · 87",
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Stanford's Generative Agents — 25 AI characters that built culture nobody scripted; what that implies about the rules running our world.",
+    "script": "In twenty twenty three, researchers dropped twenty-five AI characters into a tiny virtual town. Nobody scripted their lives. They woke up, made coffee, went to work, gossiped. Then one of them decided to throw a Valentine's party, and invited the others, who showed up, remembered it, and talked about it afterward. No human wrote that plan. It emerged on its own. Now sit with the question that follows. If a town of code can grow a culture nobody designed, how sure are you that whatever runs your world knew what it was about to create?",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "25 AI agents threw a party no human planned. Emergence is real. 🎭",
+    "hashtags": [
+      "#ai",
+      "#emergence",
+      "#simulationtheory",
+      "#consciousness",
+      "#aiagents",
+      "#philosophy",
+      "#deepthoughts",
+      "#future"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 7
   }
 ]
