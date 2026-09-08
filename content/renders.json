@@ -493,5 +493,20 @@
     "hook": "If It's All Determined, Why Decide?",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 80,
+    "renderedAt": "2026-09-08T18:04:01.116Z",
+    "style": "trend-v2",
+    "seconds": 16.68,
+    "targetSeconds": 22,
+    "beats": 5,
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "It Only Renders What You Look At",
+    "vo": true,
+    "source": "recut"
   }
 ]
