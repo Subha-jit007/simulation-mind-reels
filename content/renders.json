@@ -508,5 +508,20 @@
     "hook": "It Only Renders What You Look At",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 81,
+    "renderedAt": "2026-09-10T17:48:37.686Z",
+    "style": "trend-v2",
+    "seconds": 11.43,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "void",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "What Is It Like To Be A Bat?",
+    "vo": true,
+    "source": "recut"
   }
 ]
