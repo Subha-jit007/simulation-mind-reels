@@ -399,7 +399,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 18,
@@ -2048,7 +2049,7 @@
     "day": 84,
     "title": "The Upload Isn't You",
     "kicker": "RERUN · 84",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-5Hz",
@@ -2066,7 +2067,7 @@
       "#deepthoughts",
       "#aiconsciousness"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 2
   },
@@ -2147,5 +2148,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 7
+  },
+  {
+    "day": 88,
+    "title": "You'd Be Outnumbered A Billion To One",
+    "kicker": "RERUN · 88",
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "If ancestor simulations are ever run, simulated minds vastly outnumber originals — so statistically you're probably one of them.",
+    "script": "Suppose that one day civilizations learn to simulate entire conscious worlds. They would not run just one. They would run thousands, millions, for research, for history, for entertainment. Inside each, billions of minds, all certain they are real. Do the arithmetic. If simulated minds ever come to exist, they would outnumber the original, born minds by an almost unimaginable ratio. So if you pick a conscious being at random, the odds that it is an original are basically zero. You are a random conscious being. The math does not prove you are simulated. It just makes original the long shot.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "If sims are ever built, the simulated will outnumber the real billions to one.",
+    "hashtags": [
+      "#simulationtheory",
+      "#bostrom",
+      "#probability",
+      "#philosophy",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 17
   }
 ]
