@@ -329,7 +329,8 @@
       "#deepthoughts",
       "#scifi",
       "#metaphysics"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 15,
@@ -2155,7 +2156,7 @@
     "day": 88,
     "title": "You'd Be Outnumbered A Billion To One",
     "kicker": "RERUN · 88",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2173,7 +2174,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 17
   },
@@ -2225,8 +2226,34 @@
       "#metaphysics",
       "#future"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 20
+  },
+  {
+    "day": 91,
+    "title": "The Teleporter Kills You Every Time",
+    "kicker": "RERUN · 91",
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Teleportation as destroy-and-recreate: the person who steps out is a perfect copy; you died on the pad.",
+    "script": "Imagine a teleporter that scans every atom of your body, destroys the original, and rebuilds you perfectly somewhere else. Everyone says you arrived. But did you? The copy has your memories and feels completely continuous. Meanwhile the original you was taken apart and ended. From the copy's side, nothing happened. From yours, everything did. Now here is the unsettling part. Sleep, anesthesia, even ordinary time may be quietly doing the same thing, ending one version of you and handing your memories to the next. The teleporter just makes it obvious.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Star Trek's transporter is a murder weapon. A perfect copy walks out.",
+    "hashtags": [
+      "#philosophy",
+      "#consciousness",
+      "#identity",
+      "#teleportation",
+      "#thoughtexperiment",
+      "#deepthoughts",
+      "#scifi",
+      "#metaphysics"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 14
   }
 ]
