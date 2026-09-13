@@ -553,5 +553,20 @@
     "hook": "Your Memories Are Being Rewritten",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 84,
+    "renderedAt": "2026-09-13T17:33:11.941Z",
+    "style": "trend-v2",
+    "seconds": 9.72,
+    "targetSeconds": 13,
+    "beats": 3,
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-5Hz",
+    "hook": "The Upload Isn't You",
+    "vo": true,
+    "source": "recut"
   }
 ]
