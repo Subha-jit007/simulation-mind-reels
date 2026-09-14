@@ -568,5 +568,20 @@
     "hook": "The Upload Isn't You",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 85,
+    "renderedAt": "2026-09-14T19:33:46.873Z",
+    "style": "trend-v2",
+    "seconds": 16.66,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Your Brain Predicts, It Doesn't Record",
+    "vo": true,
+    "source": "recut"
   }
 ]
