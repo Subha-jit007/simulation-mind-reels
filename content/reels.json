@@ -260,7 +260,8 @@
       "#deepthoughts",
       "#awakening",
       "#metaphysics"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 12,
@@ -2156,7 +2157,7 @@
     "day": 88,
     "title": "You'd Be Outnumbered A Billion To One",
     "kicker": "RERUN · 88",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2174,7 +2175,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 17
   },
@@ -2255,5 +2256,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 14
+  },
+  {
+    "day": 92,
+    "title": "There's No One Behind Your Eyes",
+    "kicker": "RERUN · 92",
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "The homunculus fallacy — there is no little watcher inside the brain receiving the picture; the search for the observer dissolves it.",
+    "script": "When you see, it feels like there is a little you inside your head, watching the picture come in. But if there were, who is watching the picture inside their head? And inside theirs? It cannot be little watchers all the way down. There is no screen, and no one sitting in front of it. The seeing is just happening, with no separate seer added on top. The I that seems to be receiving your life is not a thing in there. It is the experience itself, pretending it has an owner.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Look for the watcher behind your eyes. There's no one there.",
+    "hashtags": [
+      "#consciousness",
+      "#philosophyofmind",
+      "#ego",
+      "#neuroscience",
+      "#selfinquiry",
+      "#deepthoughts",
+      "#awakening",
+      "#metaphysics"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 11
   }
 ]
