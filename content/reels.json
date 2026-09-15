@@ -284,7 +284,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#existential"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 13,
@@ -2157,7 +2158,7 @@
     "day": 88,
     "title": "You'd Be Outnumbered A Billion To One",
     "kicker": "RERUN · 88",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2175,7 +2176,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 17
   },
@@ -2261,7 +2262,7 @@
     "day": 92,
     "title": "There's No One Behind Your Eyes",
     "kicker": "RERUN · 92",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2279,8 +2280,34 @@
       "#awakening",
       "#metaphysics"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 11
+  },
+  {
+    "day": 93,
+    "title": "Free Will Might Be A User Illusion",
+    "kicker": "RERUN · 93",
+    "palette": "void",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "The feeling of choosing may arrive after the brain has already decided — free will as an interface, not the engine.",
+    "script": "In the lab, scientists can sometimes see a decision forming in your brain seconds before you feel yourself choose. The action is already on its way, and only afterward does the feeling of I decided arrive, like a caption added to a video that already exists. Maybe choice is not the engine. Maybe it is the dashboard, a simple readout of machinery you do not control. You still act. You still care. But the author you imagine at the center, freely picking, might be the story the machine tells about itself.",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "What if 'choosing' is just the story your brain tells after deciding?",
+    "hashtags": [
+      "#freewill",
+      "#determinism",
+      "#consciousness",
+      "#philosophy",
+      "#neuroscience",
+      "#deepthoughts",
+      "#metaphysics",
+      "#existential"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 12
   }
 ]
