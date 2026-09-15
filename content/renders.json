@@ -583,5 +583,20 @@
     "hook": "Your Brain Predicts, It Doesn't Record",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 86,
+    "renderedAt": "2026-09-15T18:25:10.236Z",
+    "style": "trend-v2",
+    "seconds": 14.72,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "Is Anyone Home?",
+    "vo": true,
+    "source": "recut"
   }
 ]
