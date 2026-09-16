@@ -308,7 +308,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#awakening"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 14,
@@ -2158,7 +2159,7 @@
     "day": 88,
     "title": "You'd Be Outnumbered A Billion To One",
     "kicker": "RERUN · 88",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2176,7 +2177,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 17
   },
@@ -2262,7 +2263,7 @@
     "day": 92,
     "title": "There's No One Behind Your Eyes",
     "kicker": "RERUN · 92",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2280,7 +2281,7 @@
       "#awakening",
       "#metaphysics"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 11
   },
@@ -2306,8 +2307,34 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 12
+  },
+  {
+    "day": 94,
+    "title": "You're Not Who Started This Sentence",
+    "kicker": "RERUN · 94",
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Personal identity over time — the cells, thoughts, and atoms turn over; the continuous 'you' is a useful fiction.",
+    "script": "The atoms in you are not the atoms you had years ago. The cells have turned over. Even your memories have been rewritten each time you recalled them. The person who began reading this is, in a real sense, already gone, replaced by a slightly different one, and that one is being replaced now. There is no fixed you persisting through time. There is a chain of almost-yous, each handing off to the next so smoothly that it feels like one continuous person. Continuity is not a fact. It is an extraordinary special effect.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "The 'you' that began reading this is already gone.",
+    "hashtags": [
+      "#identity",
+      "#consciousness",
+      "#philosophy",
+      "#impermanence",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#awakening"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 13
   }
 ]
