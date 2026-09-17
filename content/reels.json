@@ -428,7 +428,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#whatisreal"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 19,
@@ -2263,7 +2264,7 @@
     "day": 92,
     "title": "There's No One Behind Your Eyes",
     "kicker": "RERUN · 92",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2281,7 +2282,7 @@
       "#awakening",
       "#metaphysics"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 11
   },
@@ -2336,5 +2337,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 13
+  },
+  {
+    "day": 95,
+    "title": "You Might Be A Flicker In The Void",
+    "kicker": "RERUN · 95",
+    "palette": "ember",
+    "voice": "en-US-EricNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Boltzmann brains — a random fluctuation could produce a momentary self-aware mind with false memories of a whole life.",
+    "script": "In a vast enough universe, given enough time, random chance can assemble anything, even a fully formed brain, complete with memories of a life it never lived. Physicists take this seriously. Such a mind would flicker into existence, feel like it has a past, a name, a whole world, and then dissolve. Here is the disturbing part. By some counts, these accidental minds could vastly outnumber real ones. So how do you know your memories of this morning point to a real morning, and not to a brain that assembled itself one second ago, already remembering?",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "A random fluctuation could create a mind for one second — with a lifetime of fake memories.",
+    "hashtags": [
+      "#boltzmannbrain",
+      "#cosmology",
+      "#physics",
+      "#consciousness",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 18
   }
 ]
