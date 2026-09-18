@@ -628,5 +628,20 @@
     "hook": "You'd Be Outnumbered A Billion To One",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 89,
+    "renderedAt": "2026-09-18T17:50:28.825Z",
+    "style": "trend-v2",
+    "seconds": 17.28,
+    "targetSeconds": 16,
+    "beats": 5,
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "The Ego Is A Story You Keep Telling",
+    "vo": true,
+    "source": "recut"
   }
 ]
