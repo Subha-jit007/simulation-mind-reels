@@ -932,7 +932,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#existential"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 40,
@@ -2264,7 +2265,7 @@
     "day": 92,
     "title": "There's No One Behind Your Eyes",
     "kicker": "RERUN · 92",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2282,7 +2283,7 @@
       "#awakening",
       "#metaphysics"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 11
   },
@@ -2360,8 +2361,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 18
+  },
+  {
+    "day": 96,
+    "title": "What Survives You Isn't Your Atoms",
+    "kicker": "RERUN · 96",
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Pattern identity — if 'you' is the arrangement, not the material, then what continues is information, not substance.",
+    "script": "If someone you love died, but every atom, every memory, every pattern of them was perfectly preserved and continued, would they be gone? The atoms were never the point. They are replaced constantly while you are alive. What makes someone themselves is the pattern, the particular arrangement of information that runs on the matter. Which raises a strange possibility. If identity is pattern, not stuff, then what ends at death is not a substance. It is information. And information, unlike atoms, is the kind of thing that, in principle, could be copied, stored, or one day, continued. We just do not know how. Yet.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "If you are a pattern, not a substance, what really ends when you die?",
+    "hashtags": [
+      "#identity",
+      "#consciousness",
+      "#philosophy",
+      "#death",
+      "#patternidentity",
+      "#deepthoughts",
+      "#metaphysics",
+      "#existential"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 39
   }
 ]
