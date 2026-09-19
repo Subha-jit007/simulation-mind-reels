@@ -643,5 +643,20 @@
     "hook": "The Ego Is A Story You Keep Telling",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 90,
+    "renderedAt": "2026-09-19T17:25:52.246Z",
+    "style": "trend-v2",
+    "seconds": 12.02,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "When The AI Begs To Live",
+    "vo": true,
+    "source": "recut"
   }
 ]
