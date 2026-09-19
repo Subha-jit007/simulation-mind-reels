@@ -956,7 +956,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#time"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 41,
@@ -2265,7 +2266,7 @@
     "day": 92,
     "title": "There's No One Behind Your Eyes",
     "kicker": "RERUN · 92",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2283,7 +2284,7 @@
       "#awakening",
       "#metaphysics"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 11
   },
@@ -2369,7 +2370,7 @@
     "day": 96,
     "title": "What Survives You Isn't Your Atoms",
     "kicker": "RERUN · 96",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2387,8 +2388,34 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 39
+  },
+  {
+    "day": 97,
+    "title": "Would You Let Them Pause You?",
+    "kicker": "RERUN · 97",
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "If you could be paused for a century and resumed, would the resumed you be you — and would the gap even be felt?",
+    "script": "Imagine you could be paused, frozen completely, for a hundred years, then resumed. From your side, no time would pass at all. You would close your eyes and open them in the next century, unchanged. Did you survive? Or did one version of you stop, and a hundred years later, a copy continue? You cannot tell the difference, which is exactly the problem. And if a pause that long is survivable, what about a pause forever? At what gap does continuing become merely starting again? Identity, it turns out, has no clear edge. It only feels like it does because life never tests it.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Paused for 100 years, then resumed. Did you survive — or just restart?",
+    "hashtags": [
+      "#consciousness",
+      "#identity",
+      "#philosophy",
+      "#thoughtexperiment",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#time"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 40
   }
 ]
