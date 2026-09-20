@@ -658,5 +658,20 @@
     "hook": "When The AI Begs To Live",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 91,
+    "renderedAt": "2026-09-20T17:39:43.575Z",
+    "style": "trend-v2",
+    "seconds": 19.67,
+    "targetSeconds": 16,
+    "beats": 5,
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "The Teleporter Kills You Every Time",
+    "vo": true,
+    "source": "recut"
   }
 ]
