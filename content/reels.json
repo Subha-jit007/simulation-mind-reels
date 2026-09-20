@@ -1124,7 +1124,8 @@
       "#deepthoughts",
       "#metaphysics",
       "#existential"
-    ]
+    ],
+    "recutCount": 1
   },
   {
     "day": 48,
@@ -2266,7 +2267,7 @@
     "day": 92,
     "title": "There's No One Behind Your Eyes",
     "kicker": "RERUN · 92",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2284,7 +2285,7 @@
       "#awakening",
       "#metaphysics"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 11
   },
@@ -2370,7 +2371,7 @@
     "day": 96,
     "title": "What Survives You Isn't Your Atoms",
     "kicker": "RERUN · 96",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2388,7 +2389,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 39
   },
@@ -2417,5 +2418,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 40
+  },
+  {
+    "day": 98,
+    "title": "Are We In A Simulation Is The Wrong Question",
+    "kicker": "RERUN · 98",
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Since the answer changes nothing observable, the better question is what 'real' even means and why we crave the distinction.",
+    "script": "We keep asking, are we living in a simulation? But notice, the answer would change nothing. If the simulation is perfect, your life, your love, your pain, all of it stays exactly as real to you as it is right now. So maybe that is the wrong question. The better one is hiding underneath it. What did we mean by real in the first place? If a thing is consistent, and you can experience it, and it affects you, what more were you demanding for it to count? The simulation question, chased far enough, does not reveal the universe. It reveals how confused we are about reality itself.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "'Are we simulated?' changes nothing. The real question is what 'real' means.",
+    "hashtags": [
+      "#simulationtheory",
+      "#philosophy",
+      "#epistemology",
+      "#whatisreal",
+      "#consciousness",
+      "#deepthoughts",
+      "#metaphysics",
+      "#existential"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 47
   }
 ]
