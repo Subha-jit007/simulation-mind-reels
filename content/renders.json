@@ -673,5 +673,20 @@
     "hook": "The Teleporter Kills You Every Time",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 92,
+    "renderedAt": "2026-09-21T19:41:40.939Z",
+    "style": "trend-v2",
+    "seconds": 17.93,
+    "targetSeconds": 22,
+    "beats": 5,
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "There's No One Behind Your Eyes",
+    "vo": true,
+    "source": "recut"
   }
 ]
