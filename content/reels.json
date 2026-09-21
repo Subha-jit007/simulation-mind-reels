@@ -1149,7 +1149,8 @@
       "#mindfulness",
       "#metaphysics"
     ],
-    "targetSeconds": 13
+    "targetSeconds": 13,
+    "recutCount": 1
   },
   {
     "day": 49,
@@ -2371,7 +2372,7 @@
     "day": 96,
     "title": "What Survives You Isn't Your Atoms",
     "kicker": "RERUN · 96",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2389,7 +2390,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 39
   },
@@ -2441,8 +2442,34 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 47
+  },
+  {
+    "day": 99,
+    "title": "The Watcher That Never Changes",
+    "kicker": "RERUN · 99",
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Thoughts, moods and bodies change constantly, yet the bare awareness witnessing them feels strangely constant your whole life.",
+    "script": "Your body has changed completely since childhood. Your beliefs, your moods, your memories, all different. Almost nothing about you has stayed the same. Except one thing. The bare sense of being aware, of someone being home behind it all, feels strangely unchanged, the same quiet watcher that was there when you were five. Everything you can notice about yourself is content, passing through. But the awareness that notices, the witness, never seems to age or move. Some traditions say that is the only part of you that was ever truly you. Not the story. The space the story appears in.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "Everything about you has changed. The awareness watching it hasn't.",
+    "hashtags": [
+      "#awareness",
+      "#consciousness",
+      "#nonduality",
+      "#philosophy",
+      "#awakening",
+      "#deepthoughts",
+      "#mindfulness",
+      "#metaphysics"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 48
   }
 ]
