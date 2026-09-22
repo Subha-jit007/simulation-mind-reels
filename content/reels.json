@@ -1222,7 +1222,8 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 16
+    "targetSeconds": 16,
+    "recutCount": 1
   },
   {
     "day": 52,
@@ -2372,7 +2373,7 @@
     "day": 96,
     "title": "What Survives You Isn't Your Atoms",
     "kicker": "RERUN · 96",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2390,7 +2391,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 39
   },
@@ -2468,8 +2469,34 @@
       "#mindfulness",
       "#metaphysics"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 48
+  },
+  {
+    "day": 100,
+    "title": "Even If It's A Dream, It's Where You Live",
+    "kicker": "RERUN · 100",
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-5%",
+    "pitch": "-3Hz",
+    "idea": "The finale: simulation, dream or base reality — this is the only world you can touch, and that is exactly what makes it matter.",
+    "script": "So maybe it is a simulation. Maybe it is a dream. Maybe it is base reality, whatever that even means. After everything, here is what does not change. This is the only world you can reach. The only one where the coffee is warm, where someone's hand fits yours, where the light comes through the window in the morning. Chasing whether it is really real can quietly steal the one thing that was always real to you, the experience itself. The substrate was never the point. You are here. It is vivid. It is brief. So stop trying to wake up from it, and start actually living in it.",
+    "cta": "You made it to the end. Now go live like it's real.",
+    "caption": "Simulation, dream, or base reality — it's the only world you'll ever touch. So touch it. 🌌",
+    "hashtags": [
+      "#simulationtheory",
+      "#consciousness",
+      "#philosophy",
+      "#existential",
+      "#awakening",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 51
   }
 ]
