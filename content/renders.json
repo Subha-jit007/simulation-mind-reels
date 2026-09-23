@@ -703,5 +703,20 @@
     "hook": "Free Will Might Be A User Illusion",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 94,
+    "renderedAt": "2026-09-23T18:35:09.223Z",
+    "style": "trend-v2",
+    "seconds": 14.84,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "You're Not Who Started This Sentence",
+    "vo": true,
+    "source": "recut"
   }
 ]
