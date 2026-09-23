@@ -1,6 +1,6 @@
-# 🤖 Growth Agent — 2026-09-22
+# 🤖 Growth Agent — 2026-09-23
 
-**@__.advaita_** · **31 followers** (+0 since last check) · 94 posts
+**@__.advaita_** · **30 followers** (-1 since last check) · 95 posts
 
 **Optimising on:** `retention`
 
@@ -26,25 +26,25 @@
 | palette | posts | retention |
 |---|---|---|
 | signal | 34 | 53.09 |
-| void | 35 | 52.54 |
+| void | 36 | 51.33 |
 | ember | 24 | 47.76 |
 
 ### Voice
-⏳ Still exploring — en-US-GuyNeural is ahead but inside the noise (t=0.96, need 2)
+⏳ Still exploring — en-US-GuyNeural is ahead but inside the noise (t=1.17, need 2)
 
 | voice | posts | retention |
 |---|---|---|
 | en-US-GuyNeural | 15 | 79.01 |
-| en-GB-ThomasNeural | 12 | 55.44 |
+| en-GB-ThomasNeural | 13 | 51.17 |
 | en-US-SteffanNeural | 12 | 46.25 |
 | en-US-RogerNeural | 13 | 44.63 |
+| en-US-AndrewNeural | 12 | 44.54 |
 | en-US-EricNeural | 14 | 44.14 |
 | en-GB-RyanNeural | 15 | 44.08 |
-| en-US-AndrewNeural | 12 | 43.79 |
 
 ## What it changed for upcoming reels
-- day 96: 22s · ember · en-US-AndrewNeural  (explore)
-- day 99: 16s · void · en-US-EricNeural
+- day 96: 17s · signal · en-US-AndrewNeural  (explore)
+- day 100: 13s · void · en-US-AndrewNeural  (explore)
 
 ## 💰 Paid-promo readiness
 - 🎯 **Under 1k** — growth phase. Saves and shares are the levers, not likes.

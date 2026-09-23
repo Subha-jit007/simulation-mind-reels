@@ -1198,7 +1198,8 @@
       "#metaphysics",
       "#simulationtheory"
     ],
-    "targetSeconds": 16
+    "targetSeconds": 16,
+    "recutCount": 1
   },
   {
     "day": 51,
@@ -2373,7 +2374,7 @@
     "day": 96,
     "title": "What Survives You Isn't Your Atoms",
     "kicker": "RERUN · 96",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2391,7 +2392,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 39
   },
@@ -2477,7 +2478,7 @@
     "day": 100,
     "title": "Even If It's A Dream, It's Where You Live",
     "kicker": "RERUN · 100",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-5%",
     "pitch": "-3Hz",
@@ -2495,8 +2496,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 16,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 51
+  },
+  {
+    "day": 101,
+    "title": "The Question That Has No Outside",
+    "kicker": "RERUN · 101",
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Every ultimate question — why is there something, what is consciousness, is this real — shares one wall: we are inside the thing we're asking about.",
+    "script": "Why is there something rather than nothing? What is consciousness? Is any of this real? They feel like different questions, but they share one wall. To answer any of them, you would have to get outside the thing you are asking about, outside existence, outside your own mind, outside reality, and look at it from beyond. But there is no beyond available to you. You are always inside the system you are trying to explain. That is not a temporary limit science will fix. It may be the permanent shape of being a mind. The deepest questions are not unanswered. They are asked from a place with no door to the outside.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Every deepest question hits the same wall: we're inside what we're asking about.",
+    "hashtags": [
+      "#philosophy",
+      "#consciousness",
+      "#existential",
+      "#epistemology",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#simulationtheory"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 50
   }
 ]
