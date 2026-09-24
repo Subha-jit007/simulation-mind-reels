@@ -718,5 +718,20 @@
     "hook": "You're Not Who Started This Sentence",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 95,
+    "renderedAt": "2026-09-24T18:34:45.532Z",
+    "style": "trend-v2",
+    "seconds": 15.66,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "ember",
+    "voice": "en-US-EricNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "You Might Be A Flicker In The Void",
+    "vo": true,
+    "source": "recut"
   }
 ]
