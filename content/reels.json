@@ -1174,7 +1174,8 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 16
+    "targetSeconds": 16,
+    "recutCount": 1
   },
   {
     "day": 50,
@@ -2374,7 +2375,7 @@
     "day": 96,
     "title": "What Survives You Isn't Your Atoms",
     "kicker": "RERUN · 96",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2392,7 +2393,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 39
   },
@@ -2478,7 +2479,7 @@
     "day": 100,
     "title": "Even If It's A Dream, It's Where You Live",
     "kicker": "RERUN · 100",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-5%",
     "pitch": "-3Hz",
@@ -2496,7 +2497,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 51
   },
@@ -2522,8 +2523,34 @@
       "#metaphysics",
       "#simulationtheory"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 50
+  },
+  {
+    "day": 102,
+    "title": "The Agents Don't Know They're Simulated",
+    "kicker": "RERUN · 102",
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "AI agents in a virtual world have no way to detect their world is virtual — and neither, by the same logic, would we.",
+    "script": "In a simulated world, the characters have no way of knowing. To them, their physics is just physics, their sky is just sky. Nothing inside the program can point beyond it, because everything they could use to check is also part of the program. We can see this clearly when we build little simulated worlds of our own. The agents inside are perfectly, permanently unaware. Now turn that around. If a simulated mind could never detect its own simulation, then your inability to detect one proves absolutely nothing. The view looks exactly the same from inside a real world, and inside a perfect fake.",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "The AI in the sim can't tell it's in a sim. By what logic could you?",
+    "hashtags": [
+      "#simulationtheory",
+      "#ai",
+      "#aiagents",
+      "#consciousness",
+      "#philosophy",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 49
   }
 ]
