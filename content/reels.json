@@ -453,7 +453,7 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 20,
@@ -2479,7 +2479,7 @@
     "day": 100,
     "title": "Even If It's A Dream, It's Where You Live",
     "kicker": "RERUN · 100",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-5%",
     "pitch": "-3Hz",
@@ -2497,7 +2497,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 51
   },
@@ -2549,8 +2549,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 49
+  },
+  {
+    "day": 103,
+    "title": "The Map Is Not The Territory",
+    "kicker": "RERUN · 103",
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Your brain never touches reality directly — it lives inside a model of the world, and mistakes the model for the thing.",
+    "script": "You feel like you are in direct contact with the world. You are not. Light and sound hit your senses, and your brain builds a model, a fast, useful, internal map. Then you live inside the map and call it reality. The color you see is not out there. The solidity you feel is mostly empty space. You have never once touched the world directly. You have only ever known your brain's rendering of it. Most of the time the map is good enough to survive on. But never mistake the map for the territory. You have never seen the territory at all.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "You've never touched reality. Only your brain's model of it.",
+    "hashtags": [
+      "#perception",
+      "#consciousness",
+      "#philosophy",
+      "#neuroscience",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#epistemology"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 19
   }
 ]
