@@ -748,5 +748,20 @@
     "hook": "What Survives You Isn't Your Atoms",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 97,
+    "renderedAt": "2026-09-26T17:54:35.574Z",
+    "style": "trend-v2",
+    "seconds": 12.38,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Would You Let Them Pause You?",
+    "vo": true,
+    "source": "recut"
   }
 ]
