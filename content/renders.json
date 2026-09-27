@@ -763,5 +763,20 @@
     "hook": "Would You Let Them Pause You?",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 98,
+    "renderedAt": "2026-09-27T18:36:57.973Z",
+    "style": "trend-v2",
+    "seconds": 16.33,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Are We In A Simulation Is The Wrong Question",
+    "vo": true,
+    "source": "recut"
   }
 ]
