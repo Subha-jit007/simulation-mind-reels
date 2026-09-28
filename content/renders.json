@@ -778,5 +778,20 @@
     "hook": "Are We In A Simulation Is The Wrong Question",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 99,
+    "renderedAt": "2026-09-28T20:41:06.876Z",
+    "style": "trend-v2",
+    "seconds": 17.13,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "The Watcher That Never Changes",
+    "vo": true,
+    "source": "recut"
   }
 ]
