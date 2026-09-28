@@ -525,7 +525,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 23,
@@ -2479,7 +2479,7 @@
     "day": 100,
     "title": "Even If It's A Dream, It's Where You Live",
     "kicker": "RERUN · 100",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-5%",
     "pitch": "-3Hz",
@@ -2497,7 +2497,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 51
   },
@@ -2583,7 +2583,7 @@
     "day": 104,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 104",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2601,7 +2601,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 4
   },
@@ -2627,8 +2627,34 @@
       "#metaphysics",
       "#cosmos"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 29
+  },
+  {
+    "day": 106,
+    "title": "You Live A Fraction Of A Second In The Past",
+    "kicker": "RERUN · 106",
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Neural processing delay means the 'now' you experience already happened; consciousness is a slightly delayed broadcast.",
+    "script": "It takes time for signals to travel from your senses to your brain and become experience. By the time you consciously see something, it has already happened. The now you feel is a reconstruction, assembled slightly late and presented as live. Your brain even edits the timing so everything seems to line up, hiding the delay from you. You are never actually in the present moment. You are always watching a recording of a world that has already moved on. Reality is live. Your experience of it is on tape, a heartbeat behind, forever.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "The present you feel is already the past. Your brain is buffering.",
+    "hashtags": [
+      "#perception",
+      "#neuroscience",
+      "#consciousness",
+      "#time",
+      "#philosophy",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 22
   }
 ]
