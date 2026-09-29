@@ -793,5 +793,20 @@
     "hook": "The Watcher That Never Changes",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 100,
+    "renderedAt": "2026-09-29T19:34:38.310Z",
+    "style": "trend-v2",
+    "seconds": 10.28,
+    "targetSeconds": 17,
+    "beats": 3,
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-5%",
+    "pitch": "-3Hz",
+    "hook": "Even If It's A Dream, It's Where You Live",
+    "vo": true,
+    "source": "recut"
   }
 ]
