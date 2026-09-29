@@ -21,7 +21,7 @@
       "#thematrix",
       "#metaphysics"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 2,
@@ -2583,7 +2583,7 @@
     "day": 104,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 104",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2601,7 +2601,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 4
   },
@@ -2656,5 +2656,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 22
+  },
+  {
+    "day": 107,
+    "title": "You Will Never Find The Exit",
+    "kicker": "RERUN · 107",
+    "palette": "ember",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-6Hz",
+    "idea": "The structural impossibility of detecting a simulation from inside — and why it doesn't make the experience less real.",
+    "script": "If we live in a simulation, you will never find the exit. Every test you run is part of the program. The ruler that measures the wall is made of the same code as the wall. The cage is not locked — it has no door at all. But here is what changes everything. If this is the only reality you can reach, and it stays consistent, then the pain still hurts. The love still lands. The substrate never cheapened a single moment of it.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "You can't escape a simulation from the inside. But maybe that was never the point. 🌌",
+    "hashtags": [
+      "#simulationtheory",
+      "#consciousness",
+      "#philosophy",
+      "#existential",
+      "#whatisreal",
+      "#deepthoughts",
+      "#thematrix",
+      "#metaphysics"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 1
   }
 ]

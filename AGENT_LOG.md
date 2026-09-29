@@ -1,15 +1,15 @@
-# 🤖 Growth Agent — 2026-09-28
+# 🤖 Growth Agent — 2026-09-29
 
-**@__.advaita_** · **30 followers** (+1 since last check) · 100 posts
+**@__.advaita_** · **30 followers** (+0 since last check) · 101 posts
 
 **Optimising on:** `retention`
 
 ## Best reels
-1. **Day 1 — You Will Never Find The Exit** · 192 views
-2. **Day 27 — Pain Is Data. Suffering Is The Story.** · 191 views
-3. **Day 28 — You Are The Ship Of Theseus** · 166 views
-4. **Day 19 — The Map Is Not The Territory** · 163 views
-5. **Day 24 — The Self Is A Verb** · 153 views
+1. **Day 27 — Pain Is Data. Suffering Is The Story.** · 191 views
+2. **Day 28 — You Are The Ship Of Theseus** · 166 views
+3. **Day 19 — The Map Is Not The Territory** · 163 views
+4. **Day 24 — The Self Is A Verb** · 153 views
+5. **Day 22 — You Live A Fraction Of A Second In The Past** · 150 views
 
 ## What the data supports
 ### Length
@@ -17,35 +17,33 @@
 
 | length | posts | retention |
 |---|---|---|
-| 15-20s | 5 | 0.29 |
-| 12-14s | 2 | 0.13 |
+| 12-14s | 2 | 0.39 |
+| 15-20s | 6 | 0.24 |
 
 ### Palette
-⏳ Still exploring — too close to call (signal vs void)
+⏳ Still exploring — signal is ahead but inside the noise (t=0.88, need 2)
 
 | palette | posts | retention |
 |---|---|---|
 | signal | 35 | 54.86 |
-| void | 39 | 48.26 |
-| ember | 25 | 46.13 |
+| void | 38 | 44.52 |
+| ember | 26 | 44.36 |
 
 ### Voice
-⏳ Still exploring — en-US-GuyNeural is ahead but inside the noise (t=1.40, need 2)
+⏳ Still exploring — en-US-GuyNeural is ahead but inside the noise (t=1.06, need 2)
 
 | voice | posts | retention |
 |---|---|---|
-| en-US-GuyNeural | 15 | 79.01 |
+| en-US-GuyNeural | 14 | 70.94 |
 | en-US-SteffanNeural | 14 | 49.00 |
-| en-GB-ThomasNeural | 14 | 48.80 |
+| en-GB-ThomasNeural | 14 | 48.84 |
 | en-US-RogerNeural | 13 | 44.63 |
-| en-US-EricNeural | 14 | 44.14 |
-| en-GB-RyanNeural | 15 | 44.08 |
+| en-US-EricNeural | 14 | 44.21 |
+| en-GB-RyanNeural | 16 | 41.33 |
 | en-US-AndrewNeural | 14 | 38.70 |
 
 ## What it changed for upcoming reels
-- day 100: 17s · signal · en-US-AndrewNeural  (explore)
-- day 104: 13s · void · en-US-AndrewNeural  (explore)
-- day 105: 16s · void · en-GB-ThomasNeural
+- day 104: 22s · ember · en-US-AndrewNeural  (explore)
 
 ## 💰 Paid-promo readiness
 - 🎯 **Under 1k** — growth phase. Saves and shares are the levers, not likes.
