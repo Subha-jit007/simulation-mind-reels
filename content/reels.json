@@ -645,7 +645,7 @@
       "#awakening",
       "#psychology"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 28,
@@ -2583,7 +2583,7 @@
     "day": 104,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 104",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2601,7 +2601,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 4
   },
@@ -2679,8 +2679,34 @@
       "#thematrix",
       "#metaphysics"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 1
+  },
+  {
+    "day": 108,
+    "title": "Pain Is Data. Suffering Is The Story.",
+    "kicker": "RERUN · 108",
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Pain is raw signal; suffering is the narrative the self wraps around it — separating the two changes everything.",
+    "script": "Pain is a signal. A nerve fires, your brain registers damage, and that is information, raw and useful. But suffering is something extra. It is the story you wrap around the pain. This should not be happening. It will never end. Why me. The sensation arrives on its own. The narrative is added. And the strange thing is, most of what hurts in a life lives in the narrative, not the sensation. You cannot always stop the signal. But the story, the part that turns pain into suffering, was written by you. Which means, sometimes, it can be written differently.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "Pain is the signal. Suffering is the story you tell about it.",
+    "hashtags": [
+      "#suffering",
+      "#consciousness",
+      "#philosophy",
+      "#mindfulness",
+      "#stoicism",
+      "#deepthoughts",
+      "#awakening",
+      "#psychology"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 27
   }
 ]
