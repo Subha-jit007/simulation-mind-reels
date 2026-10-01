@@ -669,7 +669,7 @@
       "#metaphysics",
       "#paradox"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 29,
@@ -2583,7 +2583,7 @@
     "day": 104,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 104",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2601,7 +2601,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 4
   },
@@ -2687,7 +2687,7 @@
     "day": 108,
     "title": "Pain Is Data. Suffering Is The Story.",
     "kicker": "RERUN · 108",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2705,8 +2705,34 @@
       "#awakening",
       "#psychology"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 27
+  },
+  {
+    "day": 109,
+    "title": "You Are The Ship Of Theseus",
+    "kicker": "RERUN · 109",
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Every atom in you is replaced over years — so what makes you the same person is pattern, not material.",
+    "script": "There is an old puzzle. A ship has every plank replaced, one by one, until none of the original remains. Is it still the same ship? Now look at yourself. Almost every atom in your body has been swapped out over the years. The matter that made you a child is long gone. So what makes you the same person? Not the material. It is the pattern, the arrangement, the continuity of the shape, not the stuff. You are not a substance that persists. You are a pattern that the universe keeps rebuilding out of whatever atoms are passing through.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "Almost every atom in you has been replaced. What stayed 'you'?",
+    "hashtags": [
+      "#shipoftheseus",
+      "#identity",
+      "#philosophy",
+      "#consciousness",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#paradox"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 28
   }
 ]
