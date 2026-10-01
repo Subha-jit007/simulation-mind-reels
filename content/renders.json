@@ -823,5 +823,20 @@
     "hook": "The Question That Has No Outside",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 102,
+    "renderedAt": "2026-10-01T19:41:39.773Z",
+    "style": "trend-v2",
+    "seconds": 17.04,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "The Agents Don't Know They're Simulated",
+    "vo": true,
+    "source": "recut"
   }
 ]
