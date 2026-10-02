@@ -838,5 +838,20 @@
     "hook": "The Agents Don't Know They're Simulated",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 103,
+    "renderedAt": "2026-10-02T19:27:23.028Z",
+    "style": "trend-v2",
+    "seconds": 16.38,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "The Map Is Not The Territory",
+    "vo": true,
+    "source": "recut"
   }
 ]
