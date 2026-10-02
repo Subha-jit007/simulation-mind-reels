@@ -501,7 +501,7 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 22,
@@ -2583,7 +2583,7 @@
     "day": 104,
     "title": "One Of These Three Is True",
     "kicker": "RERUN · 104",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-7%",
     "pitch": "-6Hz",
@@ -2601,7 +2601,7 @@
       "#metaphysics",
       "#mindblown"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 4
   },
@@ -2687,7 +2687,7 @@
     "day": 108,
     "title": "Pain Is Data. Suffering Is The Story.",
     "kicker": "RERUN · 108",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2705,7 +2705,7 @@
       "#awakening",
       "#psychology"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 27
   },
@@ -2734,5 +2734,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 28
+  },
+  {
+    "day": 110,
+    "title": "You Can't Prove Anyone Else Is Real",
+    "kicker": "RERUN · 110",
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Solipsism — the only consciousness you can directly verify is your own; everyone else is an inference.",
+    "script": "Here is a thought you cannot fully escape. The only consciousness you have ever directly experienced is your own. Everyone else, you infer. You see bodies move and faces react, and you assume there is an inner life behind them, like yours. But you can never step inside another mind to check. For all the proof you can ever truly get, you are the single point of awareness in a world of convincing appearances. Almost certainly that is not true. But notice you cannot actually disprove it. That quiet, unprovable aloneness sits underneath every connection you will ever have.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "The only mind you can ever prove exists is your own.",
+    "hashtags": [
+      "#solipsism",
+      "#consciousness",
+      "#philosophy",
+      "#existential",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#epistemology"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 21
   }
 ]
