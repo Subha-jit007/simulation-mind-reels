@@ -909,7 +909,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 39,
@@ -2687,7 +2687,7 @@
     "day": 108,
     "title": "Pain Is Data. Suffering Is The Story.",
     "kicker": "RERUN · 108",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2705,7 +2705,7 @@
       "#awakening",
       "#psychology"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 27
   },
@@ -2757,8 +2757,34 @@
       "#metaphysics",
       "#epistemology"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 21
+  },
+  {
+    "day": 111,
+    "title": "The Loneliest Fact In Philosophy",
+    "kicker": "RERUN · 111",
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "You are sealed inside the one consciousness you can verify, forever inferring the inner lives of everyone else.",
+    "script": "You will spend your entire life beside other minds and never enter a single one. You will love people, know them deeply, finish their sentences, and still only ever experience your own awareness, never theirs. Every connection is two sealed rooms, passing signals under the door, inferring the life on the other side. We are together, constantly, and fundamentally alone in the one place that matters most, the inside. It sounds tragic. But maybe it is why connection feels so precious. We reach across a gap that can never fully close, and somehow, often, that reaching is enough.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "You'll spend your whole life unable to truly enter another mind.",
+    "hashtags": [
+      "#solipsism",
+      "#consciousness",
+      "#philosophy",
+      "#existential",
+      "#loneliness",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 38
   }
 ]
