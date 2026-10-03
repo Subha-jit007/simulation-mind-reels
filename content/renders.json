@@ -853,5 +853,20 @@
     "hook": "The Map Is Not The Territory",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 104,
+    "renderedAt": "2026-10-03T18:07:52.742Z",
+    "style": "trend-v2",
+    "seconds": 17.56,
+    "targetSeconds": 22,
+    "beats": 5,
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "One Of These Three Is True",
+    "vo": true,
+    "source": "recut"
   }
 ]
