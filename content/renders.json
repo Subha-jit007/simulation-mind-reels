@@ -868,5 +868,20 @@
     "hook": "One Of These Three Is True",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 105,
+    "renderedAt": "2026-10-04T18:17:16.480Z",
+    "style": "trend-v2",
+    "seconds": 18,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "The Universe Is Suspiciously Mathematical",
+    "vo": true,
+    "source": "recut"
   }
 ]
