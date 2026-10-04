@@ -141,7 +141,7 @@
       "#metaphysics",
       "#quantum"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 7,
@@ -2687,7 +2687,7 @@
     "day": 108,
     "title": "Pain Is Data. Suffering Is The Story.",
     "kicker": "RERUN · 108",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2705,7 +2705,7 @@
       "#awakening",
       "#psychology"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 27
   },
@@ -2783,8 +2783,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 38
+  },
+  {
+    "day": 112,
+    "title": "Maybe It's Bits, Not Atoms",
+    "kicker": "RERUN · 112",
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "Universe-as-computation: particles behave like information; the line between physical and computational is thinner than it seems.",
+    "script": "Strip the universe down and something strange is left. Particles behave like information. Every interaction looks like a calculation. The same mathematics that runs inside your computer seems to run underneath reality itself. Some physicists now ask, seriously, whether existence is less like a substance and more like a program. Bits, not atoms, all the way down. It doesn't prove we are simulated. But it means the line between the physical and the computational is far thinner than your eyes will ever let you believe.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "What if reality runs on information, not matter? 0 and 1, all the way down.",
+    "hashtags": [
+      "#simulationtheory",
+      "#physics",
+      "#information",
+      "#philosophy",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics",
+      "#quantum"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 6
   }
 ]
