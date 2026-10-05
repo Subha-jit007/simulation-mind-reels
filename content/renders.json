@@ -883,5 +883,20 @@
     "hook": "The Universe Is Suspiciously Mathematical",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 106,
+    "renderedAt": "2026-10-05T21:35:01.551Z",
+    "style": "trend-v2",
+    "seconds": 14.34,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "You Live A Fraction Of A Second In The Past",
+    "vo": true,
+    "source": "recut"
   }
 ]
