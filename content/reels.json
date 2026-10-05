@@ -45,7 +45,7 @@
       "#deepthoughts",
       "#aiconsciousness"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 3,
@@ -2687,7 +2687,7 @@
     "day": 108,
     "title": "Pain Is Data. Suffering Is The Story.",
     "kicker": "RERUN · 108",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2705,7 +2705,7 @@
       "#awakening",
       "#psychology"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 27
   },
@@ -2791,7 +2791,7 @@
     "day": 112,
     "title": "Maybe It's Bits, Not Atoms",
     "kicker": "RERUN · 112",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2809,8 +2809,34 @@
       "#metaphysics",
       "#quantum"
     ],
-    "targetSeconds": 16,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 6
+  },
+  {
+    "day": 113,
+    "title": "The Upload Isn't You",
+    "kicker": "RERUN · 113",
+    "palette": "ember",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-7%",
+    "pitch": "-5Hz",
+    "idea": "The copy problem: a perfect brain upload is a successor that thinks it's you, not a transfer of you.",
+    "script": "They say one day you'll upload your mind and live forever. But picture the machine that scans your brain, copies every neuron, and switches on. That copy wakes up certain it is you. It has your memories, your voice, your fear of dying. And meanwhile, you are still standing there. Or you died in the scan. Nothing transferred. You didn't become immortal. You built a stranger who inherits your life and your name. The upload isn't you. It's a successor who only thinks it is.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "Immortality through uploading? The copy lives. You don't. 🧠",
+    "hashtags": [
+      "#consciousness",
+      "#transhumanism",
+      "#philosophyofmind",
+      "#simulationtheory",
+      "#mindupload",
+      "#existential",
+      "#deepthoughts",
+      "#aiconsciousness"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 2
   }
 ]
