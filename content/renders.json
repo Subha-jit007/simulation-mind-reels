@@ -898,5 +898,20 @@
     "hook": "You Live A Fraction Of A Second In The Past",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 107,
+    "renderedAt": "2026-10-06T19:46:31.119Z",
+    "style": "trend-v2",
+    "seconds": 15.57,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "ember",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-6Hz",
+    "hook": "You Will Never Find The Exit",
+    "vo": true,
+    "source": "recut"
   }
 ]
