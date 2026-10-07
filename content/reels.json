@@ -885,7 +885,7 @@
       "#metaphysics",
       "#awakening"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 38,
@@ -2791,7 +2791,7 @@
     "day": 112,
     "title": "Maybe It's Bits, Not Atoms",
     "kicker": "RERUN · 112",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2809,7 +2809,7 @@
       "#metaphysics",
       "#quantum"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 6
   },
@@ -2861,8 +2861,34 @@
       "#mindfulness",
       "#metaphysics"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 24
+  },
+  {
+    "day": 115,
+    "title": "Meaning Isn't Found. It's Assigned.",
+    "kicker": "RERUN · 115",
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "The universe ships without built-in meaning; meaning is something minds add — which makes you its source, not its seeker.",
+    "script": "People search the universe for meaning, as if it is hidden out there, waiting to be discovered. But the universe is silent. It ships with no built-in purpose, no label explaining what any of it is for. That sounds bleak, until you flip it. Meaning was never out there to find. It is something minds create and assign. The love you feel, the things you care about, the significance of a life, those are real, and they are authored, by you. You are not a seeker of meaning in a meaningful world. You are a source of it, in a blank one.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "You won't find meaning out there. You're the one who assigns it.",
+    "hashtags": [
+      "#meaning",
+      "#existential",
+      "#philosophy",
+      "#nihilism",
+      "#consciousness",
+      "#deepthoughts",
+      "#metaphysics",
+      "#awakening"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 37
   }
 ]
