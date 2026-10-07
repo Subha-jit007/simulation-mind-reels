@@ -913,5 +913,20 @@
     "hook": "You Will Never Find The Exit",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 108,
+    "renderedAt": "2026-10-07T20:04:31.744Z",
+    "style": "trend-v2",
+    "seconds": 12.49,
+    "targetSeconds": 13,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "Pain Is Data. Suffering Is The Story.",
+    "vo": true,
+    "source": "recut"
   }
 ]
