@@ -928,5 +928,20 @@
     "hook": "Pain Is Data. Suffering Is The Story.",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 109,
+    "renderedAt": "2026-10-08T20:04:02.969Z",
+    "style": "trend-v2",
+    "seconds": 14.04,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "You Are The Ship Of Theseus",
+    "vo": true,
+    "source": "recut"
   }
 ]
