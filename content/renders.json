@@ -943,5 +943,20 @@
     "hook": "You Are The Ship Of Theseus",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 110,
+    "renderedAt": "2026-10-09T19:37:48.254Z",
+    "style": "trend-v2",
+    "seconds": 16.33,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "You Can't Prove Anyone Else Is Real",
+    "vo": true,
+    "source": "recut"
   }
 ]
