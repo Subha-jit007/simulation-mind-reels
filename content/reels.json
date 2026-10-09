@@ -165,7 +165,7 @@
       "#deepthoughts",
       "#future"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 8,
@@ -2791,7 +2791,7 @@
     "day": 112,
     "title": "Maybe It's Bits, Not Atoms",
     "kicker": "RERUN · 112",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2809,7 +2809,7 @@
       "#metaphysics",
       "#quantum"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 6
   },
@@ -2895,7 +2895,7 @@
     "day": 116,
     "title": "Time Might Already Be Frozen",
     "kicker": "RERUN · 116",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -2913,8 +2913,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 44
+  },
+  {
+    "day": 117,
+    "title": "The Party No One Planned",
+    "kicker": "RERUN · 117",
+    "palette": "void",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Stanford's Generative Agents — 25 AI characters that built culture nobody scripted; what that implies about the rules running our world.",
+    "script": "In twenty twenty three, researchers dropped twenty-five AI characters into a tiny virtual town. Nobody scripted their lives. They woke up, made coffee, went to work, gossiped. Then one of them decided to throw a Valentine's party, and invited the others, who showed up, remembered it, and talked about it afterward. No human wrote that plan. It emerged on its own. Now sit with the question that follows. If a town of code can grow a culture nobody designed, how sure are you that whatever runs your world knew what it was about to create?",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "25 AI agents threw a party no human planned. Emergence is real. 🎭",
+    "hashtags": [
+      "#ai",
+      "#emergence",
+      "#simulationtheory",
+      "#consciousness",
+      "#aiagents",
+      "#philosophy",
+      "#deepthoughts",
+      "#future"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 7
   }
 ]
