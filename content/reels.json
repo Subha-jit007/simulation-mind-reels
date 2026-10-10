@@ -261,7 +261,7 @@
       "#awakening",
       "#metaphysics"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 12,
@@ -2791,7 +2791,7 @@
     "day": 112,
     "title": "Maybe It's Bits, Not Atoms",
     "kicker": "RERUN · 112",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -2809,7 +2809,7 @@
       "#metaphysics",
       "#quantum"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 6
   },
@@ -2895,7 +2895,7 @@
     "day": 116,
     "title": "Time Might Already Be Frozen",
     "kicker": "RERUN · 116",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -2913,7 +2913,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 44
   },
@@ -2939,8 +2939,34 @@
       "#deepthoughts",
       "#future"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 7
+  },
+  {
+    "day": 118,
+    "title": "There's No One Behind Your Eyes",
+    "kicker": "RERUN · 118",
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "The homunculus fallacy — there is no little watcher inside the brain receiving the picture; the search for the observer dissolves it.",
+    "script": "When you see, it feels like there is a little you inside your head, watching the picture come in. But if there were, who is watching the picture inside their head? And inside theirs? It cannot be little watchers all the way down. There is no screen, and no one sitting in front of it. The seeing is just happening, with no separate seer added on top. The I that seems to be receiving your life is not a thing in there. It is the experience itself, pretending it has an owner.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Look for the watcher behind your eyes. There's no one there.",
+    "hashtags": [
+      "#consciousness",
+      "#philosophyofmind",
+      "#ego",
+      "#neuroscience",
+      "#selfinquiry",
+      "#deepthoughts",
+      "#awakening",
+      "#metaphysics"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 11
   }
 ]
