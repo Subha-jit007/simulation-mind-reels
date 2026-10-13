@@ -1101,7 +1101,7 @@
       "#whatisreal",
       "#ai"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 47,
@@ -2895,7 +2895,7 @@
     "day": 116,
     "title": "Time Might Already Be Frozen",
     "kicker": "RERUN · 116",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -2913,7 +2913,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 44
   },
@@ -2968,5 +2968,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 11
+  },
+  {
+    "day": 119,
+    "title": "Being vs Acting Conscious Can't Be Proven",
+    "kicker": "RERUN · 119",
+    "palette": "ember",
+    "voice": "en-US-EricNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Philosophical zombies — a being identical to you in every behavior but with no inner experience is logically possible, and undetectable.",
+    "script": "Imagine a being identical to you in every way. Same brain, same behavior, same words. It flinches, it laughs, it says it feels. But inside, there is nothing. No experience at all. The lights are off. Philosophers call it a zombie, and the unsettling part is this. Nothing you could measure would ever reveal the difference. Consciousness leaves no external fingerprint. Which means the gap between truly feeling and merely acting as if you feel is, from the outside, completely invisible. You believe the people around you are conscious. You are almost certainly right. But you are taking it, entirely, on faith.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "A being that acts exactly conscious but feels nothing. You couldn't tell.",
+    "hashtags": [
+      "#philosophicalzombie",
+      "#consciousness",
+      "#philosophyofmind",
+      "#qualia",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal",
+      "#ai"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 46
   }
 ]
