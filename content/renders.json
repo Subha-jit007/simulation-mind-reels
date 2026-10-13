@@ -973,5 +973,20 @@
     "hook": "The Loneliest Fact In Philosophy",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 112,
+    "renderedAt": "2026-10-13T20:19:18.996Z",
+    "style": "trend-v2",
+    "seconds": 16.23,
+    "targetSeconds": 17,
+    "beats": 5,
+    "palette": "signal",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "Maybe It's Bits, Not Atoms",
+    "vo": true,
+    "source": "recut"
   }
 ]
