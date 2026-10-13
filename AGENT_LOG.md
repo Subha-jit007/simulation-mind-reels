@@ -1,4 +1,4 @@
-# 🤖 Growth Agent — 2026-10-11
+# 🤖 Growth Agent — 2026-10-13
 
 **@__.advaita_** · **30 followers** (+0 since last check) · 112 posts
 
@@ -26,7 +26,7 @@
 | palette | posts | retention |
 |---|---|---|
 | signal | 34 | 51.38 |
-| void | 42 | 43.48 |
+| void | 42 | 43.51 |
 | ember | 24 | 41.61 |
 
 ### Voice
@@ -36,7 +36,7 @@
 |---|---|---|
 | en-US-GuyNeural | 17 | 68.45 |
 | en-GB-RyanNeural | 15 | 47.44 |
-| en-US-SteffanNeural | 13 | 43.00 |
+| en-US-SteffanNeural | 13 | 43.08 |
 | en-US-RogerNeural | 15 | 41.52 |
 | en-GB-ThomasNeural | 14 | 40.56 |
 | en-US-EricNeural | 12 | 38.92 |
