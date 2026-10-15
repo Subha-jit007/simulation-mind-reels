@@ -1003,5 +1003,20 @@
     "hook": "The Upload Isn't You",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 114,
+    "renderedAt": "2026-10-15T18:30:21.329Z",
+    "style": "trend-v2",
+    "seconds": 14.56,
+    "targetSeconds": 16,
+    "beats": 4,
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "The Self Is A Verb",
+    "vo": true,
+    "source": "recut"
   }
 ]
