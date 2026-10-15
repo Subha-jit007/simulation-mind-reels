@@ -237,7 +237,7 @@
       "#mindfulness",
       "#awakening"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 11,
@@ -2895,7 +2895,7 @@
     "day": 116,
     "title": "Time Might Already Be Frozen",
     "kicker": "RERUN · 116",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -2913,7 +2913,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 44
   },
@@ -2999,7 +2999,7 @@
     "day": 120,
     "title": "You're Not Who Started This Sentence",
     "kicker": "RERUN · 120",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -3017,8 +3017,34 @@
       "#metaphysics",
       "#awakening"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 13
+  },
+  {
+    "day": 121,
+    "title": "The Ego Is A Story You Keep Telling",
+    "kicker": "RERUN · 121",
+    "palette": "signal",
+    "voice": "en-GB-ThomasNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "The ego isn't a thing you have; it's a narrative the brain continuously authors to bind experience into a 'me.'",
+    "script": "You think you have a self, sitting somewhere behind your face, the same one since childhood. But look closely and you cannot find it. What you find is a story. A running narrative your brain writes, stitching memories and sensations into a character called me. The self is not the author of the story. The self is the story. And like any story, it can be edited, interrupted, even put down. That is not a loss. It means the thing you defend so fiercely was never as solid as the fear that guards it.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "You don't have an ego. You're constantly writing one.",
+    "hashtags": [
+      "#ego",
+      "#consciousness",
+      "#philosophy",
+      "#selfawareness",
+      "#egodeath",
+      "#deepthoughts",
+      "#mindfulness",
+      "#awakening"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 10
   }
 ]
