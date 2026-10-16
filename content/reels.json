@@ -405,7 +405,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 18,
@@ -2895,7 +2895,7 @@
     "day": 116,
     "title": "Time Might Already Be Frozen",
     "kicker": "RERUN · 116",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -2913,7 +2913,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 44
   },
@@ -2999,7 +2999,7 @@
     "day": 120,
     "title": "You're Not Who Started This Sentence",
     "kicker": "RERUN · 120",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -3017,7 +3017,7 @@
       "#metaphysics",
       "#awakening"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 13
   },
@@ -3046,5 +3046,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 10
+  },
+  {
+    "day": 122,
+    "title": "You'd Be Outnumbered A Billion To One",
+    "kicker": "RERUN · 122",
+    "palette": "ember",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "If ancestor simulations are ever run, simulated minds vastly outnumber originals — so statistically you're probably one of them.",
+    "script": "Suppose that one day civilizations learn to simulate entire conscious worlds. They would not run just one. They would run thousands, millions, for research, for history, for entertainment. Inside each, billions of minds, all certain they are real. Do the arithmetic. If simulated minds ever come to exist, they would outnumber the original, born minds by an almost unimaginable ratio. So if you pick a conscious being at random, the odds that it is an original are basically zero. You are a random conscious being. The math does not prove you are simulated. It just makes original the long shot.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "If sims are ever built, the simulated will outnumber the real billions to one.",
+    "hashtags": [
+      "#simulationtheory",
+      "#bostrom",
+      "#probability",
+      "#philosophy",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 17
   }
 ]
