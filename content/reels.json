@@ -357,7 +357,7 @@
       "#ai",
       "#metaphysics"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 16,
@@ -2999,7 +2999,7 @@
     "day": 120,
     "title": "You're Not Who Started This Sentence",
     "kicker": "RERUN · 120",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -3017,7 +3017,7 @@
       "#metaphysics",
       "#awakening"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 13
   },
@@ -3072,5 +3072,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 17
+  },
+  {
+    "day": 123,
+    "title": "The Room That Speaks But Can't Understand",
+    "kicker": "RERUN · 123",
+    "palette": "void",
+    "voice": "en-US-EricNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "idea": "Searle's Chinese Room — perfect symbol manipulation without comprehension; does any AI actually understand?",
+    "script": "Picture a man in a sealed room who speaks no Chinese. People slip questions in Chinese under the door. He has a giant rulebook that tells him which symbols to send back. To everyone outside, the room answers fluently. But the man understands nothing. He is just matching shapes. Now ask the hard question. Today's AI is that room, faster and vaster. It produces brilliant answers by manipulating symbols it may not understand at all. Fluency is not comprehension. And from the outside, you genuinely cannot tell the difference.",
+    "cta": "Follow if your own mind unsettles you.",
+    "caption": "It answers every question perfectly. It understands nothing. Sound familiar?",
+    "hashtags": [
+      "#chineseroom",
+      "#aiconsciousness",
+      "#philosophyofmind",
+      "#consciousness",
+      "#searle",
+      "#deepthoughts",
+      "#ai",
+      "#metaphysics"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 15
   }
 ]
