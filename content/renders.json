@@ -1033,5 +1033,20 @@
     "hook": "Meaning Isn't Found. It's Assigned.",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 116,
+    "renderedAt": "2026-10-18T17:29:08.786Z",
+    "style": "trend-v2",
+    "seconds": 21.56,
+    "targetSeconds": 22,
+    "beats": 6,
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "hook": "Time Might Already Be Frozen",
+    "vo": true,
+    "source": "recut"
   }
 ]
