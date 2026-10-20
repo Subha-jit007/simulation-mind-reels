@@ -1063,5 +1063,20 @@
     "hook": "The Party No One Planned",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 118,
+    "renderedAt": "2026-10-20T18:36:42.283Z",
+    "style": "trend-v2",
+    "seconds": 12.11,
+    "targetSeconds": 16,
+    "beats": 3,
+    "palette": "signal",
+    "voice": "en-US-GuyNeural",
+    "rate": "-7%",
+    "pitch": "-6Hz",
+    "hook": "There's No One Behind Your Eyes",
+    "vo": true,
+    "source": "recut"
   }
 ]
