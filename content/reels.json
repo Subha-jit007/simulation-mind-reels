@@ -213,7 +213,7 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 10,
@@ -2999,7 +2999,7 @@
     "day": 120,
     "title": "You're Not Who Started This Sentence",
     "kicker": "RERUN · 120",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-3Hz",
@@ -3017,7 +3017,7 @@
       "#metaphysics",
       "#awakening"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 13
   },
@@ -3103,7 +3103,7 @@
     "day": 124,
     "title": "Free Will Might Be A User Illusion",
     "kicker": "RERUN · 124",
-    "palette": "void",
+    "palette": "ember",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -3121,7 +3121,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 22,
     "source": "recut",
     "of": 12
   },
@@ -3147,8 +3147,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 20,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 18
+  },
+  {
+    "day": 126,
+    "title": "Who Made The Upper Beings?",
+    "kicker": "RERUN · 126",
+    "palette": "void",
+    "voice": "en-US-GuyNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "Saying 'upper beings made our world' just relocates the question — same infinite regress as 'who made God.'",
+    "script": "Say a higher being built our universe. It is a satisfying answer, until you ask the next question. Who built them? If everything that exists needs a maker, then their world needs one too, and that maker needs one, forever, with no floor to stand on. And if something can simply exist without a maker, then why not this universe? The creator explanation feels like an answer, but it only moves the mystery up one level and hides it there. The question never actually closes. It just gets a new address.",
+    "cta": "Follow if you can sit with not knowing.",
+    "caption": "If a creator made our world, who made the creator? The regress never ends.",
+    "hashtags": [
+      "#simulationtheory",
+      "#theology",
+      "#philosophy",
+      "#god",
+      "#existential",
+      "#deepthoughts",
+      "#metaphysics",
+      "#whatisreal"
+    ],
+    "targetSeconds": 13,
+    "source": "recut",
+    "of": 9
   }
 ]
