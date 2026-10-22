@@ -1093,5 +1093,20 @@
     "hook": "Being vs Acting Conscious Can't Be Proven",
     "vo": true,
     "source": "recut"
+  },
+  {
+    "day": 120,
+    "renderedAt": "2026-10-22T19:20:40.330Z",
+    "style": "trend-v2",
+    "seconds": 9.36,
+    "targetSeconds": 13,
+    "beats": 3,
+    "palette": "void",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "hook": "You're Not Who Started This Sentence",
+    "vo": true,
+    "source": "recut"
   }
 ]
