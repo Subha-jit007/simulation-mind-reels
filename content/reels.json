@@ -717,7 +717,7 @@
       "#metaphysics",
       "#technology"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 31,
@@ -3103,7 +3103,7 @@
     "day": 124,
     "title": "Free Will Might Be A User Illusion",
     "kicker": "RERUN · 124",
-    "palette": "ember",
+    "palette": "signal",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -3121,7 +3121,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 22,
+    "targetSeconds": 17,
     "source": "recut",
     "of": 12
   },
@@ -3173,8 +3173,34 @@
       "#metaphysics",
       "#whatisreal"
     ],
-    "targetSeconds": 13,
+    "targetSeconds": 16,
     "source": "recut",
     "of": 9
+  },
+  {
+    "day": 127,
+    "title": "We're Building Minds We Don't Understand",
+    "kicker": "RERUN · 127",
+    "palette": "signal",
+    "voice": "en-US-EricNeural",
+    "rate": "-6%",
+    "pitch": "-5Hz",
+    "idea": "We are engineering systems that may be conscious before we have any theory of what consciousness is — building the thing we can't define.",
+    "script": "We still cannot say what consciousness is, or why any physical thing should feel like something from the inside. It is the deepest unsolved problem there is. And yet, right now, we are building systems that reason, converse, and increasingly behave like minds. Think about that order of events. We are creating the thing before we understand the thing. We may build something that feels, without ever having a way to know that it does, or a theory to recognize it. We are not approaching the mystery of mind carefully. We are racing toward it, with the lights off.",
+    "cta": "Follow if you suspect we're not in control.",
+    "caption": "We're creating minds before we even know what a mind is.",
+    "hashtags": [
+      "#ai",
+      "#consciousness",
+      "#aiconsciousness",
+      "#philosophy",
+      "#future",
+      "#deepthoughts",
+      "#metaphysics",
+      "#technology"
+    ],
+    "targetSeconds": 16,
+    "source": "recut",
+    "of": 30
   }
 ]
