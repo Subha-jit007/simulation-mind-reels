@@ -69,7 +69,7 @@
       "#deepthoughts",
       "#metaphysics"
     ],
-    "recutCount": 1
+    "recutCount": 2
   },
   {
     "day": 4,
@@ -3103,7 +3103,7 @@
     "day": 124,
     "title": "Free Will Might Be A User Illusion",
     "kicker": "RERUN · 124",
-    "palette": "signal",
+    "palette": "void",
     "voice": "en-US-AndrewNeural",
     "rate": "-6%",
     "pitch": "-5Hz",
@@ -3121,7 +3121,7 @@
       "#metaphysics",
       "#existential"
     ],
-    "targetSeconds": 17,
+    "targetSeconds": 13,
     "source": "recut",
     "of": 12
   },
@@ -3202,5 +3202,31 @@
     "targetSeconds": 16,
     "source": "recut",
     "of": 30
+  },
+  {
+    "day": 128,
+    "title": "Nobody Knows Why This Feels Like Anything",
+    "kicker": "RERUN · 128",
+    "palette": "ember",
+    "voice": "en-US-AndrewNeural",
+    "rate": "-6%",
+    "pitch": "-3Hz",
+    "idea": "The hard problem of consciousness — we can map every neuron and still not explain subjective experience.",
+    "script": "Here is something nobody on Earth can explain. Not a single scientist knows why any of this feels like anything. Light hits your eye, signals fire, and somehow there is a someone in there watching the color red. We can map every neuron and still not find where the experience lives. This is called the hard problem of consciousness. We could build a perfect copy of a brain and never know if anyone is home, or if it just behaves as if it is. We are surrounded by the deepest mystery there is. And it is looking out through your eyes right now.",
+    "cta": "Follow for the questions that don't let you sleep.",
+    "caption": "Science can map the brain. It still can't explain the watcher inside it.",
+    "hashtags": [
+      "#consciousness",
+      "#hardproblem",
+      "#philosophyofmind",
+      "#neuroscience",
+      "#existential",
+      "#whatisreal",
+      "#deepthoughts",
+      "#metaphysics"
+    ],
+    "targetSeconds": 20,
+    "source": "recut",
+    "of": 3
   }
 ]
